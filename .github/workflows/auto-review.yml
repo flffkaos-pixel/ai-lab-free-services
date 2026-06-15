@@ -1,0 +1,34 @@
+name: AI 연구소 - 완전 자동 논문 리뷰
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hermes CLI 설치
+        run: |
+          curl -fsSL https://cli.hermesagent.ai/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Hermes Agent 실행 설정
+        env:
+          HERMES_API_KEY: ${{ secrets.HERMES_API_KEY }}
+        run: |
+          mkdir -p ~/.hermes
+          cat > ~/.hermes/config.yaml << 'EOF'
+          default_model: claude-sonnet-4-20250514
+          default_provider: anthropic
+          api_keys:
+            anthropic: "$HERMES_API_KEY"
+          EOF
+
+      - name: 구글 시트 확인 + 논문 분석 + 결과 발송
+        run: |
+          pip install requests
+          hermes run --prompt "auto-review-pipeline 스킬에 따라 구글 시트(1q-3_iJEWNfQr8a2N45aEH0hqCXUpOp2m59gNpM38K4w)의 새 신청을 확인하고, 논문 6영역 분석 후 send_results.py로 결과를 발송하세요. 이미 처리된 건은 건너뛰세요." --skills auto-review-pipeline
