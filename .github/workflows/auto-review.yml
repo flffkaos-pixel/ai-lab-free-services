@@ -55,7 +55,7 @@ jobs:
           각 영역을 문제점 → 개선 제안 순서로 작성. 마지막에 총평 한 줄.'''
               r=requests.post('https://integrate.api.nvidia.com/v1/chat/completions',
                   headers={'Authorization':f'Bearer {NVIDIA_KEY}','Content-Type':'application/json'},
-                  json={'model':'deepseek-ai/deepseek-v3-0324','messages':[{'role':'user','content':prompt}],'temperature':0.3},
+                  json={'model':'deepseek-ai/deepseek-v4-pro','messages':[{'role':'user','content':prompt}],'temperature':0.3},
                   timeout=120)
               return r.json()['choices'][0]['message']['content']
 
