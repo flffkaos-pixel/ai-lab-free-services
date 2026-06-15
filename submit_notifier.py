@@ -24,7 +24,7 @@ from datetime import datetime
 # ============================================================
 # 설정 — 여기만 수정하면 됨
 # ============================================================
-SPREADSHEET_ID = "11CPRUcljFGC-JG2vOLzxwh1viB1fVIsC3BuYCzGmJrY"
+SPREADSHEET_ID = "1q-3_iJEWNfQr8a2N45aEH0hqCXUpOp2m59gNpM38K4w"
 GH_TOKEN = "ghp_UP...T4vG"
 GH_REPO = "flffkaos-pixel/ai-lab-free-services"
 LAST_CHECK = os.path.join(os.path.dirname(os.path.abspath(__file__)), "last_sheet_check.json")
@@ -91,6 +91,8 @@ def send_email_notification(name, email, service, content):
         print(f"📧 이메일 알림 발송 완료 → {YOUR_EMAIL}")
     except Exception as e:
         print(f"⚠️ 이메일 발송 실패: {e}")
+
+def main():
     try:
         rows = get_sheet_data()
     except Exception as e:
@@ -117,8 +119,9 @@ def send_email_notification(name, email, service, content):
 
         name = row.get("이름", row.get("name", "익명"))
         email = row.get("이메일", row.get("email", ""))
-        service = row.get("서비스", row.get("service", "기타"))
-        content = row.get("내용", row.get("content", row.get("message", "")))
+        service = "논문 리뷰"
+        title_paper = row.get("논문 제목", row.get("paper_title", ""))
+        content = row.get("논문파일 업로드", row.get("paper_file", ""))
 
         # 제목: [서비스] 이름
         if "논문" in service or "review" in service.lower():
@@ -128,7 +131,7 @@ def send_email_notification(name, email, service, content):
         else:
             label = "general"
 
-        title = f"[{service}] {name}님 신청"
+        title = f"[논문 리뷰] {name}님 - {title_paper}" if title_paper else f"[논문 리뷰] {name}님 신청"
         body = f"""## 새 신청 접수
 
 - **이름:** {name}
