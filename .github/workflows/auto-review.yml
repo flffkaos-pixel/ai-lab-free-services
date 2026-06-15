@@ -18,14 +18,14 @@ jobs:
 
       - name: Hermes Agent 실행 설정
         env:
-          HERMES_API_KEY: ${{ secrets.HERMES_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: |
           mkdir -p ~/.hermes
           cat > ~/.hermes/config.yaml << 'EOF'
-          default_model: claude-sonnet-4-20250514
-          default_provider: anthropic
+          default_model: deepseek-ai/deepseek-v3-0324
+          default_provider: nvidia
           api_keys:
-            anthropic: "$HERMES_API_KEY"
+            nvidia: "$NVIDIA_API_KEY"
           EOF
 
       - name: 구글 시트 확인 + 논문 분석 + 결과 발송
