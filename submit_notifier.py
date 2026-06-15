@@ -17,15 +17,21 @@ import os
 import json
 import re
 import requests
+import smtplib
+from email.mime.text import MIMEText
 from datetime import datetime
 
 # ============================================================
 # 설정 — 여기만 수정하면 됨
 # ============================================================
-SPREADSHEET_ID = "YOUR_SPREADSHEET_ID"  # 구글 시트 URL에서 /d/.../edit 부분
-GH_TOKEN = "YOUR_GITHUB_TOKEN"          # GitHub Settings → Developer settings → Tokens
+SPREADSHEET_ID = "11CPRUcljFGC-JG2vOLzxwh1viB1fVIsC3BuYCzGmJrY"
+GH_TOKEN = "ghp_UP...T4vG"
 GH_REPO = "flffkaos-pixel/ai-lab-free-services"
-LAST_CHECK = os.path.expanduser("~/.hermes/last_sheet_check.json")
+LAST_CHECK = os.path.join(os.path.dirname(os.path.abspath(__file__)), "last_sheet_check.json")
+
+# 이메일 알림 설정
+YOUR_EMAIL = ""  # ← 신청 알림 받을 이메일 주소
+GMAIL_APP_PASSWORD = ""  # ← Gmail 앱 비밀번호 (아래 설명 참고)
 # ============================================================
 
 def get_sheet_data():
@@ -55,7 +61,36 @@ def get_sheet_data():
         rows.append(row)
     return rows
 
-def main():
+def send_email_notification(name, email, service, content):
+    """신청 알림 이메일 발송"""
+    if not YOUR_EMAIL or not GMAIL_APP_PASSWORD:
+        return
+
+    subject = f"[AI 연구소] 새 신청 - {name}님 ({service})"
+    body = f"""새로운 신청이 접수되었습니다.
+
+이름: {name}
+이메일: {email}
+서비스: {service}
+접수일: {datetime.now().strftime('%Y-%m-%d %H:%M')}
+
+내용:
+{content}
+"""
+
+    msg = MIMEText(body, "plain", "utf-8")
+    msg["Subject"] = subject
+    msg["From"] = YOUR_EMAIL
+    msg["To"] = YOUR_EMAIL
+
+    try:
+        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+        server.login(YOUR_EMAIL, GMAIL_APP_PASSWORD)
+        server.send_message(msg)
+        server.quit()
+        print(f"📧 이메일 알림 발송 완료 → {YOUR_EMAIL}")
+    except Exception as e:
+        print(f"⚠️ 이메일 발송 실패: {e}")
     try:
         rows = get_sheet_data()
     except Exception as e:
@@ -121,6 +156,8 @@ def main():
             if resp.status_code == 201:
                 issue_url = resp.json()["html_url"]
                 print(f"✅ [{row_num}행] {title} → {issue_url}")
+                # 이메일 알림 발송
+                send_email_notification(name, email, service, content)
             else:
                 print(f"❌ [{row_num}행] 실패: {resp.status_code} {resp.text}")
         except Exception as e:
