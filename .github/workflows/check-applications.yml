@@ -1,41 +1,19 @@
-name: AI 연구소 - 신청서 감시
+name: AI 연구소 - 논문 리뷰 자동화
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 30분마다
-  workflow_dispatch:  # 수동 실행도 가능
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: 의존성 설치
-        run: pip install gspread oauth2client
-
-      - name: 구글폼 신청 확인 → Hermes에 전달
-        env:
-          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-          HERMES_WEBHOOK_URL: ${{ secrets.HERMES_WEBHOOK_URL }}
+      - name: 구글 시트 확인
         run: |
-          # credentials.json 복원
-          echo "$GOOGLE_CREDENTIALS" > credentials.json
-
-          # check-applications.py 실행
-          NEW_APPS=$(python check-applications.py 2>&1)
-
-          if [ -n "$NEW_APPS" ]; then
-            echo "새 신청 발견: $NEW_APPS"
-
-            # Hermes CronJob에 HTTP POST로 전달
-            curl -s -X POST "$HERMES_WEBHOOK_URL" \
-              -H "Content-Type: application/json" \
-              -d "{\"new_applications\": $NEW_APPS}"
-          else
-            echo "신규 신청 없음"
-          fi
+          pip install requests
+          python submit_notifier.py

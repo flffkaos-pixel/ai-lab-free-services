@@ -26,7 +26,8 @@ def rows():
     u = f"https://docs.google.com/spreadsheets/d/{S}/export?format=csv"
     r = requests.get(u)
     r.raise_for_status()
-    lines = r.text.strip().split("\n")
+    text = r.text.replace('\r', '')
+    lines = text.strip().split("\n")
     h = lines[0].split(",")
     out = []
     for line in lines[1:]:
