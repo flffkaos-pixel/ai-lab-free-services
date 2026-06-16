@@ -71,18 +71,23 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=8):
 def translate_to_korean(title, abstract):
     """Groq API로 한국어 1줄 요약"""
     import requests
-    prompt = f"""다음 영문 AI 논문 정보를 한국어로 작성하세요.
+    prompt = f"""You are translating an AI paper title and abstract into Korean. Respond ONLY in the exact format below, no extra text.
 
-영문 제목: {title}
+[FIRST LINE FORMAT — start with "한국어 제목:"]
+한국어 제목: <Korean translated title>
 
-영문 초록: {abstract[:1500]}
+한국어 한 줄 요약: <30자 이내 핵심 idea 요약>
 
-반드시 아래 형식으로만 작성:
+주요 기여:
+- <contribution 1>
+- <contribution 2>
+- <contribution 3>
 
-한국어 제목:
-한국어 한 줄 요약 (30자 이내, 핵심 아이디어 1문장):
-주요 기여 (한글 20대, 불릿 3개):
-적용 분야:"""
+적용 분야: <field name>
+
+English title: {title}
+
+English abstract: {abstract[:1500]}"""
 
     try:
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
@@ -99,12 +104,12 @@ def translate_to_korean(title, abstract):
             return data["choices"][0]["message"]["content"]
     except Exception as e:
         print(f"  translate err: {e}")
-    # 실패시 영어 요약이라도 반환
+    # 실패시 영문 fallback
     return f"영문 제목: {title}\n\n영문 초록: {abstract[:500]}"
 
 
-def parse_translation(text):
-    """모델 출력 파싱"""
+def parse_translation(text, fallback_title=""):
+    """모델 출력 파싱 — 한국어 섹션 키워드가 없으면 fallback"""
     out = {"ko_title": "", "summary": "", "contributions": [], "field": ""}
     cur_section = None
     for line in text.split("\n"):
@@ -123,15 +128,15 @@ def parse_translation(text):
         elif line.startswith(("•", "-", "*", "1.", "2.", "3.")):
             if cur_section == "contributions":
                 out["contributions"].append(line.lstrip("•-*0123456789. ").strip())
-    if not out["ko_title"]:
-        out["ko_title"] = text.split("\n")[0][:200]
+    if not out["ko_title"] or len(out["ko_title"]) < 5:
+        out["ko_title"] = fallback_title[:200] if fallback_title else "AI 논문"
     return out
 
 
 def make_post(paper, translation):
     """마크다운 블로그 포스트 생성"""
     today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
-    parsed = parse_translation(translation)
+    parsed = parse_translation(translation, fallback_title=paper["title"])
 
     front_matter = f"""---
 layout: post
