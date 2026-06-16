@@ -125,26 +125,39 @@ English abstract: {abstract[:1200]}"""
 
 
 def parse_summary(text, english_title=""):
-    """'한국어 제목:' / '한줄요약:' 라인 파싱"""
+    """'한국어 제목:' / '한줄요약:' 라인 파싱 - 여러 형태 처리"""
+    import re as re_mod
+
+    # 1) 명확한 단일 라벨 찾기
     ko_title = ""
     summary = ""
     for line in text.split("\n"):
         line = line.strip()
-        if line.startswith("한국어 제목:") or line.startswith("한국어 제목 "):
-            ko_title = line.split(":", 1)[-1].strip()
-        elif line.startswith("한줄요약:") or line.startswith("한줄요약 "):
-            summary = line.split(":", 1)[-1].strip()
-        elif line.startswith("**한국어 제목**:") or "**한줄요약**" in line:
-            cleaned = line.replace("**", "").split(":", 1)[-1].strip()
-            if "한줄요약" in cleaned[:8]:
-                summary = cleaned.replace("한줄요약", "").strip()
-            else:
-                ko_title = cleaned.replace("한국어 제목", "").strip()
+        if not line:
+            continue
+        # 한국어 제목: 형태
+        m = re_mod.match(r'^[\s*]*한국어\s*제목\s*[:：]\s*(.+)$', line)
+        if m:
+            ko_title = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
+            continue
+        # 한줄요약: 형태
+        m = re_mod.match(r'^[\s*]*한줄요약\s*[:：]\s*(.+)$', line)
+        if m:
+            summary = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
+            continue
 
-    if not ko_title or len(ko_title) < 3:
+    # 2) 못 찾았으면 본문에서 영문 라벨 제거
+    if not ko_title and english_title:
         ko_title = english_title
-    if not summary or len(summary) < 5:
-        summary = "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
+    if not summary:
+        # 한국어 한 줄 요약 자투리 추출
+        for line in text.split("\n"):
+            line = line.strip()
+            if 10 <= len(line) <= 80 and not line.startswith(("•", "-", "*", "주요", "적용", "English", "korean")):
+                summary = line
+                break
+        if not summary:
+            summary = "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
     return ko_title, summary
 
 
