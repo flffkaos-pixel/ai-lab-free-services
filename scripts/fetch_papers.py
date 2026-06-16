@@ -87,38 +87,40 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
 def summarize(title, abstract):
     """Groq API로 한국어 1줄 요약 생성"""
     import requests
-    prompt = f"""You are an AI assistant. Translate an AI paper into Korean. Output in EXACTLY this format:
+    prompt = f"""Task: Translate an English AI paper into Korean summary.
 
-한국어 제목: <Korean title translation>
-한줄요약: <30자 이내 한국어 핵심 요약>
+=== EXPECTED OUTPUT (write ONLY this, nothing else) ===
+한국어 제목: <Korean translation of title under 80 characters>
+한줄요약: <Korean one-line summary under 50 characters>
 
-Do NOT include ANY other sections, English text in these fields, or explanation.
-
+=== INPUT ===
 English title: {title}
 
-English abstract: {abstract[:1200]}"""
-    print(f"  summarize debug: API 키 = {GK[:8]}...")
+English abstract: {abstract[:1200]}
+
+=== YOUR OUTPUT ==="""
     try:
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
                 "model": "qwen/qwen3-32b",
                 "messages": [
-                    {"role": "system", "content": "You always respond in the exact format requested. Never add extra text."},
+                    {"role": "system", "content": "You are a precise Korean translator. Follow the EXACT output format requested."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.2,
-                "max_tokens": 400
+                "max_tokens": 300
             },
             timeout=120)
         print(f"  summarize status: {resp.status_code}")
         if resp.status_code != 200:
-            print(f"  summarize err body: {resp.text[:300]}")
+            print(f"  summarize err body: {resp.text[:200]}")
             return None
         data = resp.json()
         if "choices" in data:
-            return data["choices"][0]["message"]["content"]
-        print(f"  summarize err json: {data}")
+            text = data["choices"][0]["message"]["content"]
+            print(f"  AI 응답: {text[:120]}")
+            return text
     except Exception as as_err:
         print(f"  summarize err: {as_err}")
     return None
