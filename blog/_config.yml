@@ -1,9 +1,9 @@
 title: AI 논문 한 줄 — 매일 새로운 AI 논문 한국어 요약
 description: arXiv에서 매일选取한 AI 최신 Papers을 한국어로 1줄 요약 제공하는 자동화 블로그
-url: "https://flffkaos-pixel.github.io"
+url: "https://flffkaos-pixel.github.io/ai-lab-free-services"
 baseurl: ""
 timezone: Asia/Seoul
-permalink: /ai-lab-free-services/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 lang: ko
 locale: ko_KR

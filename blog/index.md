@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /ai-lab-free-services/
+permalink: /
 ---
 # AI 논문 한 줄
 
