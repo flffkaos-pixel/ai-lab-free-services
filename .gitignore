@@ -1,1 +1,12 @@
 last_check.json
+submit_notifier.py
+send_results.py
+preview_review.py
+test_review.py
+preview_output.md
+KEY_ROTATION_URGENT.md
+FROM_NAME_GUIDE.md
+__pycache__/
+*.pyc
+*.py.bak
+.DS_Store

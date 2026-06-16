@@ -1,0 +1,31 @@
+title: AI 논문 한 줄 — 매일 새로운 AI 논문 한국어 요약
+description: arXiv에서 매일选取한 AI 최신 Papers을 한국어로 1줄 요약 제공하는 자동화 블로그
+url: "https://flffkaos.github.io/ai-lab-free-services"
+baseurl: ""
+timezone: Asia/Seoul
+permalink: /:year/:month/:day/:title/
+
+lang: ko
+locale: ko_KR
+
+# SEO
+google_analytics:
+keywords: ai 논문, 머신러닝 논문, 논문 요약, ai research, arxiv, deep learning
+author:
+  name: AI 논문 한 줄
+  email: flffkaos@gmail.com
+
+# 테마 — Jekyll minima 무료
+theme: minima
+
+# SEO 플러그인
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 페이지네이션
+paginate: 20
+paginate_path: "/page:num/"
+
+# SNS (사용 안 함)
+minimal_mistakes_skin: "default"

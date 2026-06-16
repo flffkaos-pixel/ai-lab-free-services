@@ -1,0 +1,50 @@
+name: 매일 자동 논문 포스팅
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 UTC 0시 = KST 09시
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 패키지 설치
+        run: pip install requests
+
+      - name: arXiv에서 논문 수집 + 한국어 요약
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python scripts/fetch_papers.py
+
+      - name: Jekyll 사이트 빌드
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./blog
+          destination: ./_site
+
+      - name: Pages 배포
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Pages 배포 실행
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 새 블로그 포스트 커밋
+        run: |
+          git config user.email "blog-bot@ai-lab.com"
+          git config user.name "AI Blog Bot"
+          git add blog/_posts/ || true
+          git diff --staged --quiet || git commit -m "blog: 자동 포스팅 $(date +%Y-%m-%d)"
+          git push
