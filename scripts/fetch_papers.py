@@ -199,6 +199,8 @@ def main():
     success = 0
 
     for paper in unique[:8]:
+        filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
+        out_path = os.path.join(OUT_DIR, filename)
         print(f"  → {paper['id']}: {paper['title'][:70]}")
         post, _ = make_post(paper, today_str)
 
