@@ -170,7 +170,7 @@ field: "{field}"
 
 [원문 보러가기 →]({paper["url"]})
 """
-    return front_matter, excerpt
+    return front_matter
 
 
 def main():
@@ -205,7 +205,7 @@ def main():
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(OUT_DIR, filename)
         print(f"  → {paper['id']}: {paper['title'][:70]}")
-        post, _ = make_post(paper, today_str)
+        post = make_post(paper, today_str)
 
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(post)
