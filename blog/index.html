@@ -1,0 +1,74 @@
+---
+layout: null
+permalink: /
+---
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 논문 한 줄 — 매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로</title>
+  <meta name="description" content="arXiv에서 매일 선정한 AI/ML 최신 논문을 한국어로 한 줄 요약 제공합니다.">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>📚 AI 논문 한 줄</h1>
+  <p>매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
+
+  <nav class="field-tabs">
+    {% assign fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
+    {% for f in fields %}
+      <a class="field-tab" href="#field:{{ f }}">{{ f }}</a>
+    {% endfor %}
+  </nav>
+</header>
+
+<div class="wrap">
+
+{% assign posts_by_date = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" %}
+{% comment %} 필드별 placeholder - 실제론 post.tag 활용 {% endcomment %}
+
+{% for group in posts_by_date %}
+  <h2 class="date-group">📅 {{ group.name }}</h2>
+  <div class="cards">
+    {% for post in group.items %}
+      <a class="card" href="{{ post.url | relative_url }}">
+        <h3>{{ post.title }}</h3>
+        {% if post.excerpt and post.excerpt != "" %}
+          <p class="summary">{{ post.excerpt | strip_html | truncate: 130 }}</p>
+        {% else %}
+          <p class="summary">논문 전문을 확인하려면 클릭하세요</p>
+        {% endif %}
+        <div class="meta">
+          {% if post.arxiv_id %}
+            <span class="tag">arXiv:{{ post.arxiv_id }}</span>
+          {% endif %}
+          <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
+          {% if post.categories %}
+            <span>🏷 {{ post.categories | first | upcase }}</span>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+  <p style="text-align:center; padding: 60px 0; color: #888;">
+    아직 등록된 논문이 없습니다. 매일 오전 9시에 자동 추가됩니다.
+  </p>
+{% endif %}
+
+<footer>
+  <p>매일 0시(UTC, <strong>한국 오전 9시</strong>)에 자동 업데이트</p>
+  <p style="margin-top:8px;">
+    <a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a>
+  </p>
+</footer>
+
+</div>
+
+</body>
+</html>
