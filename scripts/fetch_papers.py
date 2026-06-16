@@ -7,7 +7,7 @@ arXiv에서 AI 분야 최신 논문 자동 수집 → 한국어 1줄 요약 → 
 import os, json, re, time
 from datetime import datetime, timezone, timedelta
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "blog", "_posts")
+OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "blog", "_posts")
 
 # 환경변수 (GitHub Actions secrets)
 GK = os.environ.get("GROQ_API_KEY", "gsk_***PLACEHOLDER***")
