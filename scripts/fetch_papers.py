@@ -103,9 +103,9 @@ English abstract: {abstract[:1200]}
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
-                "model": "qwen/qwen3-32b",
+                "model": "llama-3.3-70b-versatile",
                 "messages": [
-                    {"role": "system", "content": "You are a precise Korean translator. Follow the EXACT output format requested."},
+                    {"role": "system", "content": "You are a precise Korean translator. Follow the EXACT output format requested. Write ONLY Korean characters after each label."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.2,
