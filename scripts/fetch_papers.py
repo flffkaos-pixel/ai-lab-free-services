@@ -119,6 +119,8 @@ English abstract: {abstract[:1200]}
         data = resp.json()
         if "choices" in data:
             text = data["choices"][0]["message"]["content"]
+            # qwen3의 <think> 블록 제거
+            text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL).strip()
             print(f"  AI 응답: {text[:120]}")
             return text
     except Exception as as_err:
