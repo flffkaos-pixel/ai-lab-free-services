@@ -97,6 +97,7 @@ Do NOT include ANY other sections, English text in these fields, or explanation.
 English title: {title}
 
 English abstract: {abstract[:1200]}"""
+    print(f"  summarize debug: API 키 = {GK[:8]}...")
     try:
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
@@ -109,10 +110,15 @@ English abstract: {abstract[:1200]}"""
                 "temperature": 0.2,
                 "max_tokens": 400
             },
-            timeout=60)
+            timeout=120)
+        print(f"  summarize status: {resp.status_code}")
+        if resp.status_code != 200:
+            print(f"  summarize err body: {resp.text[:300]}")
+            return None
         data = resp.json()
         if "choices" in data:
             return data["choices"][0]["message"]["content"]
+        print(f"  summarize err json: {data}")
     except Exception as as_err:
         print(f"  summarize err: {as_err}")
     return None
