@@ -199,12 +199,6 @@ def main():
     success = 0
 
     for paper in unique[:8]:
-        filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
-        out_path = os.path.join(OUT_DIR, filename)
-        if os.path.exists(out_path):
-            print(f"  [skip] {paper['id']} (이미 있음)")
-            continue
-
         print(f"  → {paper['id']}: {paper['title'][:70]}")
         post, _ = make_post(paper, today_str)
 
