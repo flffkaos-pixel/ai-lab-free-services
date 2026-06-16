@@ -87,12 +87,12 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
 def summarize(title, abstract):
     """Groq API로 한국어 1줄 요약 생성"""
     import requests
-    prompt = f"""You will translate an AI paper into Korean. Output in EXACTLY this format and nothing else:
+    prompt = f"""You are an AI assistant. Translate an AI paper into Korean. Output in EXACTLY this format:
 
-한국어 제목: <Korean title>
-한줄요약: <30자 이내 한국어 요약>
+한국어 제목: <Korean title translation>
+한줄요약: <30자 이내 한국어 핵심 요약>
 
-Do NOT include ANY other sections. No "주요 기여", no "적용 분야", no explanation.
+Do NOT include ANY other sections, English text in these fields, or explanation.
 
 English title: {title}
 
@@ -102,8 +102,11 @@ English abstract: {abstract[:1200]}"""
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
                 "model": "qwen/qwen3-32b",
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.3,
+                "messages": [
+                    {"role": "system", "content": "You always respond in the exact format requested. Never add extra text."},
+                    {"role": "user", "content": prompt}
+                ],
+                "temperature": 0.2,
                 "max_tokens": 400
             },
             timeout=60)
@@ -149,9 +152,6 @@ def make_post(paper, today_str):
     else:
         ko_title, summary = paper["title"], "AI 요약 생성 실패"
 
-    # excerpt는 홈페이지 카드 미리보기에 표시
-    excerpt = summary
-
     front_matter = f"""---
 layout: post
 title: "{ko_title[:200]}"
@@ -160,10 +160,13 @@ categories: [ai]
 tags: [arxiv, {field}, {paper["id"]}]
 arxiv_id: "{paper["id"]}"
 field: "{field}"
-excerpt: "{excerpt[:200]}"
 ---
 
-{summary} <!-- more -->
+{summary}
+
+<!-- more -->
+
+*분야: {field}*
 
 [원문 보러가기 →]({paper["url"]})
 """
