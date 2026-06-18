@@ -58,7 +58,3 @@ jobs:
           publish_dir: ./_site
           publish_branch: gh-pages
           force_orphan: true
-
-      - name: Pages 배포
-        id: deployment
-        uses: actions/deploy-pages@v4
