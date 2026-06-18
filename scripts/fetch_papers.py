@@ -103,19 +103,22 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
 def summarize(title, abstract):
     import requests
     prompt = (
-        "Task: Translate an English AI paper title and write a Korean one-line summary.\n\n"
-        "=== STRICT FORMAT (write ONLY these two lines, nothing else) ===\n"
-        "한국어 제목: <Korean translation of title, under 80 characters>\n"
-        "한줄요약: <Korean one-line summary of core contribution, 20-50 characters>\n\n"
-        "### RULES ###\n"
-        "- Output ONLY 2 lines, no greetings, no explanations\n"
-        "- Title must be natural Korean (no machine-translation feel)\n"
-        "- One-line summary focuses on what THIS paper does, not background\n"
-        "- No English word salad — write Korean grammar correctly\n\n"
+        "Task: Read an English AI paper and write a Korean translation of the title plus a ONE-LINE summary.\n\n"
+        "=== OUTPUT FORMAT (write ONLY these 2 lines, nothing else) ===\n"
+        "제목: <Korean title, natural and concise, under 80 chars>\n"
+        "요약: <ONE sentence that includes the SPECIFIC CORE FINDING or RESULT. Use numbers/percentages if available.>\n\n"
+        "=== CRITICAL RULES ===\n"
+        "- The 요약 must describe the paper's KEY RESULT, not the method or background\n"
+        "- Good: 'CoT 프롬프트를 적용해 수학 추론 능력을 기존 대비 23% 향상'\n"
+        "- Good: '단 7B 모델이 GPT-4 수준의 수학 문제를 풀어내는 Few-shot 학습 기법 제안'\n"
+        "- Bad: '이 논문은 대규모 언어 모델의 추론 능력을 향상시키는 방법을 제안합니다'\n"
+        "- Bad: 'Transformer 기반 모델의 학습 효율성을 개선했다'\n"
+        "- Include concrete numbers (accuracy %, BLEU score, parameters) if present in abstract\n"
+        "- 요약 length: 30~70 characters (Korean)\n\n"
         "=== INPUT ===\n"
         f"English title: {title}\n\n"
         f"English abstract: {abstract[:1200]}\n\n"
-        "=== OUTPUT (2 lines) ==="
+        "=== OUTPUT (2 lines only) ==="
     )
     try:
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
@@ -123,7 +126,7 @@ def summarize(title, abstract):
             json={
                 "model": "qwen/qwen3-32b",   # qwen3-32b: 한국어/학술 논문 압도적 우수
                 "messages": [
-                    {"role": "system", "content": "You translate English AI paper titles into natural Korean with one-line summary. Output strict 2-line format only."},
+                    {"role": "system", "content": "You are an AI paper summarizer. Output EXACTLY 2 lines: '제목: <Korean title>' and '요약: <one sentence about the KEY FINDING/RESULT, with numbers if available>'. No explanations, no greetings."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.2, "max_tokens": 300,
@@ -146,18 +149,18 @@ def parse_summary(text, english_title=""):
         return english_title, "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
     for line in text.split("\n"):
         line = line.strip()
-        m = re.match(r"^[*\s\-]*한국어\s*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
+        m = re.match(r"^[*\s\-]*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             ko_title = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
-        m = re.match(r"^[*\s\-]*한줄요약\s*[:：]\s*(.+?)\s*[*]?$", line)
+        m = re.match(r"^[*\s\-]*요약\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             summary = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
     if not ko_title or len(ko_title) < 3:
         ko_title = english_title
     if not summary or len(summary) < 5:
-        summary = "논문 원문으로 핵심 아이디어를 확인하세요."
+        summary = "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
     return ko_title, summary
 
 
@@ -174,10 +177,11 @@ def make_post(paper, today_str):
     tags: [{field}, arxiv, {paper["id"]}]
     arxiv_id: "{paper["id"]}"
     field: "{field}"
+    excerpt: "{summary[:300]}"
     ---
 
     {summary}
-"""
+    """
 
 
 # 각 분야별 Jekyll 페이지 정의
