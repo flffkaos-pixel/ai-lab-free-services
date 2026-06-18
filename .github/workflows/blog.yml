@@ -6,15 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  post:
+  build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      contents: write
-      id-token: write
-      pages: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -47,16 +48,14 @@ jobs:
             echo "✅ 푸시 완료"
           fi
 
-      - name: Jekyll 사이트 빌드
-        uses: actions/jekyll-build-pages@v1
+      - name: Jekyll 빌드 & 배포 (helaili/jekyll-action)
+        uses: helaili/jekyll-action@v2
         with:
-          source: ./blog
-          destination: ./_site
-
-      - name: Pages 배포
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+          jekyll_src: 'blog'
+          jekyll_baseurl: '/ai-lab-free-services'
+          jekyll_gems: 'jekyll-include-cache'
+        env:
+          JEKYLL_ENV: production
 
       - name: Pages 배포 실행
         id: deployment
