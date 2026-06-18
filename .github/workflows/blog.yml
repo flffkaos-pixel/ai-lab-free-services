@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.email "blog-bot@ai-lab.com"
           git config user.name "AI Blog Bot"
-          git add blog/_posts/ || true
+          git add blog/_posts/ blog/field-*.html 2>/dev/null || git add blog/ || true
           if git diff --staged --quiet; then
             echo "변경된 파일 없음 (이미 처리됨)"
           else
