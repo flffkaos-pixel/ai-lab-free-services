@@ -131,7 +131,7 @@ def summarize(title, abstract):
                 ],
                 "temperature": 0.2, "max_tokens": 300,
                 "thinking": {"type": "disabled"},
-            }, timeout=120)
+            }, timeout=300)
         if resp.status_code != 200:
             print(f"  groq err: HTTP {resp.status_code}")
             return None
