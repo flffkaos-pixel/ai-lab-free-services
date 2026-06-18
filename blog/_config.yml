@@ -1,11 +1,10 @@
 ---
 title: AI 논문 한 줄
-description: 매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요.
+tagline: 매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요
 url: "https://flffkaos-pixel.github.io/ai-lab-free-services"
 baseurl: "/ai-lab-free-services"
 timezone: Asia/Seoul
-permalink: /:year/:month/:day/:title/
-
+permalink: /:categories/:year/:month/:day/:title/
 lang: ko
 locale: ko_KR
 
@@ -19,17 +18,10 @@ keywords:
 author:
   name: AI 논문 한 줄
 
-# GitHub Pages minima 테마
-theme: minima
-
+# minima 테마 제거 — 자체 HTML/CSS 사용
 exclude:
   - feed.xml
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+plugins: []
 
 excerpt_separator: "<!-- more -->"
-
-paginate: 30
-paginate_path: "/page:num/"

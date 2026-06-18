@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — AI 논문 한 줄{% else %}AI 논문 한 줄{% endif %}</title>
+  <meta name="description" content="arXiv AI 논문 한국어 한 줄 요약. 매일 오전 9시 자동 업데이트.">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-title" href="{{ '/' | relative_url }}">AI 논문 한 줄</a>
+  <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>일일 논문</a>
+    {% assign nav_fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
+    {% for f in nav_fields %}
+      {% capture safe %}{% if f == "AI/ML" %}ai-ml{% elsif f == "CV" %}cv{% elsif f == "NLP" %}nlp{% elsif f == "RL" %}rl{% elsif f == "음성/음악" %}audio{% elsif f == "로봇" %}robotics{% elsif f == "통계" %}statistics{% endif %}{% endcapture %}
+      <a href="{{ '/field/' | append: safe | append: '/' | relative_url }}">{{ f }}</a>
+    {% endfor %}
+  </nav>
+</header>
+
+<main class="container">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <p>매일 0시(UTC, <strong>한국 오전 9시</strong>)에 자동 업데이트</p>
+  <p><a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a></p>
+</footer>
+
+</body>
+</html>

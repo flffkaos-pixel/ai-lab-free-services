@@ -1,76 +1,38 @@
 ---
-layout: null
+layout: default
 permalink: /
 ---
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 논문 한 줄 — 매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로</title>
-  <meta name="description" content="arXiv에서 매일 선정한 AI/ML 최신 논문을 한국어로 한 줄 요약 제공합니다.">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-</head>
-<body>
 
-<header class="site-header">
-  <h1>📚 AI 논문 한 줄</h1>
-  <p>매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
+<section class="intro">
+  <p>매일 <strong>오전 9시 KST</strong>, arXiv에서 선정한 최신 AI 논문을 분야별로 분류하여
+  <strong>한국어 한 줄 요약</strong>으로 제공합니다.</p>
+</section>
 
-  {% assign fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
-  <nav class="field-tabs">
-    {% for f in fields %}
-      {% capture safe %}{% if f == "AI/ML" %}ai-ml{% elsif f == "CV" %}cv{% elsif f == "NLP" %}nlp{% elsif f == "RL" %}rl{% elsif f == "음성/음악" %}audio{% elsif f == "로봇" %}robotics{% elsif f == "통계" %}statistics{% endif %}{% endcapture %}
-      <a class="field-tab" href="{{ '/field/' | append: safe | append: '/' | relative_url }}">{{ f }}</a>
-    {% endfor %}
-  </nav>
-</header>
+<h2>📚 일일 논문</h2>
 
-<div class="wrap">
-
-{% assign field_order = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
-{% for field_name in field_order %}
-  {% assign field_posts = site.posts | where: "field", field_name %}
-  {% if field_posts.size > 0 %}
-    <section class="field-section" id="field:{{ field_name }}">
-      <h2 class="date-group">📂 {{ field_name }} 분야 ({{ field_posts.size }}건)</h2>
-      <div class="cards">
-        {% for post in field_posts limit:8 %}
-          <a class="card" href="{{ post.url | relative_url }}">
-            <h3>{{ post.title }}</h3>
-            {% if post.excerpt and post.excerpt != "" %}
-              <p class="summary">{{ post.excerpt | strip_html | truncate: 130 }}</p>
-            {% else %}
-              <p class="summary">논문 전문을 확인하려면 클릭하세요</p>
-            {% endif %}
-            <div class="meta">
-              {% if post.arxiv_id %}
-                <span class="tag">arXiv:{{ post.arxiv_id }}</span>
-              {% endif %}
-              <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
-              <span>🏷 {{ post.field }}</span>
-            </div>
-          </a>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
+<ul class="report-list">
+{% assign posts_by_date = site.posts | group_by: "date" %}
+{% for date in posts_by_date limit: 30 %}
+  <li>
+    <div class="rl-head">
+      <time>{{ date.name }}</time>
+      <span class="count-badge">{{ date.items.size }}건</span>
+    </div>
+    <div class="rl-top3">
+      <span class="rl-label">논문</span>
+      {% for post in date.items limit: 4 %}
+        <span class="t3-chip">
+          <b>{{ post.field }}</b>
+          <a href="{{ post.url | relative_url }}">{{ post.title | truncate: 24 }}</a>
+        </span>
+      {% endfor %}
+    </div>
+  </li>
 {% endfor %}
+</ul>
 
 {% if site.posts.size == 0 %}
-  <p style="text-align:center; padding: 60px 0; color: #888;">
-    아직 등록된 논문이 없습니다. 매일 오전 9시에 자동 추가됩니다.
-  </p>
+<p style="text-align:center; color:var(--muted); padding:40px 0;">
+  아직 등록된 논문이 없습니다.
+</p>
 {% endif %}
-
-<footer>
-  <p>매일 0시(UTC, <strong>한국 오전 9시</strong>)에 자동 업데이트</p>
-  <p style="margin-top:8px;">
-    <a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a>
-  </p>
-</footer>
-
-</div>
-
-</body>
-</html>

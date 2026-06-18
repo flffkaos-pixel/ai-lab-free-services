@@ -1,207 +1,140 @@
-/* AI 논문 한 줄 - 모던 디자인 */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* =========================================================
+   AI 논문 한 줄 — 디자인 시스템
+   기반: ai-stock-blog 스타일 (Hugo → Jekyll 적응)
+   ========================================================= */
+:root {
+  --fg: #1a1a1e;
+  --muted: #6b7280;
+  --faint: #9ca3af;
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;
+  --border: #ececf1;
+  --border-strong: #e0e1e8;
+  --accent: #4f46e5;
+  --accent-ink: #3730a3;
+  --accent-soft: #eef2ff;
+  --good: #047857; --good-bg: #ecfdf5;
+  --warnbg: #fffbeb; --warnbd: #fde68a; --warnink: #92400e;
+  --r: 16px; --r-sm: 11px; --r-pill: 999px;
+  --shadow: 0 1px 2px rgba(17,17,26,.04), 0 6px 20px rgba(17,17,26,.05) !important;
+  --shadow-sm: 0 1px 2px rgba(17,17,26,.05) !important;
+  --ring: 0 0 0 3px rgba(79,70,229,.15);
+}
+
+* { box-sizing: border-box; all: initial !important; }
+
+html { -webkit-text-size-adjust: 100%; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo",
-               "Malgun Gothic", sans-serif;
-  background: #fafbfc;
-  color: #1a1a1a;
-  line-height: 1.6;
+  margin: 0 !important;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+               "Noto Sans KR", Segoe UI, Roboto, sans-serif !important;
+  color: var(--fg) !important;
+  line-height: 1.7 !important;
+  background: var(--bg) !important;
+  letter-spacing: -0.01em !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 24px 100px;
-}
+.container { max-width: 900px; margin: 0 auto !important; padding: 8px 22px 80px !important; }
 
-/* 헤더 */
+a { color: var(--accent) !important; text-decoration: none !important; }
+a:hover { text-decoration: underline !important; }
+
+h1, h2, h3, h4 { line-height: 1.28 !important; letter-spacing: -0.02em !important; font-weight: 750 !important; }
+h1 { font-size: 1.7rem !important; margin: 22px 0 10px !important; }
+h2 { font-size: 1.28rem !important; margin: 36px 0 12px !important; }
+h3 { font-size: 1.08rem !important; }
+
+hr { border: none !important; border-top: 1px solid var(--border) !important; margin: 36px 0 !important; }
+
+/* ---------- 헤더 ---------- */
 .site-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 80px 24px 50px;
-  text-align: center;
+  max-width: 900px; margin: 0 auto !important; padding: 30px 22px 18px !important;
+}
+.site-title { font-size: 1.32rem !important; font-weight: 800 !important; color: var(--fg) !important; letter-spacing: -0.03em !important; }
+.site-title:hover { text-decoration: none !important; }
+.site-tagline { color: var(--muted) !important; font-size: .9rem !important; margin: 7px 0 0 !important; max-width: 70ch !important; }
+
+/* 네비 — 세그먼트 알약 */
+.site-nav {
+  display: flex !important; gap: 4px !important; margin-top: 18px !important; flex-wrap: wrap !important;
+  background: var(--surface-2) !important; border: 1px solid var(--border) !important;
+  border-radius: var(--r-pill) !important; padding: 4px !important; width: fit-content !important;
+}
+.site-nav a {
+  font-size: .88rem !important; font-weight: 650 !important; color: var(--muted) !important;
+  padding: 7px 16px !important; border-radius: var(--r-pill) !important; transition: .15s !important;
+}
+.site-nav a:hover { color: var(--fg) !important; text-decoration: none !important; }
+.site-nav a.active {
+  background: var(--surface) !important; color: var(--accent-ink) !important;
+  box-shadow: var(--shadow-sm) !important;
 }
 
-.site-header h1 {
-  font-size: 2.4rem;
-  margin-bottom: 12px;
-  font-weight: 800;
-  letter-spacing: -1px;
+/* ---------- 카드 ---------- */
+.intro {
+  background: var(--surface) !important; border: 1px solid var(--border) !important;
+  border-radius: var(--r) !important; box-shadow: var(--shadow) !important; padding: 20px 24px !important; margin: 24px 0 !important;
+}
+.intro p { margin: 0 !important; }
+.intro p + p { margin-top: 14px !important; }
+
+/* ---------- 리포트 목록 ---------- */
+.report-list { list-style: none !important; padding: 0 !important; }
+.report-list li {
+  background: var(--surface) !important; border: 1px solid var(--border) !important;
+  border-radius: var(--r-sm) !important; padding: 16px 18px !important; margin: 12px 0 !important;
+  box-shadow: var(--shadow-sm) !important; transition: .15s !important;
+}
+.report-list li:hover {
+  box-shadow: var(--shadow) !important; transform: translateY(-1px) !important;
+}
+.rl-head { display: flex !important; gap: 12px !important; align-items: baseline !important; flex-wrap: wrap !important; }
+.rl-head time { color: var(--faint) !important; font-size: .82rem !important; font-variant-numeric: tabular-nums !important; white-space: nowrap !important; }
+.rl-head a { font-weight: 700 !important; font-size: 1.02rem !important; }
+.rl-top3 { margin-top: 11px !important; display: flex !important; gap: 7px !important; align-items: center !important; flex-wrap: wrap !important; }
+.rl-label { font-size: .76rem !important; color: var(--faint) !important; font-weight: 650 !important; }
+.t3-chip {
+  font-size: .82rem !important; background: var(--surface-2) !important; border: 1px solid var(--border) !important;
+  border-radius: var(--r-pill) !important; padding: 4px 12px !important;
+}
+.t3-chip b { color: var(--accent-ink) !important; }
+.t3-chip a { color: var(--fg) !important; font-weight: 600 !important; }
+
+/* ---------- 필드 태그 ---------- */
+.field-tag {
+  display: inline-block !important; font-size: .72rem !important; font-weight: 650 !important;
+  background: var(--accent-soft) !important; color: var(--accent-ink) !important;
+  border: 1px solid #e0e7ff !important; border-radius: var(--r-pill) !important;
+  padding: 2px 9px !important; margin-left: 4px !important; vertical-align: middle !important;
 }
 
-.site-header p {
-  font-size: 1.1rem;
-  opacity: 0.92;
+.count-badge {
+  font-size: .76rem !important; color: var(--muted) !important; background: var(--surface-2) !important;
+  border: 1px solid var(--border) !important; border-radius: var(--r-pill) !important;
+  padding: 3px 11px !important; font-weight: 650 !important; margin-left: 8px !important;
 }
 
-/* 분야 필터 칩 */
-.field-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 24px 24px 0;
+/* ---------- 포스트 본문 ---------- */
+.post-meta { color: var(--faint) !important; font-size: .86rem !important; margin-bottom: 26px !important; }
+.post-content { font-size: 1.02rem !important; line-height: 1.8 !important; }
+.post-content p { margin: 12px 0 !important; }
+.back { margin: 4px 0 18px !important; }
+.back a { color: var(--muted) !important; font-weight: 600 !important; font-size: .9rem !important; }
+.tag { color: var(--muted) !important; }
+
+/* ---------- 푸터 ---------- */
+.site-footer {
+  border-top: 1px solid var(--border) !important; color: var(--faint) !important; font-size: .82rem !important;
+  max-width: 900px !important; margin: 24px auto 0 !important; padding: 24px 22px 56px !important;
 }
+.site-footer p { margin: 4px 0 !important; }
 
-.field-tab {
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.18);
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  backdrop-filter: blur(8px);
-  transition: all 0.2s;
-}
-
-.field-tab:hover { background: rgba(255,255,255,0.32); color: white; }
-.field-tab.active { background: white; color: #667eea; }
-
-/* 카드 */
-h2.date-group {
-  font-size: 1.1rem;
-  color: #667eea;
-  font-weight: 700;
-  margin: 50px 0 20px;
-  padding-left: 14px;
-  border-left: 4px solid #667eea;
-}
-
-.cards {
-  display: grid;
-  gap: 16px;
-}
-
-.card {
-  display: block;
-  background: white;
-  border-radius: 14px;
-  padding: 22px 24px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  border: 1px solid #eee;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  color: inherit;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(102, 126, 234, 0.18);
-  border-color: #667eea;
-  color: inherit;
-}
-
-.card h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.45;
-  margin-bottom: 8px;
-  color: #1a1a1a;
-}
-
-.card .summary {
-  font-size: 0.92rem;
-  color: #555;
-  line-height: 1.55;
-  margin-bottom: 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card .meta {
-  font-size: 0.82rem;
-  color: #888;
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.tag {
-  padding: 2px 10px;
-  border-radius: 12px;
-  background: #f1eedc;
-  color: #764ba2;
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-
-/* 푸터 */
-footer {
-  text-align: center;
-  margin-top: 80px;
-  color: #888;
-  font-size: 0.85rem;
-}
-
-footer a { color: #667eea; text-decoration: none; }
-
-/* 상세 페이지 */
-.post-wrap {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 60px 24px 80px;
-}
-
-.post-wrap h1 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin-bottom: 14px;
-  line-height: 1.3;
-}
-
-.post-wrap .post-date {
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 32px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #eee;
-}
-
-.post-wrap h2 {
-  font-size: 1.15rem;
-  margin: 28px 0 12px;
-  color: #667eea;
-  font-weight: 700;
-}
-
-.post-wrap ul { padding-left: 22px; margin: 10px 0; }
-.post-wrap li { margin: 6px 0; }
-.post-wrap blockquote {
-  background: #f5f7ff;
-  border-left: 3px solid #667eea;
-  padding: 12px 16px;
-  margin: 16px 0;
-  color: #555;
-  font-size: 0.94rem;
-}
-.post-wrap a { color: #667eea; text-decoration: none; }
-.post-wrap a:hover { text-decoration: underline; }
-.back-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 600;
-}
-.back-link:hover { text-decoration: underline; }
-
-/* 404 페이지 */
-.error-msg {
-  text-align: center;
-  padding: 120px 24px;
-  color: #888;
-}
-.error-msg h1 { font-size: 3rem; margin-bottom: 14px; color: #667eea; }
-
-/* 모바일 */
-@media (max-width: 700px) {
-  .site-header h1 { font-size: 1.6rem; }
-  .site-header p { font-size: 0.95rem; }
-  .wrap { padding: 30px 16px 60px; }
-  .field-tab { font-size: 0.82rem; padding: 6px 12px; }
+/* ---------- 반응형 ---------- */
+@media (max-width: 560px) {
+  .container { padding: 6px 16px 64px !important; }
+  .site-header { padding: 24px 16px 16px !important; }
+  h1 { font-size: 1.42rem !important; }
 }

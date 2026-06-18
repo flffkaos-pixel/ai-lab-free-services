@@ -167,22 +167,16 @@ def make_post(paper, today_str):
     ko_title, summary = parse_summary(ai, paper["title"])
 
     return f"""---
-layout: post
-title: "{ko_title[:200]}"
-date: {today_str} 09:00:00 +0900
-categories: [{field}]
-tags: [arxiv, {field}, {paper["id"]}]
-arxiv_id: "{paper["id"]}"
-field: "{field}"
----
+    layout: post
+    title: "{ko_title[:200]}"
+    date: {today_str} 09:00:00 +0900
+    categories: [{field}]
+    tags: [{field}, arxiv, {paper["id"]}]
+    arxiv_id: "{paper["id"]}"
+    field: "{field}"
+    ---
 
-{summary}
-
-<!-- more -->
-
-*분야: {field}*
-
-[원문 보러가기 →]({paper["url"]})
+    {summary}
 """
 
 

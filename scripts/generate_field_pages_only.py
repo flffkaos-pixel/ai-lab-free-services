@@ -1,12 +1,55 @@
 #!/usr/bin/env python3
-"""fetch_papers.py의 generate_field_pages()만 부분 실행 (GROQ 호출 없이)."""
-import os, sys
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(ROOT, "scripts"))
+"""field 페이지 생성 — layout: default 사용"""
+import os
 
-# GROQ 호출이 없는 부분만 실행되도록 fetch_papers 임포트 후 generate_field_pages() 호출
-import importlib.util
-spec = importlib.util.spec_from_file_location("fetch_papers", os.path.join(ROOT, "scripts", "fetch_papers.py"))
-m = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(m)
-m.generate_field_pages()
+BLOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "blog")
+
+FIELD_DEFS = [
+    ("AI/ML",   "🤖 AI/ML",            "ai-ml"),
+    ("CV",      "👁 Computer Vision",  "cv"),
+    ("NLP",     "📝 NLP",              "nlp"),
+    ("RL",      "🎮 강화학습",          "rl"),
+    ("음성/음악", "🎵 음성/음악",         "audio"),
+    ("로봇",     "🦾 로봇",              "robotics"),
+    ("통계",     "📊 통계",              "statistics"),
+]
+
+for field_name, label, safe in FIELD_DEFS:
+    page = f"""---
+layout: default
+permalink: /field/{safe}/
+title: {label} 분야
+---
+
+<h2>{label} 논문</h2>
+
+<ul class="report-list">
+  {{% assign found = 0 %}}
+  {{% for post in site.posts %}}
+    {{% if post.field == "{field_name}" %}}
+      <li>
+        <div class="rl-head">
+          <time>{{{{ post.date | date: "%Y-%m-%d" }}}}</time>
+          <a href="{{{{ post.url | relative_url }}}}">{{{{ post.title }}}}</a>
+          <span class="field-tag">{{{{ post.field }}}}</span>
+        </div>
+        <p style="margin:6px 0 0; color:var(--muted); font-size:.88rem;">
+          {{{{ post.excerpt | strip_html | truncate: 130 }}}}
+        </p>
+      </li>
+      {{% assign found = 1 %}}
+    {{% endif %}}
+  {{% endfor %}}
+  {{% if found == 0 %}}
+    <li style="text-align:center; color:var(--faint); padding:40px;">
+      아직 등록된 논문이 없습니다.
+    </li>
+  {{% endif %}}
+</ul>
+"""
+    out_path = os.path.join(BLOG_DIR, f"field-{safe}.html")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"  📄 field-{safe}.html")
+
+print("✅ 완료")
