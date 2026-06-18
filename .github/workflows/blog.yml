@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - uses: actions/checkout@v4
 
@@ -45,12 +39,16 @@ jobs:
             git push
           fi
 
-      - name: Jekyll 빌드
+      - name: Jekyll 빌드 (blog/ → _site/)
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./blog
           destination: ./_site
 
-      - name: Pages 배포
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: GitHub Pages 직접 배포 (정적 파일 — Jekyll 후처리 없음)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true

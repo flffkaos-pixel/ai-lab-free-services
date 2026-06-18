@@ -2,7 +2,7 @@ name: AI 논문 리뷰 - 자동 실행
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 0 * * *'  # 매일 한국 오전 9시 (UTC 0시)
   workflow_dispatch:
 
 jobs:
