@@ -9,7 +9,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pages: write
       id-token: write
     environment:
@@ -46,11 +46,10 @@ jobs:
           fi
 
       - name: Jekyll 빌드
-        uses: helaili/jekyll-action@v2
+        uses: actions/jekyll-build-pages@v1
         with:
-          build_dir: blog
-          jekyll_env: production
-          token: ${{ secrets.GITHUB_TOKEN }}
+          source: ./blog
+          destination: ./_site
 
       - name: Pages 배포
         id: deployment
