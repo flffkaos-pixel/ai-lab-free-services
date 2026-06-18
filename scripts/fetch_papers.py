@@ -126,18 +126,22 @@ def summarize(title, abstract):
             json={
                 "model": "qwen/qwen3-32b",   # qwen3-32b: 한국어/학술 논문 압도적 우수
                 "messages": [
-                    {"role": "system", "content": "You are an AI paper summarizer. Output EXACTLY 2 lines: '제목: <Korean title>' and '요약: <one sentence about the KEY FINDING/RESULT, with numbers if available>'. No explanations, no greetings."},
+                    {"role": "system", "content": "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.2, "max_tokens": 300,
+                "thinking": {"type": "disabled"},
             }, timeout=120)
         if resp.status_code != 200:
             print(f"  groq err: HTTP {resp.status_code}")
             return None
         data = resp.json()
         if "choices" in data:
-            text = data["choices"][0]["message"]["content"]
-            return re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+                    text = data["choices"][0]["message"]["content"]
+                    # Strip both Anthropic-style and XML-style thinking blocks
+                    text = re.sub(r"", "", text, flags=re.DOTALL)
+                    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
+                    return text.strip()
     except Exception as e:
         print(f"  err: {e}")
     return None
@@ -147,16 +151,28 @@ def parse_summary(text, english_title=""):
     ko_title, summary = "", ""
     if not text:
         return english_title, "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
-    for line in text.split("\n"):
-        line = line.strip()
-        m = re.match(r"^[*\s\-]*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
+    lines = [l.strip() for l in text.split("\n") if l.strip() and not l.strip().startswith("#")]
+    for line in lines:
+        m = re.match(r"^[*\s\-–]*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             ko_title = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
-        m = re.match(r"^[*\s\-]*요약\s*[:：]\s*(.+?)\s*[*]?$", line)
+        m = re.match(r"^[*\s\-–]*요약\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             summary = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
+    # Fallback: line without prefix but contains numbers (key finding indicator)
+    if not summary:
+        for line in lines:
+            if re.search(r"\d+\.?\d*[%℃°단]", line) and len(line) > 10:
+                summary = line
+                break
+    # Fallback: any substantial line that doesn't look like a title
+    if not summary:
+        for line in lines:
+            if len(line) > 8 and not line[0].isupper() and "OmniAgent" not in line and "Agent" not in line[:20]:
+                summary = line
+                break
     if not ko_title or len(ko_title) < 3:
         ko_title = english_title
     if not summary or len(summary) < 5:
