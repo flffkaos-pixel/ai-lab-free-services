@@ -51,11 +51,16 @@ jobs:
       - name: Jekyll 빌드 & 배포 (helaili/jekyll-action)
         uses: helaili/jekyll-action@v2
         with:
-          jekyll_src: 'blog'
-          jekyll_baseurl: '/ai-lab-free-services'
-          jekyll_gems: 'jekyll-include-cache'
+          build_dir: blog
+          jekyll_env: production
+          build_only: false
         env:
-          JEKYLL_ENV: production
+          JEKYLL_BASEURL: /ai-lab-free-services
+        pre_build_commands: |
+          # baseurl을 blog/_config.yml에 동적으로 설정
+          sed -i 's|^baseurl:.*|baseurl: "/ai-lab-free-services"|' blog/_config.yml
+          echo "✅ baseurl 설정 완료"
+          cat blog/_config.yml | grep baseurl
 
       - name: Pages 배포 실행
         id: deployment
