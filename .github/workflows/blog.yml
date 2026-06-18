@@ -2,7 +2,7 @@ name: 매일 자동 논문 포스팅
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 UTC 0시 = KST 09시
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -27,41 +27,30 @@ jobs:
       - name: 패키지 설치
         run: pip install requests
 
-      - name: arXiv에서 논문 수집 + 한국어 요약 → 파일 생성
+      - name: arXiv에서 논문 수집
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/fetch_papers.py
 
-      - name: 이전 푸터 제거
+      - name: 푸터 제거
         run: python scripts/cleanup_footers.py blog/_posts/
 
-      - name: 새 포스트 자동 커밋 & 푸시
+      - name: 자동 커밋
         run: |
           git config user.email "blog-bot@ai-lab.com"
           git config user.name "AI Blog Bot"
-          git add blog/_posts/ blog/field-*.html 2>/dev/null || git add blog/ || true
-          if git diff --staged --quiet; then
-            echo "변경된 파일 없음 (이미 처리됨)"
-          else
-            git commit -m "blog: $(date +%Y-%m-%d) AI 논문 자동 포스팅"
+          git add blog/ || true
+          if ! git diff --staged --quiet; then
+            git commit -m "blog: $(date +%Y-%m-%d) 자동 포스팅"
             git push
-            echo "✅ 푸시 완료"
           fi
 
-      - name: Jekyll 빌드 & 배포 (helaili/jekyll-action)
+      - name: Jekyll 빌드
         uses: helaili/jekyll-action@v2
         with:
           build_dir: blog
           jekyll_env: production
-          build_only: false
-        env:
-          JEKYLL_BASEURL: /ai-lab-free-services
-        pre_build_commands: |
-          # baseurl을 blog/_config.yml에 동적으로 설정
-          sed -i 's|^baseurl:.*|baseurl: "/ai-lab-free-services"|' blog/_config.yml
-          echo "✅ baseurl 설정 완료"
-          cat blog/_config.yml | grep baseurl
 
-      - name: Pages 배포 실행
+      - name: Pages 배포
         id: deployment
         uses: actions/deploy-pages@v4
