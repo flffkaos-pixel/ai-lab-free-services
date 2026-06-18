@@ -14,44 +14,69 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: blog-data
+
+      - name: blog-data 브랜치 없으면 생성
+        run: |
+          if git rev-parse --verify --quiet blog-data 2>/dev/null; then
+            echo "blog-data exists"
+          else
+            git checkout --orphan blog-data && git reset --hard
+            mkdir -p blog/_posts
+            git commit -m "init blog-data" || true
+            git push origin blog-data || true
+          fi
 
       - name: Python 설치
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: 패키지 설치
-        run: pip install requests
+      - run: pip install requests
 
       - name: arXiv에서 논문 수집
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/fetch_papers.py
 
-      - name: 푸터 제거
-        run: python scripts/cleanup_footers.py blog/_posts/
-
-      - name: 자동 커밋
+      - name: blog-data에 포스트만 커밋
         run: |
           git config user.email "blog-bot@ai-lab.com"
           git config user.name "AI Blog Bot"
-          git add blog/ || true
+          git add blog/_posts/
           if ! git diff --staged --quiet; then
-            git commit -m "blog: $(date +%Y-%m-%d) 자동 포스팅"
-            git push
+            git commit -m "data: $(date +%Y-%m-%d) 논문 $(find blog/_posts -name '*.md' | wc -l)건"
+            git push origin blog-data
+          else
+            echo "No new papers"
           fi
 
-      - name: Jekyll 빌드 (blog/ → repo root/_site/)
+      - name: master blog 소스 가져오기
+        uses: actions/checkout@v4
+        with:
+          repository: flffkaos-pixel/ai-lab-free-services
+          ref: master
+          path: blog-src
+
+      - name: blog-data 포스트를 blog-src에 복사
+        run: |
+          mkdir -p blog-src/blog/_posts
+          cp -r blog-data/blog/_posts/*.md blog-src/blog/_posts/ 2>/dev/null || true
+          echo "Posts copied: $(ls blog-src/blog/_posts/*.md 2>/dev/null | wc -l)"
+
+      - name: field 페이지 생성
+        run: python blog-src/scripts/generate_field_pages_only.py
+
+      - name: Jekyll 빌드
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./blog
-          destination: ./_site
+          source: ./blog-src/blog
+          destination: ./blog-src/_site
 
-      - name: GitHub Pages로 배포
-        id: deployment
+      - name: GitHub Pages 배포
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./blog-src/_site
           publish_branch: gh-pages
           force_orphan: true
