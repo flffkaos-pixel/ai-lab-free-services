@@ -13,40 +13,14 @@ jobs:
       pages: write
 
     steps:
-      - name: blog-data 브랜치 준비
+      - name: blog-data에서 포스트만 가져오기
         run: |
-          git clone --branch blog-data --depth 1 https://github.com/flffkaos-pixel/ai-lab-free-services.git _data 2>/dev/null && echo "blog-data exists" || {
-            git clone --depth 1 https://github.com/flffkaos-pixel/ai-lab-free-services.git _data
-            cd _data && git checkout --orphan blog-data && git reset --hard && git commit -m "init blog-data" && git push origin blog-data
-            cd ..
-          }
-          mkdir -p _data/blog/_posts
-
-      - name: Python 설치
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install requests
-
-      - name: arXiv에서 논문 수집
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python _data/scripts/fetch_papers.py
-
-      - name: 푸터 제거
-        run: python _data/scripts/cleanup_footers.py _data/blog/_posts/
-
-      - name: blog-data에 포스트만 커밋
-        run: |
-          cd _data
-          git config user.email "blog-bot@ai-lab.com"
-          git config user.name "AI Blog Bot"
-          git add blog/_posts/
-          if ! git diff --staged --quiet; then
-            git commit -m "data: $(date +%Y-%m-%d) 논문 $(find blog/_posts -name '*.md' | wc -l)건"
-            git push origin blog-data
+          if git ls-remote --heads https://github.com/flffkaos-pixel/ai-lab-free-services blog-data | grep -q blog-data; then
+            git clone --branch blog-data --depth 1 https://github.com/flffkaos-pixel/ai-lab-free-services.git _data
           else
-            echo "No new papers"
+            mkdir -p _data/blog/_posts
+            cd _data && git init && git checkout --orphan blog-data && git commit -m "init blog-data" && git push origin blog-data
+            cd ..
           fi
 
       - name: master blog 소스 가져오기
@@ -60,7 +34,30 @@ jobs:
         run: |
           mkdir -p blog-src/blog/_posts
           cp -r _data/blog/_posts/*.md blog-src/blog/_posts/ 2>/dev/null || true
-          echo "Posts copied: $(ls blog-src/blog/_posts/*.md 2>/dev/null | wc -l)"
+          echo "Posts: $(ls blog-src/blog/_posts/*.md 2>/dev/null | wc -l)건"
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+
+      - name: arXiv에서 논문 수집
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python blog-src/scripts/fetch_papers.py
+
+      - name: blog-data에 포스트만 커밋
+        run: |
+          cp -r blog-src/blog/_posts/*.md _data/blog/_posts/ 2>/dev/null || true
+          cd _data
+          git config user.email "blog-bot@ai-lab.com"
+          git config user.name "AI Blog Bot"
+          git add blog/_posts/
+          if ! git diff --staged --quiet; then
+            git commit -m "data: $(date +%Y-%m-%d) 논문 $(find blog/_posts -name '*.md' | wc -l)건"
+            git push origin blog-data
+          fi
 
       - name: field 페이지 생성
         run: python blog-src/scripts/generate_field_pages_only.py
