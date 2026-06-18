@@ -50,6 +50,7 @@ jobs:
         with:
           build_dir: blog
           jekyll_env: production
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pages 배포
         id: deployment
