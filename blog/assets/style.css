@@ -337,3 +337,9 @@ summary { cursor: pointer; font-weight: 650; }
   .sec-best { width: 100%; margin: 4px 0 0; }
   .dash-cta a { flex: 1; justify-content: center; }
 }
+
+/* ---------- 필드 태그 ---------- */
+.field-tag {
+  font-size: .72rem; font-weight: 650; background: var(--accent-soft); color: var(--accent-ink);
+  border: 1px solid #e0e7ff; border-radius: var(--r-pill); padding: 2px 9px; margin-left: 4px; vertical-align: middle;
+}
