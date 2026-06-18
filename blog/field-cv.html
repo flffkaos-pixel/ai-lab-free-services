@@ -1,31 +1,56 @@
 ---
-layout: default
+layout: null
 permalink: /field/cv/
-title: 👁 Computer Vision 분야
 ---
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👁 Computer Vision — AI 논문 한 줄</title>
+  <link rel="stylesheet" href="{ '/assets/style.css' | relative_url }">
+</head>
+<body>
 
-<h2>👁 Computer Vision 논문</h2>
+<header class="site-header">
+  <h1>👁 Computer Vision</h1>
+  <p>이 분야의 최신 논문을 한국어 한 줄로 정리합니다</p>
+  <nav class="field-tabs">
+    <a class="field-tab" href="{{ '/field/ai-ml/' | relative_url }}">🤖 AI/ML</a>
+    <a class="field-tab" href="{{ '/field/cv/' | relative_url }}">👁 Computer Vision</a>
+    <a class="field-tab" href="{{ '/field/nlp/' | relative_url }}">📝 NLP</a>
+    <a class="field-tab" href="{{ '/field/rl/' | relative_url }}">🎮 Reinforcement</a>
+    <a class="field-tab" href="{{ '/field/audio/' | relative_url }}">🎵 음성/음악</a>
+    <a class="field-tab" href="{{ '/field/robotics/' | relative_url }}">🦾 로봇</a>
+    <a class="field-tab" href="{{ '/field/statistics/' | relative_url }}">📊 통계</a>
+  </nav>
+</header>
 
-<ul class="report-list">
-  {% assign found = 0 %}
-  {% for post in site.posts %}
-    {% if post.field == "CV" %}
-      <li>
-        <div class="rl-head">
-          <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="field-tag">{{ post.field }}</span>
-        </div>
-        <p style="margin:6px 0 0; color:var(--muted); font-size:.88rem;">
-          {{ post.excerpt | strip_html | truncate: 130 }}
-        </p>
-      </li>
-      {% assign found = 1 %}
+<div class="wrap">
+  <h2 class="date-group">📚 CV 논문</h2>
+  <div class="cards">
+    {% assign found = 0 %}
+    {% for post in site.posts %}
+      {% if post.field == "CV" %}
+        <a class="card" href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+          <p class="summary">{{ post.excerpt | strip_html | truncate: 130 }}</p>
+          <div class="meta">
+            <span class="tag">arXiv:{{ post.arxiv_id }}</span>
+            <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
+            <span>🏷 {{ post.field }}</span>
+          </div>
+        </a>
+        {% assign found = 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if found == 0 %}
+      <p style="text-align:center; color:#888; padding:40px 0;">
+        아직 등록된 논문이 없습니다.
+      </p>
     {% endif %}
-  {% endfor %}
-  {% if found == 0 %}
-    <li style="text-align:center; color:var(--faint); padding:40px;">
-      아직 등록된 논문이 없습니다.
-    </li>
-  {% endif %}
-</ul>
+  </div>
+</div>
+
+</body>
+</html>
