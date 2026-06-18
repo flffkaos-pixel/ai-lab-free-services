@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
 arXiv → 한국어 요약 → Jekyll 블로그 + 분야별 페이지 자동 생성
+v2: arXiv API의 category 태그를 활용해 정확한 분야 분류
+    + qwen3-32b로 한 줄 요약 생성
 """
 
 import os, json, re, time, urllib.request, urllib.parse
@@ -12,30 +14,60 @@ POSTS_DIR = os.path.join(ROOT, "blog", "_posts")
 BLOG_DIR = os.path.join(ROOT, "blog")
 GK = os.environ.get("GROQ_API_KEY", "gsk_***PLACEHOLDER***")
 
-FIELD_KEYWORDS = {
-    "NLP": ["language model", "llm", "transformer", "rag", "embedding",
-            "text", "tokenizer", "prompt", "finetuning"],
-    "CV": ["image", "vision", "object detection", "segmentation",
-           "yolo", "diffusion", "gan", "depth estimation"],
-    "RL": ["reinforcement learning", "rlhf", "policy gradient",
-           "reward model", "agent", "mcts"],
-    "음성/음악": ["speech", "audio", "tts", "asr", "voice",
-                  "music", "speaker", "whisper"],
-    "로봇": ["robot", "manipulation", "locomotion", "embodied",
-             "grasp", "robotics", "drone"],
-    "통계": ["statistics", "bayesian", "monte carlo",
-             "hypothesis", "stochastic", "regression"]
+# arXiv primary category → 우리 field 매핑
+# cs.AI, cs.LG → AI/ML
+# cs.CL → NLP
+# cs.CV → CV
+# cs.RO → 로봇
+# cs.SD (sound), eess.AS → 음성/음악
+# stat.ML, cs.LG → 통계 (필요 시)
+CATEGORY_MAP = {
+    "cs.AI":   "AI/ML",
+    "cs.LG":   "AI/ML",
+    "cs.CL":   "NLP",
+    "cs.CV":   "CV",
+    "cs.RO":   "로봇",
+    "cs.SD":   "음성/음악",
+    "eess.AS": "음성/음악",
+    "stat.ML": "통계",
+    "stat.AP": "통계",
+    "stat.CO": "통계",
+    "cs.IR":   "NLP",      # 정보 검색은 NLP로
+    "cs.NE":   "AI/ML",    # 신경망/계산 신경과학
+    "cs.DC":   "AI/ML",    # 분산 컴퓨팅 (보통 AI)
+}
+
+# 카테고리가 명확하지 않을 때 제목/abstract에서 보조 분류
+KEYWORD_BACKUP = {
+    "NLP":      ["language model", "llm", "transformer", "rag", "embedding",
+                 "tokenizer", "prompt", "finetuning", "nlp", "text generation"],
+    "CV":       ["image", "vision", "object detection", "segmentation",
+                 "yolo", "diffusion", "gan ", "depth estimation", "video"],
+    "RL":       ["reinforcement learning", "rlhf", "policy gradient",
+                 "reward model", "agent", "mcts", "markov decision"],
+    "음성/음악":  ["speech", "audio", "tts", "asr", "voice",
+                  "music", "speaker", "whisper", "sound"],
+    "로봇":      ["robot", "manipulation", "locomotion", "embodied",
+                 "grasp", "robotics", "drone"],
+    "통계":      ["statistics", "bayesian", "monte carlo",
+                 "hypothesis", "stochastic", "regression"],
 }
 
 
-def detect_field(title, abstract):
-    text = (title + " " + abstract).lower()
+def detect_field(paper):
+    """1순위: arXiv category 태그, 2순위: 키워드"""
+    for cat in paper.get("categories", []):
+        if cat in CATEGORY_MAP:
+            return CATEGORY_MAP[cat]
+    text = (paper["title"] + " " + paper["summary"]).lower()
     scores = {}
-    for field, keywords in FIELD_KEYWORDS.items():
-        s = sum(1 for kw in keywords if kw in text)
+    for field, kws in KEYWORD_BACKUP.items():
+        s = sum(1 for kw in kws if kw in text)
         if s > 0:
             scores[field] = s
-    return max(scores, key=scores.get) if scores else "AI/ML"
+    if scores:
+        return max(scores, key=scores.get)
+    return "AI/ML"
 
 
 def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
@@ -58,34 +90,46 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
         summary = re.sub(r"\s+", " ", entry.find("atom:summary", ns).text.strip().replace("\n", " "))[:1500]
         authors = [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)][:5]
         arxiv_id = url_p.split("/")[-1]
+        cats = []
+        for c in entry.findall("atom:category", ns):
+            term = c.attrib.get("term")
+            if term:
+                cats.append(term)
         papers.append({"id": arxiv_id, "title": title, "summary": summary,
-                       "authors": authors, "url": url_p})
+                       "authors": authors, "url": url_p, "categories": cats})
     return papers
 
 
 def summarize(title, abstract):
     import requests
     prompt = (
-        "Task: Translate an English AI paper into Korean summary.\n\n"
-        "=== EXPECTED OUTPUT (write ONLY this, nothing else) ===\n"
-        "한국어 제목: <Korean translation of title under 80 characters>\n"
-        "한줄요약: <Korean one-line summary under 50 characters>\n\n"
+        "Task: Translate an English AI paper title and write a Korean one-line summary.\n\n"
+        "=== STRICT FORMAT (write ONLY these two lines, nothing else) ===\n"
+        "한국어 제목: <Korean translation of title, under 80 characters>\n"
+        "한줄요약: <Korean one-line summary of core contribution, 20-50 characters>\n\n"
+        "### RULES ###\n"
+        "- Output ONLY 2 lines, no greetings, no explanations\n"
+        "- Title must be natural Korean (no machine-translation feel)\n"
+        "- One-line summary focuses on what THIS paper does, not background\n"
+        "- No English word salad — write Korean grammar correctly\n\n"
         "=== INPUT ===\n"
-        f"English title: {title}\n\nEnglish abstract: {abstract[:1200]}\n\n"
-        "=== YOUR OUTPUT ==="
+        f"English title: {title}\n\n"
+        f"English abstract: {abstract[:1200]}\n\n"
+        "=== OUTPUT (2 lines) ==="
     )
     try:
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
-                "model": "llama-3.3-70b-versatile",
+                "model": "qwen/qwen3-32b",   # qwen3-32b: 한국어/학술 논문 압도적 우수
                 "messages": [
-                    {"role": "system", "content": "You are a precise Korean translator. Write ONLY the format requested."},
+                    {"role": "system", "content": "You translate English AI paper titles into natural Korean with one-line summary. Output strict 2-line format only."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.2, "max_tokens": 300,
             }, timeout=120)
         if resp.status_code != 200:
+            print(f"  groq err: HTTP {resp.status_code}")
             return None
         data = resp.json()
         if "choices" in data:
@@ -102,11 +146,11 @@ def parse_summary(text, english_title=""):
         return english_title, "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
     for line in text.split("\n"):
         line = line.strip()
-        m = re.match(r"^[\s*]*한국어\s*제목\s*[:：]\s*(.+)$", line)
+        m = re.match(r"^[*\s\-]*한국어\s*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             ko_title = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
-        m = re.match(r"^[\s*]*한줄요약\s*[:：]\s*(.+)$", line)
+        m = re.match(r"^[*\s\-]*한줄요약\s*[:：]\s*(.+?)\s*[*]?$", line)
         if m:
             summary = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
@@ -118,7 +162,7 @@ def parse_summary(text, english_title=""):
 
 
 def make_post(paper, today_str):
-    field = detect_field(paper["title"], paper["summary"])
+    field = detect_field(paper)
     ai = summarize(paper["title"], paper["summary"])
     ko_title, summary = parse_summary(ai, paper["title"])
 
@@ -126,7 +170,7 @@ def make_post(paper, today_str):
 layout: post
 title: "{ko_title[:200]}"
 date: {today_str} 09:00:00 +0900
-categories: [ai]
+categories: [{field}]
 tags: [arxiv, {field}, {paper["id"]}]
 arxiv_id: "{paper["id"]}"
 field: "{field}"
@@ -142,19 +186,29 @@ field: "{field}"
 """
 
 
+# 각 분야별 Jekyll 페이지 정의
+FIELD_DEFS = [
+    # (system id,  표시 라벨(label), url slug,    정렬 순서)
+    ("AI/ML",   "🤖 AI/ML",            "ai-ml",      1),
+    ("CV",      "👁 Computer Vision",  "cv",         2),
+    ("NLP",     "📝 NLP",              "nlp",        3),
+    ("RL",      "🎮 Reinforcement",    "rl",         4),
+    ("음성/음악", "🎵 음성/음악",         "audio",      5),
+    ("로봇",     "🦾 로봇",              "robotics",   6),
+    ("통계",     "📊 통계",              "statistics", 7),
+]
+
+
 def generate_field_pages():
     """각 분야별 Jekyll 페이지 자동 생성"""
-    fields = [
-        ("AI/ML",    "🤖 AI/ML",          "ai-ml"),
-        ("CV",       "👁 Computer Vision","cv"),
-        ("NLP",      "📝 NLP",            "nlp"),
-        ("RL",       "🎮 Reinforcement",   "rl"),
-        ("음성/음악",  "🎵 음성/음악",       "audio"),
-        ("로봇",      "🦾 로봇",            "robotics"),
-        ("통계",      "📊 통계",            "statistics"),
-    ]
+    tabs_html = []
+    for field_name, label, safe, _ in FIELD_DEFS:
+        # 각 탭은 자기가 속한 필드의 페이지로
+        tabs_html.append(f'<a class="field-tab" href="{{{{ \'/field/{safe}/\' | relative_url }}}}">{label}</a>')
+    tabs_block = "\n    ".join(tabs_html)
 
-    for field_name, label, safe in fields:
+    for field_name, label, safe, _ in FIELD_DEFS:
+        # 라벨의 {} Jekyll 충돌 회피: | escape 사용
         page = f"""---
 layout: null
 permalink: /field/{safe}/
@@ -173,23 +227,23 @@ permalink: /field/{safe}/
   <h1>{label}</h1>
   <p>이 분야의 최신 논문을 한국어 한 줄로 정리합니다</p>
   <nav class="field-tabs">
-    <a class="field-tab" href="{{ '/' | relative_url }}">🏠 전체</a>
+    {tabs_block}
   </nav>
 </header>
 
 <div class="wrap">
   <h2 class="date-group">📚 {field_name} 논문</h2>
   <div class="cards">
-    {{% assign page_field = '{field_name}' %}}
     {{% assign found = 0 %}}
     {{% for post in site.posts %}}
-      {{% if post.field == page_field %}}
+      {{% if post.field == "{field_name}" %}}
         <a class="card" href="{{{{ post.url | relative_url }}}}">
           <h3>{{{{ post.title }}}}</h3>
           <p class="summary">{{{{ post.excerpt | strip_html | truncate: 130 }}}}</p>
           <div class="meta">
             <span class="tag">arXiv:{{{{ post.arxiv_id }}}}</span>
             <span>📄 {{{{ post.date | date: "%Y-%m-%d" }}}}</span>
+            <span>🏷 {{{{ post.field }}}}</span>
           </div>
         </a>
         {{% assign found = 1 %}}
@@ -218,8 +272,13 @@ def main():
     generate_field_pages()
 
     print("\n===== 논문 수집 =====")
-    queries = [("cat:cs.AI", 3), ("cat:cs.LG", 3),
-               ("cat:cs.CV", 2), ("cat:cs.CL", 2)]
+    # 분야별 의도적 분류: cs.CV → CV, cs.CL → NLP, cs.RO → 로봇, cs.LG → AI/ML
+    queries = [("cat:cs.LG", 2),  # AI/ML
+               ("cat:cs.CL", 2),  # NLP
+               ("cat:cs.CV", 2),  # CV
+               ("cat:cs.RO", 1),  # 로봇
+               ("cat:cs.AI", 1),  # AI/ML 추가
+               ]
     all_papers = []
     for q, n in queries:
         papers = fetch_arxiv_papers(q, max_results=n)
@@ -237,14 +296,19 @@ def main():
     for paper in unique[:8]:
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(POSTS_DIR, filename)
-        print(f"  → {paper['id']}: {paper['title'][:60]}")
+        # 이미 오늘 처리한 파일은 건너뛰기 (idempotent)
+        if os.path.exists(out_path):
+            print(f"  ↩ {paper['id']}: 이미 존재, 건너뜀")
+            success += 1
+            continue
+        print(f"  → {paper['id']} [{detect_field(paper)}]: {paper['title'][:60]}")
         post = make_post(paper, today_str)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(post)
         success += 1
-        time.sleep(15)
+        time.sleep(15)  # TPM 보호
 
-    print(f"\n완료: {success}건 + 분야 페이지 7건")
+    print(f"\n완료: {success}건 + 분야 페이지 {len(FIELD_DEFS)}건")
 
 
 if __name__ == "__main__":

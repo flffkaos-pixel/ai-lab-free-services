@@ -17,42 +17,44 @@ permalink: /
   <h1>📚 AI 논문 한 줄</h1>
   <p>매일 가장 핫한 AI/머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
 
+  {% assign fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
   <nav class="field-tabs">
-    {% assign fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
     {% for f in fields %}
-      <a class="field-tab" href="#field:{{ f }}">{{ f }}</a>
+      {% capture safe %}{% if f == "AI/ML" %}ai-ml{% elsif f == "CV" %}cv{% elsif f == "NLP" %}nlp{% elsif f == "RL" %}rl{% elsif f == "음성/음악" %}audio{% elsif f == "로봇" %}robotics{% elsif f == "통계" %}statistics{% endif %}{% endcapture %}
+      <a class="field-tab" href="{{ '/field/' | append: safe | append: '/' | relative_url }}">{{ f }}</a>
     {% endfor %}
   </nav>
 </header>
 
 <div class="wrap">
 
-{% assign posts_by_date = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" %}
-{% comment %} 필드별 placeholder - 실제론 post.tag 활용 {% endcomment %}
-
-{% for group in posts_by_date %}
-  <h2 class="date-group">📅 {{ group.name }}</h2>
-  <div class="cards">
-    {% for post in group.items %}
-      <a class="card" href="{{ post.url | relative_url }}">
-        <h3>{{ post.title }}</h3>
-        {% if post.excerpt and post.excerpt != "" %}
-          <p class="summary">{{ post.excerpt | strip_html | truncate: 130 }}</p>
-        {% else %}
-          <p class="summary">논문 전문을 확인하려면 클릭하세요</p>
-        {% endif %}
-        <div class="meta">
-          {% if post.arxiv_id %}
-            <span class="tag">arXiv:{{ post.arxiv_id }}</span>
-          {% endif %}
-          <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
-          {% if post.categories %}
-            <span>🏷 {{ post.categories | first | upcase }}</span>
-          {% endif %}
-        </div>
-      </a>
-    {% endfor %}
-  </div>
+{% assign field_order = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
+{% for field_name in field_order %}
+  {% assign field_posts = site.posts | where: "field", field_name %}
+  {% if field_posts.size > 0 %}
+    <section class="field-section" id="field:{{ field_name }}">
+      <h2 class="date-group">📂 {{ field_name }} 분야 ({{ field_posts.size }}건)</h2>
+      <div class="cards">
+        {% for post in field_posts limit:8 %}
+          <a class="card" href="{{ post.url | relative_url }}">
+            <h3>{{ post.title }}</h3>
+            {% if post.excerpt and post.excerpt != "" %}
+              <p class="summary">{{ post.excerpt | strip_html | truncate: 130 }}</p>
+            {% else %}
+              <p class="summary">논문 전문을 확인하려면 클릭하세요</p>
+            {% endif %}
+            <div class="meta">
+              {% if post.arxiv_id %}
+                <span class="tag">arXiv:{{ post.arxiv_id }}</span>
+              {% endif %}
+              <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
+              <span>🏷 {{ post.field }}</span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 {% endfor %}
 
 {% if site.posts.size == 0 %}
