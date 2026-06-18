@@ -16,12 +16,12 @@ jobs:
       - name: blog-data에서 포스트만 가져오기
         run: |
           if git ls-remote --heads https://github.com/flffkaos-pixel/ai-lab-free-services blog-data | grep -q blog-data; then
-            git clone --branch blog-data --depth 1 https://github.com/flffkaos-pixel/ai-lab-free-services.git _data
-          else
-            mkdir -p _data/blog/_posts
-            cd _data && git init && git checkout --orphan blog-data && git commit -m "init blog-data" && git push origin blog-data
-            cd ..
-          fi
+                      git clone --branch blog-data --depth 1 https://github.com/flffkaos-pixel/ai-lab-free-services.git _data
+                    else
+                      mkdir -p _data/blog/_posts
+                      cd _data && git init && git checkout --orphan blog-data && git commit -m "init blog-data" && git remote add origin https://github.com/flffkaos-pixel/ai-lab-free-services.git && git push -u origin blog-data
+                      cd ..
+                    fi
 
       - name: master blog 소스 가져오기
         uses: actions/checkout@v4
