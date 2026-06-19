@@ -2,7 +2,7 @@
 title: AI 논문 한 줄
 tagline: 매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요
 url: "https://flffkaos-pixel.github.io"
-baseurl: "/ai-lab-free-services"
+baseurl: "/nonmun"
 timezone: Asia/Seoul
 permalink: /:categories/:year/:month/:day/:title/
 lang: ko
