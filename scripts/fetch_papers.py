@@ -125,7 +125,7 @@ def summarize(title, abstract):
             "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
-                "model": "llama-3.3-70b-versatile",
+                "model": "qwen/qwen3-32b",
                 "messages": [
                     {"role": "system", "content": "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"},
                     {"role": "user", "content": prompt}
@@ -179,7 +179,7 @@ def parse_summary(text, english_title=""):
     if not ko_title or len(ko_title) < 3:
         ko_title = english_title
     if not summary or len(summary) < 5:
-        summary = "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
+        summary = " arXiv 원문 초록을 확인하여 핵심 아이디어를 파악하세요."
     return ko_title, summary
 
 
