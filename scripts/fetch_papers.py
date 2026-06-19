@@ -188,21 +188,20 @@ def make_post(paper, today_str):
     ai = summarize(paper["title"], paper["summary"])
     ko_title, summary = parse_summary(ai, paper["title"])
 
-    return f"""---
-    layout: post
-    title: "{ko_title[:200]}"
-    date: {today_str} 09:00:00 +0900
-    categories: [{field}]
-    tags: [{field}, arxiv, {paper["id"]}]
-    arxiv_id: "{paper["id"]}"
-    field: "{field}"
-    summary: "{summary}"
-    ---
-
-    **authors:** {', '.join(paper['authors'][:3])}
-
-    📖 [원문 보기](http://arxiv.org/abs/{paper["id"]})
-    """
+    return (
+            "---\n"
+            "layout: post\n"
+            f"title: \"{ko_title[:200]}\"\n"
+            f"date: {today_str} 09:00:00 +0900\n"
+            f"categories: [{field}]\n"
+            f"tags: [{field}, arxiv, {paper['id']}]\n"
+            f"arxiv_id: \"{paper['id']}\"\n"
+            f"field: \"{field}\"\n"
+            f"summary: \"{summary}\"\n"
+            "---\n"
+            f"<p><strong>authors:</strong> {', '.join(paper['authors'][:3])}</p>\n"
+            f"<p><a href=\"http://arxiv.org/abs/{paper['id']}\">📖 원문 보기</a></p>"
+        )
 
 
 # 각 분야별 Jekyll 페이지 정의
