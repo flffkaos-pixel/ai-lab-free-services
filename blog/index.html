@@ -20,7 +20,7 @@ permalink: /
     </div>
     <div class="rl-top3">
       <span class="rl-label">논문</span>
-{% for post in date.items limit: 6 %}
+{% for post in date.items %}
       <span class="t3-chip"><b>{{ post.field }}</b>
         <a href="{{ post.url | relative_url }}">{{ post.title | truncate: 28 }}</a>
       </span>
