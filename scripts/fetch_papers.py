@@ -199,8 +199,7 @@ def make_post(paper, today_str):
             f"field: \"{field}\"\n"
             f"summary: \"{summary}\"\n"
             "---\n"
-            f"<p><strong>authors:</strong> {', '.join(paper['authors'][:3])}</p>\n"
-            f"<p><a href=\"http://arxiv.org/abs/{paper['id']}\">📖 원문 보기</a></p>"
+            f"<p><strong>authors:</strong> {', '.join(paper['authors'])}</p>\n"
         )
 
 
