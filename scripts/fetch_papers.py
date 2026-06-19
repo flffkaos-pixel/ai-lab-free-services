@@ -196,10 +196,12 @@ def make_post(paper, today_str):
     tags: [{field}, arxiv, {paper["id"]}]
     arxiv_id: "{paper["id"]}"
     field: "{field}"
-    excerpt: "{summary[:300]}"
+    summary: "{summary}"
     ---
 
-    {summary}
+    **authors:** {', '.join(paper['authors'][:3])}
+
+    📖 [원문 보기](http://arxiv.org/abs/{paper["id"]})
     """
 
 

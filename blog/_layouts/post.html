@@ -14,9 +14,9 @@
   {% endif %}
 </div>
 
-{% if page.excerpt %}
+{% if page.summary %}
 <div class="post-summary">
-  <strong>한 줄 요약:</strong> {{ page.excerpt | strip_html }}
+  <strong>한 줄 요약:</strong> {{ page.summary | strip_html | strip }}
 </div>
 {% endif %}
 
