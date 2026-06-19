@@ -121,27 +121,30 @@ def summarize(title, abstract):
         "=== OUTPUT (2 lines only) ==="
     )
     try:
-        resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
+        resp = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
-                "model": "qwen3-32b",
+                "model": "llama-3.3-70b-versatile",
                 "messages": [
                     {"role": "system", "content": "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"},
                     {"role": "user", "content": prompt}
                 ],
-                "temperature": 0.2, "max_tokens": 300,
-                "thinking": {"type": "disabled"},
-            }, timeout=300)
+                "temperature": 0.2,
+                "max_tokens": 300,
+            },
+            timeout=300,
+        )
         if resp.status_code != 200:
-            print(f"  groq err: HTTP {resp.status_code}")
+            print(f"  groq err: HTTP {resp.status_code} — body: {resp.text[:200]}")
             return None
         data = resp.json()
         if "choices" in data:
-                    text = data["choices"][0]["message"]["content"]
-                    # Strip both Anthropic-style and XML-style thinking blocks
-                    text = re.sub(r"", "", text, flags=re.DOTALL)
-                    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
-                    return text.strip()
+            text = data["choices"][0]["message"]["content"]
+            # Strip thinking blocks that Llama sometimes returns
+            text = re.sub(r"", "", text, flags=re.DOTALL)
+            text = re.sub(r"<thinking>.*?</thinking>", "", text, flags=re.DOTALL)
+            return text.strip()
     except Exception as e:
         print(f"  err: {e}")
     return None
