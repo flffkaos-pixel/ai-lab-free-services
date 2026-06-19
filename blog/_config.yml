@@ -27,7 +27,7 @@ excerpt_separator: "<!-- more -->"
 
 # minima 테마 제거 — 자체 HTML/CSS 사용
 exclude:
-  - feed.xml
+  - ".well-known"
   
 plugins: []
 
