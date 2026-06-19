@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flffkaos-pixel.github.io/ai-lab-free-services/sitemap.xml

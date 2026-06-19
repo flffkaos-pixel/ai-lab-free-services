@@ -1,11 +1,126 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} — AI 논문 한 줄{% else %}AI 논문 한 줄{% endif %}</title>
-  <meta name="description" content="arXiv AI 논문 한국어 한 줄 요약. 매일 오전 9시 자동 업데이트.">
+  
+  {% if page.title %}
+    {% assign page_title = page.title | append: " — AI 논문 한 줄" %}
+    {% assign og_title = page.title %}
+  {% else %}
+    {% assign page_title = "AI 논문 한 줄 | arXiv AI 논문 한국어 요약" %}
+    {% assign og_title = "AI 논문 한 줄 | arXiv AI 논문 한국어 요약" %}
+  {% endif %}
+  
+  <title>{{ page_title }}</title>
+  
+  <!-- Primary Meta -->
+  {% if page.excerpt %}
+    {% assign meta_desc = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+  {% else %}
+    {% assign meta_desc = "매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공." %}
+  {% endif %}
+  <meta name="description" content="{{ meta_desc }}">
+  <meta name="keywords" content="AI 논문, arXiv, 논문 요약, 머신러닝, 딥러닝, 한국어 논문, AI 연구, 컴퓨터비전, NLP, 강화학습">
+  <meta name="author" content="AI 논문 한 줄">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ meta_desc }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="AI 논문 한 줄">
+  <meta property="og:locale" content="ko_KR">
+  {% if page.arxiv_id %}
+  <meta property="og:image" content="https://arxiv.org/icons/favicon-32x32.png">
+  {% endif %}
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title }}">
+  <meta name="twitter:description" content="{{ meta_desc }}">
+  
+  <!-- JSON-LD Structured Data -->
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | strip_html | escape }}",
+    "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 300 | escape }}",
+    "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+09:00' }}",
+    "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+09:00' }}",
+    "author": { "@type": "Organization", "name": "AI 논문 한 줄" },
+    "publisher": { "@type": "Organization", "name": "AI 논문 한 줄", "url": "{{ '/' | absolute_url }}" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+    {% if page.arxiv_id %}
+    "citation": "https://arxiv.org/abs/{{ page.arxiv_id }}",
+    {% endif %}
+    "inLanguage": "ko",
+    "about": [{% if page.field %}"{{ page.field }}"{% endif %}]
+  }
+  </script>
+  {% endif %}
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI 논문 한 줄",
+    "alternateName": "AI Paper Korean Summary",
+    "url": "{{ '/' | absolute_url }}",
+    "description": "매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약합니다.",
+    "inLanguage": "ko",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ '/' | absolute_url }}?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  {% if page.url == '/' or page.url contains '/field/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "어떤 논문을 다루나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "arXiv.org에 매일 새로 등록되는 인공지능(AI) 분야 논문 중 핵심 연구를 선별하여 한국어 한 줄 요약으로 제공합니다. AI/ML, 컴퓨터 비전(CV), 자연어 처리(NLP), 강화학습(RL), 음성/음악, 로봇, 통계 등 7개 분야를 다룹니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "언제 업데이트되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "매일 오전 9시(KST)에 자동으로 업데이트됩니다. 전날 arXiv에 등록된 최신 논문을 분석하여 한국어 요약을 생성합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "논문 요약은 어떻게 생성되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Groq의 qwen3-32b AI 모델을 사용하여 논문 초록을 분석하고 핵심 발견과 수치를 중심으로 한국어 한 줄 요약을 자동 생성합니다."
+        }
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+  
   <link rel="stylesheet" href="/ai-lab-free-services/assets/style.css">
+  <link rel="alternate" type="application/atom+xml" title="AI 논문 한 줄 RSS" href="/ai-lab-free-services/feed.xml">
 </head>
 <body>
 
@@ -27,8 +142,16 @@
 </main>
 
 <footer class="site-footer">
+  <div class="footer-links">
+    <a href="/ai-lab-free-services/about/">소개</a>
+    <a href="/ai-lab-free-services/contact/">문의하기</a>
+    <a href="/ai-lab-free-services/privacy/">개인정보 처리방침</a>
+    <a href="/ai-lab-free-services/terms/">이용약관</a>
+    <a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a>
+    <a href="/ai-lab-free-services/feed.xml">RSS</a>
+  </div>
   <p>매일 0시(UTC, <strong>한국 오전 9시</strong>)에 자동 업데이트</p>
-  <p><a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a></p>
+  <p class="copyright">© {{ site.time | date: '%Y' }} AI 논문 한 줄. 모든 논문의 저작권은 원저자에게 있습니다.</p>
 </footer>
 
 </body>

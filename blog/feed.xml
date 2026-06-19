@@ -1,0 +1,24 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI 논문 한 줄</title>
+    <link>{{ '/' | absolute_url }}</link>
+    <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
+    <language>ko</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
+    {% for post in site.posts limit: 20 %}
+    <item>
+      <title>{{ post.title | escape }}</title>
+      <link>{{ post.url | absolute_url }}</link>
+      <description>{{ post.excerpt | strip_html | truncate: 400 }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <guid>{{ post.url | absolute_url }}</guid>
+      {% for cat in post.categories %}<category>{{ cat }}</category>{% endfor %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

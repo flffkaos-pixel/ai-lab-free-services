@@ -343,3 +343,38 @@ summary { cursor: pointer; font-weight: 650; }
   font-size: .72rem; font-weight: 650; background: var(--accent-soft); color: var(--accent-ink);
   border: 1px solid #e0e7ff; border-radius: var(--r-pill); padding: 2px 9px; margin-left: 4px; vertical-align: middle;
 }
+
+/* ---------- SEO/정책 페이지 ---------- */
+.page-content {
+  max-width: 720px; margin: 0 auto; line-height: 1.8;
+}
+.page-content h1 { font-size: 1.7rem; margin-bottom: 16px; }
+.page-content h2 { font-size: 1.2rem; margin-top: 32px; color: var(--fg); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.page-content h3 { font-size: 1rem; margin-top: 24px; color: var(--fg); }
+.page-content ul { padding-left: 20px; }
+.page-content li { margin-bottom: 6px; }
+
+/* ---------- 개별 포스트 ---------- */
+.post-summary {
+  background: var(--accent-soft);
+  border: 1px solid #e0e7ff;
+  border-radius: var(--r);
+  padding: 16px 20px;
+  margin: 20px 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+.post-meta { margin: 12px 0 20px; font-size: 0.88rem; color: var(--muted); }
+.post-content { line-height: 1.8; }
+
+/* ---------- 푸터 링크 ---------- */
+.footer-links {
+  display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+  margin-bottom: 12px;
+}
+.footer-links a {
+  color: var(--muted); font-size: 0.82rem; text-decoration: none;
+}
+.footer-links a:hover { color: var(--accent); text-decoration: underline; }
+.copyright { font-size: 0.78rem; color: var(--faint); }

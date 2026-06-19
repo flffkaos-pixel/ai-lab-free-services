@@ -16,8 +16,14 @@ layout: default
   {% endif %}
 </div>
 
+{% if page.excerpt %}
+<div class="post-summary">
+  <strong>한 줄 요약:</strong> {{ page.excerpt | strip_html }}
+</div>
+{% endif %}
+
 <div class="post-content">
-{{ content }}
+{{ content | remove: page.excerpt }}
 
 {% if page.arxiv_id %}
   <p><a href="http://arxiv.org/abs/{{ page.arxiv_id }}">📖 원문 arXiv에서 보기 →</a></p>
