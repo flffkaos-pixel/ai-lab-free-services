@@ -17,13 +17,16 @@ layout: compress
   
   <title>{{ page_title }}</title>
   
-  <!-- Primary Meta -->
-  {% if page.excerpt %}
-    {% assign meta_desc = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
-  {% else %}
-    {% assign meta_desc = "매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공." %}
-  {% endif %}
-  <meta name="description" content="{{ meta_desc }}">
+  <!-- Primary Meta — page.content의 첫 단락을 description으로 사용 -->
+    {% if page.layout == 'post' and page.content %}
+      {% assign first_para = page.content | strip_html | split: '.' | first %}
+      {% assign meta_desc = page.content | strip_html | strip_newlines | truncate: 160 %}
+    {% elsif page.excerpt %}
+      {% assign meta_desc = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+      {% assign meta_desc = "매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공." %}
+    {% endif %}
+    <meta name="description" content="{{ meta_desc }}">
   <meta name="keywords" content="AI 논문, arXiv, 논문 요약, 머신러닝, 딥러닝, 한국어 논문, AI 연구, 컴퓨터비전, NLP, 강화학습">
   <meta name="author" content="AI 논문 한 줄">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">

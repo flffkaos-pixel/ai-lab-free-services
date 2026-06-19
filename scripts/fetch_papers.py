@@ -124,7 +124,7 @@ def summarize(title, abstract):
         resp = requests.post("https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
             json={
-                "model": "qwen/qwen3-32b",   # qwen3-32b: 한국어/학술 논문 압도적 우수
+                "model": "qwen3-32b",
                 "messages": [
                     {"role": "system", "content": "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"},
                     {"role": "user", "content": prompt}

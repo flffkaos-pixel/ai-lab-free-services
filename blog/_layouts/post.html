@@ -23,7 +23,7 @@ layout: default
 {% endif %}
 
 <div class="post-content">
-{{ content | remove: page.excerpt }}
+{{ content }}
 
 {% if page.arxiv_id %}
   <p><a href="http://arxiv.org/abs/{{ page.arxiv_id }}">📖 원문 arXiv에서 보기 →</a></p>
