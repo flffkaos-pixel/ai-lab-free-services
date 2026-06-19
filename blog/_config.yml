@@ -1,0 +1,43 @@
+---
+title: AI 논문 한 줄
+tagline: 매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요
+url: "https://flffkaos-pixel.github.io"
+baseurl: "/ai-lab-free-services"
+timezone: Asia/Seoul
+permalink: /:categories/:year/:month/:day/:title/
+lang: ko
+locale: ko_KR
+
+keywords:
+  - ai 논문
+  - 머신러닝 논문
+  - 논문 요약
+  - 딥러닝
+  - arxiv
+  - 한국어 논문
+  - AI 연구
+  - 컴퓨터 비전 논문
+  - 자연어 처리 논문
+
+author:
+  name: AI 논문 한 줄
+  email: flffkaos@gmail.com
+
+excerpt_separator: "<!-- more -->"
+
+# minima 테마 제거 — 자체 HTML/CSS 사용
+exclude:
+  - ".well-known"
+  
+plugins: []
+
+# compress layout
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  ignore:
+    envs: []

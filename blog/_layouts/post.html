@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="back"><a href="{{ '/' | relative_url }}">← 목록으로</a></div>
+
+<h1>{{ page.title }}</h1>
+
+<div class="post-meta">
+  <span>📄 {{ page.date | date: "%Y-%m-%d" }}</span>
+  {% if page.field %}
+    <span class="field-tag">{{ page.field }}</span>
+  {% endif %}
+  {% if page.arxiv_id %}
+    <span class="tag" style="margin-left:8px;">arXiv: {{ page.arxiv_id }}</span>
+  {% endif %}
+</div>
+
+{% if page.summary %}
+<div class="post-summary">
+  <strong>한 줄 요약:</strong> {{ page.summary | strip_html | strip }}
+</div>
+{% endif %}
+
+<div class="post-content">
+{{ content }}
+
+{% if page.arxiv_id %}
+  <p><a href="http://arxiv.org/abs/{{ page.arxiv_id }}">📖 원문 arXiv에서 보기 →</a></p>
+{% endif %}
+</div>

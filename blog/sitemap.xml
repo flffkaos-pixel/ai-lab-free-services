@@ -1,0 +1,52 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ '/' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ '/about/' | absolute_url }}</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ '/contact/' | absolute_url }}</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ '/privacy/' | absolute_url }}</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>{{ '/terms/' | absolute_url }}</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  {% for field_slug in 'ai-ml,cv,nlp,rl,audio,robotics,statistics' | split: ',' %}
+  <url>
+    <loc>{{ '/field/' | append: field_slug | absolute_url }}/</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+</urlset>
