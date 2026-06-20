@@ -275,7 +275,7 @@ def load_existing_arxiv_ids():
     for fname in os.listdir(POSTS_DIR):
         if not fname.endswith(".md"):
             continue
-        m = re.search(r'(\d{4}\.\d{4,5}v\d+)', fname)
+        m = re.search(r'(\d{4}[-.]\d{4,5}v\d+)', fname)
         if m:
             existing.add(m.group(1))
     return existing
