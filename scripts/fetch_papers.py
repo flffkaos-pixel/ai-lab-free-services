@@ -268,16 +268,17 @@ permalink: /field/{safe}/
 
 
 def load_existing_arxiv_ids():
-    """기존 포스트에서 이미 처리된 arXiv ID 목록 반환"""
+    """기존 포스트에서 이미 처리된 arXiv ID 목록 반환 (dot 정규화)"""
     existing = set()
     if not os.path.isdir(POSTS_DIR):
         return existing
     for fname in os.listdir(POSTS_DIR):
         if not fname.endswith(".md"):
             continue
-        m = re.search(r'(\d{4}[-.]\d{4,5}v\d+)', fname)
+        m = re.search(r'(\d{4})[-.](\d{4,5}v\d+)', fname)
         if m:
-            existing.add(m.group(1))
+            normalized = f"{m.group(1)}.{m.group(2)}"
+            existing.add(normalized)
     return existing
 
 
