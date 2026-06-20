@@ -4,6 +4,12 @@ on:
   schedule:
       - cron: '0 21 * * *'
   workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: '오늘 글 강제 재생성 (기존 덮어쓰기)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   build-deploy:
@@ -26,10 +32,30 @@ jobs:
           python-version: '3.12'
       - run: pip install requests
 
+      - name: 기존 포스트 정리 (force_regenerate 시)
+        if: ${{ github.event.inputs.force_regenerate == 'true' }}
+        run: |
+          today=$(TZ='Asia/Seoul' date '+%Y-%m-%d')
+          rm -f blog-src/blog/_posts/${today}-*.md
+          echo "오늘($today) 포스트 삭제 완료, 재생성합니다."
+
       - name: arXiv에서 논문 수집
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python blog-src/scripts/fetch_papers.py
+
+      - name: 생성된 포스트를 master 브랜치에 커밋
+        run: |
+          cd blog-src
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog/_posts/
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+          else
+            git commit -m "자동: $(TZ='Asia/Seoul' date '+%Y-%m-%d') 논문 포스트 추가"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/flffkaos-pixel/ai-lab-free-services.git master
+          fi
 
       - name: field 페이지 생성
         run: python blog-src/scripts/generate_field_pages_only.py

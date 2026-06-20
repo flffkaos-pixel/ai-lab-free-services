@@ -7,6 +7,7 @@ timezone: Asia/Seoul
 permalink: /:categories/:year/:month/:day/:title/
 lang: ko
 locale: ko_KR
+future: true
 
 keywords:
   - ai 논문
@@ -25,13 +26,11 @@ author:
 
 excerpt_separator: "<!-- more -->"
 
-# minima 테마 제거 — 자체 HTML/CSS 사용
 exclude:
   - ".well-known"
-  
+
 plugins: []
 
-# compress layout
 compress_html:
   clippings: all
   comments: all

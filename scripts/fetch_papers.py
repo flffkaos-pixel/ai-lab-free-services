@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-arXiv → 한국어 요약 → Jekyll 블로그 + 분야별 페이지 자동 생성
-v2: arXiv API의 category 태그를 활용해 정확한 분야 분류
-    + qwen3-32b로 한 줄 요약 생성
+arXiv -> 한국어 요약 -> Jekyll 블로그 + 분야별 페이지 자동 생성
+v3: YAML 이스케이프 보강, 제목/요약 fallback 강화
 """
 
 import os, json, re, time, urllib.request, urllib.parse
@@ -14,13 +13,6 @@ POSTS_DIR = os.path.join(ROOT, "blog", "_posts")
 BLOG_DIR = os.path.join(ROOT, "blog")
 GK = os.environ.get("GROQ_API_KEY", "gsk_***PLACEHOLDER***")
 
-# arXiv primary category → 우리 field 매핑
-# cs.AI, cs.LG → AI/ML
-# cs.CL → NLP
-# cs.CV → CV
-# cs.RO → 로봇
-# cs.SD (sound), eess.AS → 음성/음악
-# stat.ML, cs.LG → 통계 (필요 시)
 CATEGORY_MAP = {
     "cs.AI":   "AI/ML",
     "cs.LG":   "AI/ML",
@@ -32,12 +24,11 @@ CATEGORY_MAP = {
     "stat.ML": "통계",
     "stat.AP": "통계",
     "stat.CO": "통계",
-    "cs.IR":   "NLP",      # 정보 검색은 NLP로
-    "cs.NE":   "AI/ML",    # 신경망/계산 신경과학
-    "cs.DC":   "AI/ML",    # 분산 컴퓨팅 (보통 AI)
+    "cs.IR":   "NLP",
+    "cs.NE":   "AI/ML",
+    "cs.DC":   "AI/ML",
 }
 
-# 카테고리가 명확하지 않을 때 제목/abstract에서 보조 분류
 KEYWORD_BACKUP = {
     "NLP":      ["language model", "llm", "transformer", "rag", "embedding",
                  "tokenizer", "prompt", "finetuning", "nlp", "text generation"],
@@ -54,8 +45,14 @@ KEYWORD_BACKUP = {
 }
 
 
+def escape_yaml(s):
+    """YAML double-quoted scalar escaping"""
+    if not s:
+        return ""
+    return s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "")
+
+
 def detect_field(paper):
-    """1순위: arXiv category 태그, 2순위: 키워드"""
     for cat in paper.get("categories", []):
         if cat in CATEGORY_MAP:
             return CATEGORY_MAP[cat]
@@ -112,7 +109,6 @@ def summarize(title, abstract):
         "- Good: 'CoT 프롬프트를 적용해 수학 추론 능력을 기존 대비 23% 향상'\n"
         "- Good: '단 7B 모델이 GPT-4 수준의 수학 문제를 풀어내는 Few-shot 학습 기법 제안'\n"
         "- Bad: '이 논문은 대규모 언어 모델의 추론 능력을 향상시키는 방법을 제안합니다'\n"
-        "- Bad: 'Transformer 기반 모델의 학습 효율성을 개선했다'\n"
         "- Include concrete numbers (accuracy %, BLEU score, parameters) if present in abstract\n"
         "- 요약 length: 30~70 characters (Korean)\n\n"
         "=== INPUT ===\n"
@@ -141,8 +137,6 @@ def summarize(title, abstract):
         data = resp.json()
         if "choices" in data:
             text = data["choices"][0]["message"]["content"]
-            # Strip thinking blocks that Llama sometimes returns
-            text = re.sub(r"", "", text, flags=re.DOTALL)
             text = re.sub(r"<thinking>.*?</thinking>", "", text, flags=re.DOTALL)
             return text.strip()
     except Exception as e:
@@ -153,7 +147,7 @@ def summarize(title, abstract):
 def parse_summary(text, english_title=""):
     ko_title, summary = "", ""
     if not text:
-        return english_title, "논문 원문을 확인하여 핵심 아이디어를 파악하세요."
+        return english_title, "arXiv 원문 초록을 확인하여 핵심 아이디어를 파악하세요."
     lines = [l.strip() for l in text.split("\n") if l.strip() and not l.strip().startswith("#")]
     for line in lines:
         m = re.match(r"^[*\s\-–]*제목\s*[:：]\s*(.+?)\s*[*]?$", line)
@@ -164,22 +158,10 @@ def parse_summary(text, english_title=""):
         if m:
             summary = m.group(1).strip().strip('"').strip("'").lstrip('**').rstrip('**')
             continue
-    # Fallback: line without prefix but contains numbers (key finding indicator)
-    if not summary:
-        for line in lines:
-            if re.search(r"\d+\.?\d*[%℃°단]", line) and len(line) > 10:
-                summary = line
-                break
-    # Fallback: any substantial line that doesn't look like a title
-    if not summary:
-        for line in lines:
-            if len(line) > 8 and not line[0].isupper() and "OmniAgent" not in line and "Agent" not in line[:20]:
-                summary = line
-                break
     if not ko_title or len(ko_title) < 3:
         ko_title = english_title
     if not summary or len(summary) < 5:
-        summary = " arXiv 원문 초록을 확인하여 핵심 아이디어를 파악하세요."
+        summary = "arXiv 원문 초록을 확인하여 핵심 아이디어를 파악하세요."
     return ko_title, summary
 
 
@@ -188,24 +170,29 @@ def make_post(paper, today_str):
     ai = summarize(paper["title"], paper["summary"])
     ko_title, summary = parse_summary(ai, paper["title"])
 
+    # 절대 빈 제목 방지
+    if not ko_title or not ko_title.strip():
+        ko_title = paper["title"][:200]
+    if not summary or not summary.strip():
+        summary = "arXiv 원문 초록을 확인하여 핵심 아이디어를 파악하세요."
+
     return (
-            "---\n"
-            "layout: post\n"
-            f"title: \"{ko_title[:200]}\"\n"
-            f"date: {today_str} 09:00:00 +0900\n"
-            f"categories: [{field}]\n"
-            f"tags: [{field}, arxiv, {paper['id']}]\n"
-            f"arxiv_id: \"{paper['id']}\"\n"
-            f"field: \"{field}\"\n"
-            f"summary: \"{summary}\"\n"
-            "---\n"
-            f"<p><strong>authors:</strong> {', '.join(paper['authors'])}</p>\n"
-        )
+        "---\n"
+        "layout: post\n"
+        f"title: \"{escape_yaml(ko_title[:200])}\"\n"
+        f"date: {today_str} 09:00:00 +0900\n"
+        f"categories: [{escape_yaml(field)}]\n"
+        f"tags: [{escape_yaml(field)}, arxiv, {escape_yaml(paper['id'])}]\n"
+        f"arxiv_id: \"{escape_yaml(paper['id'])}\"\n"
+        f"field: \"{escape_yaml(field)}\"\n"
+        f"summary: \"{escape_yaml(summary)}\"\n"
+        "---\n"
+        f"<p><strong>authors:</strong> {escape_yaml(', '.join(paper['authors']))}</p>\n"
+        f"<p><strong>한 줄 요약:</strong> {escape_yaml(summary)}</p>\n"
+    )
 
 
-# 각 분야별 Jekyll 페이지 정의
 FIELD_DEFS = [
-    # (system id,  표시 라벨(label), url slug,    정렬 순서)
     ("AI/ML",   "🤖 AI/ML",            "ai-ml",      1),
     ("CV",      "👁 Computer Vision",  "cv",         2),
     ("NLP",     "📝 NLP",              "nlp",        3),
@@ -217,15 +204,12 @@ FIELD_DEFS = [
 
 
 def generate_field_pages():
-    """각 분야별 Jekyll 페이지 자동 생성"""
     tabs_html = []
     for field_name, label, safe, _ in FIELD_DEFS:
-        # 각 탭은 자기가 속한 필드의 페이지로
         tabs_html.append(f'<a class="field-tab" href="{{{{ \'/field/{safe}/\' | relative_url }}}}">{label}</a>')
     tabs_block = "\n    ".join(tabs_html)
 
     for field_name, label, safe, _ in FIELD_DEFS:
-        # 라벨의 {} Jekyll 충돌 회피: | escape 사용
         page = f"""---
 layout: null
 permalink: /field/{safe}/
@@ -251,26 +235,26 @@ permalink: /field/{safe}/
 <div class="wrap">
   <h2 class="date-group">📚 {field_name} 논문</h2>
   <div class="cards">
-    {{% assign found = 0 %}}
-    {{% for post in site.posts %}}
-      {{% if post.field == "{field_name}" %}}
-        <a class="card" href="{{{{ post.url | relative_url }}}}">
-          <h3>{{{{ post.title }}}}</h3>
-          <p class="summary">{{{{ post.excerpt | strip_html | truncate: 130 }}}}</p>
+    {{{{%- assign found = 0 -%}}}}
+    {{{{%- for post in site.posts -%}}}}
+      {{{{%- if post.field == "{field_name}" -%}}}}
+        <a class="card" href="{{{{{{ post.url | relative_url }}}}}}">
+          <h3>{{{{{{ post.title }}}}}}</h3>
+          <p class="summary">{{{{{{ post.excerpt | strip_html | truncate: 130 }}}}}}</p>
           <div class="meta">
-            <span class="tag">arXiv:{{{{ post.arxiv_id }}}}</span>
+            <span class="tag">arXiv:{{{{{{ post.arxiv_id }}}}}}</span>
             <span>📄 {{{{ post.date | date: "%Y-%m-%d" }}}}</span>
             <span>🏷 {{{{ post.field }}}}</span>
           </div>
         </a>
-        {{% assign found = 1 %}}
-      {{% endif %}}
-    {{% endfor %}}
-    {{% if found == 0 %}}
+        {{{{%- assign found = 1 -%}}}}
+      {{{{%- endif -%}}}}
+    {{{{%- endfor -%}}}}
+    {{{{%- if found == 0 -%}}}}
       <p style="text-align:center; color:#888; padding:40px 0;">
         아직 등록된 논문이 없습니다.
       </p>
-    {{% endif %}}
+    {{{{%- endif -%}}}}
   </div>
 </div>
 
@@ -283,18 +267,31 @@ permalink: /field/{safe}/
         print(f"  📄 페이지 생성: field-{safe}.html")
 
 
+def load_existing_arxiv_ids():
+    """기존 포스트에서 이미 처리된 arXiv ID 목록 반환"""
+    existing = set()
+    if not os.path.isdir(POSTS_DIR):
+        return existing
+    for fname in os.listdir(POSTS_DIR):
+        if not fname.endswith(".md"):
+            continue
+        m = re.search(r'(\d{4}\.\d{4,5}v\d+)', fname)
+        if m:
+            existing.add(m.group(1))
+    return existing
+
+
 def main():
     os.makedirs(POSTS_DIR, exist_ok=True)
     print("===== 분야 페이지 생성 =====")
     generate_field_pages()
 
     print("\n===== 논문 수집 =====")
-    # 분야별 의도적 분류: cs.CV → CV, cs.CL → NLP, cs.RO → 로봇, cs.LG → AI/ML
-    queries = [("cat:cs.LG", 2),  # AI/ML
-               ("cat:cs.CL", 2),  # NLP
-               ("cat:cs.CV", 2),  # CV
-               ("cat:cs.RO", 1),  # 로봇
-               ("cat:cs.AI", 1),  # AI/ML 추가
+    queries = [("cat:cs.LG", 2),
+               ("cat:cs.CL", 2),
+               ("cat:cs.CV", 2),
+               ("cat:cs.RO", 1),
+               ("cat:cs.AI", 1),
                ]
     all_papers = []
     for q, n in queries:
@@ -308,12 +305,16 @@ def main():
             seen.add(p["id"])
             unique.append(p)
 
+    # 이미 존재하는 arXiv ID는 건너뛰기 (중복 방지)
+    existing_ids = load_existing_arxiv_ids()
     today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     success = 0
     for paper in unique[:8]:
+        if paper["id"] in existing_ids:
+            print(f"  ↩ {paper['id']}: 이미 기존 포스트에 존재, 건너뜀")
+            continue
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(POSTS_DIR, filename)
-        # 이미 오늘 처리한 파일은 건너뛰기 (idempotent)
         if os.path.exists(out_path):
             print(f"  ↩ {paper['id']}: 이미 존재, 건너뜀")
             success += 1
@@ -323,7 +324,7 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(post)
         success += 1
-        time.sleep(15)  # TPM 보호
+        time.sleep(15)
 
     print(f"\n완료: {success}건 + 분야 페이지 {len(FIELD_DEFS)}건")
 
