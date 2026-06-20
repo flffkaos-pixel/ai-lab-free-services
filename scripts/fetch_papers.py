@@ -306,19 +306,13 @@ def main():
             seen.add(p["id"])
             unique.append(p)
 
-    # 이미 존재하는 arXiv ID는 건너뛰기 (중복 방지)
-    existing_ids = load_existing_arxiv_ids()
     today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     success = 0
     for paper in unique[:8]:
-        if paper["id"] in existing_ids:
-            print(f"  ↩ {paper['id']}: 이미 기존 포스트에 존재, 건너뜀")
-            continue
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(POSTS_DIR, filename)
         if os.path.exists(out_path):
-            print(f"  ↩ {paper['id']}: 이미 존재, 건너뜀")
-            success += 1
+            print(f"  ↩ {paper['id']}: 이미 오늘 포스트 존재, 건너뜀")
             continue
         print(f"  → {paper['id']} [{detect_field(paper)}]: {paper['title'][:60]}")
         post = make_post(paper, today_str)
