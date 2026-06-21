@@ -306,9 +306,13 @@ def main():
             seen.add(p["id"])
             unique.append(p)
 
+    existing_ids = load_existing_arxiv_ids()
     today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     success = 0
     for paper in unique[:8]:
+        if paper["id"] in existing_ids:
+            print(f"  ↩ {paper['id']}: 이미 다른 날짜에 존재, 건너뜀")
+            continue
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(POSTS_DIR, filename)
         if os.path.exists(out_path):
