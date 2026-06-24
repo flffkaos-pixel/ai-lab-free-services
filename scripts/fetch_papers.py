@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 arXiv -> 한국어 요약 -> Jekyll 블로그 + 분야별 페이지 자동 생성
-v3: YAML 이스케이프 보강, 제목/요약 fallback 강화
+v4: Groq llama-3.1-8b-instant (production) + fallback 체인 + 상세 에러 로깅
 """
 
 import os, json, re, time, urllib.request, urllib.parse
@@ -97,8 +97,43 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
     return papers
 
 
-def summarize(title, abstract):
+MODELS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
+
+
+def _call_groq(prompt, model, system_msg):
     import requests
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
+                json={"model": model, "messages": [
+                    {"role": "system", "content": system_msg},
+                    {"role": "user", "content": prompt},
+                ], "temperature": 0.2, "max_tokens": 300},
+                timeout=300,
+            )
+            if resp.status_code == 429:
+                print(f"  {model} rate limited (429), 재시도 {attempt+1}/3...")
+                time.sleep(10 * (attempt + 1))
+                continue
+            if resp.status_code != 200:
+                body = resp.text[:500]
+                print(f"  {model} err: HTTP {resp.status_code}, 재시도 {attempt+1}/3... 응답: {body}")
+                time.sleep(5 * (attempt + 1))
+                continue
+            data = resp.json()
+            if "choices" in data:
+                text = data["choices"][0]["message"]["content"]
+                text = re.sub(r"<thinking>.*?</thinking>", "", text, flags=re.DOTALL)
+                return text.strip()
+        except Exception as e:
+            print(f"  {model} err: {e}, 재시도 {attempt+1}/3...")
+            time.sleep(5 * (attempt + 1))
+    return None
+
+
+def summarize(title, abstract):
     prompt = (
         "Task: Read an English AI paper and write a Korean translation of the title plus a ONE-LINE summary.\n\n"
         "=== OUTPUT FORMAT (write ONLY these 2 lines, nothing else) ===\n"
@@ -116,38 +151,13 @@ def summarize(title, abstract):
         f"English abstract: {abstract[:1200]}\n\n"
         "=== OUTPUT (2 lines only) ==="
     )
-    for attempt in range(3):
-        try:
-            resp = requests.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                headers={"Authorization": f"Bearer {GK}", "Content-Type": "application/json"},
-                json={
-                    "model": "qwen/qwen3-32b",
-                    "messages": [
-                        {"role": "system", "content": "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"},
-                        {"role": "user", "content": prompt}
-                    ],
-                    "temperature": 0.2,
-                    "max_tokens": 300,
-                },
-                timeout=300,
-            )
-            if resp.status_code == 429:
-                print(f"  groq rate limited (429), 재시도 {attempt+1}/3...")
-                time.sleep(10 * (attempt + 1))
-                continue
-            if resp.status_code != 200:
-                print(f"  groq err: HTTP {resp.status_code}, 재시도 {attempt+1}/3...")
-                time.sleep(5 * (attempt + 1))
-                continue
-            data = resp.json()
-            if "choices" in data:
-                text = data["choices"][0]["message"]["content"]
-                text = re.sub(r"<thinking>.*?</thinking>", "", text, flags=re.DOTALL)
-                return text.strip()
-        except Exception as e:
-            print(f"  err: {e}, 재시도 {attempt+1}/3...")
-            time.sleep(5 * (attempt + 1))
+    system_msg = "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"
+    for model in MODELS:
+        print(f"  모델 시도: {model}")
+        result = _call_groq(prompt, model, system_msg)
+        if result:
+            return result
+        print(f"  {model} 3회 실패, fallback 모델로 전환...")
     return None
 
 
