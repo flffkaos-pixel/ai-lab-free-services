@@ -205,7 +205,6 @@ def make_post(paper, today_str):
         f"summary: \"{escape_yaml(summary)}\"\n"
         "---\n"
         f"<p><strong>authors:</strong> {escape_yaml(', '.join(paper['authors']))}</p>\n"
-        f"<p><strong>한 줄 요약:</strong> {escape_yaml(summary)}</p>\n"
     )
 
 
