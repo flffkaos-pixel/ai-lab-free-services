@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI 논문 한 줄</title>
+    <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
+    <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
+    <language>ko</language>
+    <lastBuildDate>Mon, 29 Jun 2026 07:08:38 +0900</lastBuildDate>
+    <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>DanceOPD: 이미지 생성 모델의 다중 기능 통합</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/29/2606-27377v1/</link>
+      <description>authors: Wei Zhou, Xiongwei Zhu, Zelin Xu, Bo Dong, Lixue Gong
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/29/2606-27377v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>통합 멀티모달 모델의 자가 진화</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/29/2606-27376v1/</link>
+      <description>authors: Ritesh Thawkar, Shravan Venkatraman, Omkar Thawakar, Abdelrahman Shaker, Fahad Khan
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/29/2606-27376v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>개방형 데이터, 훈련, 평가를 위한 확장 가능한 행동 클론잉</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/29/2606-27375v1/</link>
+      <description>authors: Arthur Allshire, Himanshu Gaurav Singh, Ritvik Singh, Adam Rashid, Hongsuk Choi
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/29/2606-27375v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>LLM의 성능 향상을 위한 무지식 보상 학습 방법</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/29/2606-27369v1/</link>
+      <description>authors: Yingyu Lin, Qiyue Gao, Nikki Lijing Kuang, Xunpeng Huang, Kun Zhou
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/29/2606-27369v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Boltzmann 생성기 개선</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/29/2606-27361v1/</link>
+      <description>authors: Danyal Rehman, Charlie B. Tan, Yoshua Bengio, Avishek Joey Bose, Alexander Tong
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/29/2606-27361v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>유럽 정치 엘리트 네트워크 매핑</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/29/2606-27347v1/</link>
+      <description>authors: Kirill Solovev, Jana Lasser
+</description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/29/2606-27347v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>JanusMesh: 교차 공간 편향 소자를 통한 0-shot 3D 시각적 illusion 생성</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20563v1/</link>
+      <description>authors: Siang-Ling Zhang, Huai-Hsun Cheng, Tsung-Ju Yang, Yu-Lun Liu
+
+JanusMesh는 텍스트 기반 3D 시각적 illusion(각 보기 각도에서 완전히 다른 의미를 드러내는 단일 3D 메시)을 생성하는 빠르고 학습 불필요한 프레임워크다. 기존 최적화 기반 방식의 속도 문제 및 과포화 색상 문제, 단순 스티칭 방식의 불연속 seam과 의미 누수 문제를 해결한다. 첫 번째 단계에서 CLIP 방향 정렬을 위한 voxel 공간과 Signed Distance Field(SDF) blending을 위한 교차 공간 이중 분기 편향 소자 과정을 제안한다. 두 번째 단계에서 보기 조건 텍스트 합성 모듈로 융합된 지오메트리에 보기별 2D 확산 diffusion...</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20563v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>MemoryWAM: 영속 메모리를 갖춘 효율적 세계-행동 모델링</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/19/2606-20562v1/</link>
+      <description>authors: Sizhe Yang, Juncheng Mu, Tianming Wei, Chenhao Lu, Xiaofan Li, Linning Xu, Zhengrong Xue, Zhecheng Yuan, Dahua Lin, Jiangmiao Pang, Huazhe Xu
+
+MemoryWAM은 영속 메모리를 갖춘 세계-행동 모델로, 하이브리드 메모리 설계(최근 프레임 + 이벤트 경계 앵커 프레임 + 장기 이력 압축 토큰)를 결합한다. 맞춤 어텐션 메커니즘으로 상세한 단기 문맥과 압축된 장기 문맥을 모두 검색하여 메모리 의존적 의사결정을 지원하며, 추론 지연 시간과 GPU 메모리 사용량을 줄인다. 시뮬레이션과 실제 환경 모두에서 장기 시계열·메모리 의존적 조작 태스크에서 기존 VLA 및 WAM baselin...</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/19/2606-20562v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>TimeProVe: 효율적 일상 활동 장시간 동영상 시간 추론</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20561v1/</link>
+      <description>authors: Arkaprava Sinha, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das
+
+TimeProVe는 일상 활동의 장시간 동영상에서 시간적 추론을 효율적으로 수행하는 방법을 제안한다. 기존 vision-language model(VLM) 기반 접근법이 긴 동영상의 모든 프레임을 처리하여 계산 비용이 크던 문제를, 주요 시간적 이벤트만 선별적으로 처리하여 VLM 호출을 75% 절감한다. OTB(Object Tracking Benchmark) 벤치마크에서 기존 방식 대비 7.3% 정확도 향상을 달성했으며, 복잡한 일상 활동 시퀀스에서의 시간 흐름 추론 문제를 효과적으로 해결한다.
+
+📖 원문 arXiv에서 보기 →
+</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20561v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>DiffusionGemma: 투명성 증대를 통한 개방형 텍스트 생성 개선</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/19/2606-20560v1/</link>
+      <description>authors: Joshua Engels, Callum McDougall, Bilal Chughtai, Janos Kramar, Senthoran Rajamanoharan
+
+DiffusionGemma는 diffusion 모델 기반 텍스트 생성에서 투명성(generative transparency) 문제를 분석하는 연구다. 기존 autoregressive 모델의 불투명한 생성 과정과 달리, diffusion 기반 접근법이 중간 단계의 노이즈 제거 과정을 시각화하고 해석할 수 있는 메커니즘을 제안한다. Interpreter token 분석을 통해 투명성을 28.6배 향상시키며, 실제 Gemma 모델에서 검증하여 텍스트 생성 품질 개선에 기여함을 보여준다.
+
+📖 원문 arXiv에서 보기 →
+</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/19/2606-20560v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>UNIEGO: 자기 중심 프록시를 통한 통합 시점 비디오 표현 학습</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20559v1/</link>
+      <description>authors: Wenhao Chi, Arkaprava Sinha, Dominick Reilly, Hieu Le, Srijan Das
+
+UNIEGO는 자기 중심 비디오 이해를 위한 계층적 다중 교사 증류 프레임워크로, ego-exo 시점·RGB/depth/skeleton 모달리티 등 9개 교사를 통합한다. 이기종 교사들을 직접 증류하는 대신, 프록시 모델로 다양한 교사 지식을 균질한 자기 중심 공간으로 변환한 후, SPD(Selective Proxy Distillation)로 각 샘플마다 신뢰할 수 있는 프록시만 선별적으로 증류한다. 3개 ego-exo 벤치마크에서 최고 성능을 달성했으며, 구조적 프록시 매개 지식 전달이 기존 다중 교사 증류 대비 더 풍부하고 구분 가능한 자기 중심 표현을 산출함을 확...</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/19/2606-20559v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>LedgerAgent: 정책 준수 도구 호출 에이전트를 위한 구조화 상태 관리</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/19/2606-20529v1/</link>
+      <description>authors: Md Nayem Uddin, Amir Saeidi, Eduardo Blanco, Chitta Baral
+
+LedgerAgent는 정책 준수 도구 호출 에이전트를 위한 추론 시간 방법으로, 관찰된 과제 상태를 별도 ledger에 분리 저장한 후 프롬프트에 렌더링한다. 또한 환경 변경 도구 호출 전 상태 종속 정책 제약을 ledger로 검증하여 정책 위반을 사전 차단한다. 표준 프롬프트 기반 도구 호출 대비 4개 고객 서비스 도메인에서 평균 pass@k 향상, 특히 엄격한 다중 시도 일관성 지표에서 가장 큰 개선을 보였다.
+
+</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/19/2606-20529v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>StylisticBias: 소수의 시각적 단서가 MLLM 사회 편향 주도</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/19/2606-20527v1/</link>
+      <description>authors: Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal, Samantha Dalal, Jana Diesner
+
+StylisticBias는 다중 모달 대량 언어 모델(MLLM)의 사회 편향에 대한 시각적 단서의 역할을 탐구한다. 성별·인종·연령 등 15개 보호 속성에 대한 25K 이미지의 대규모 실험을 통해, 시각적 스타일 요소(약간의 표정 변화, 특정 색조, 단순한 배경 등)만으로 MLLM의 편향 응답을 80% 이상 유도할 수 있음을 보여준다. 이 발견은 MLLM의 편향이 텍스트 콘텐츠뿐 아니라 시각적 양식 요소에 의해 지배적으로 조종될 수 있음을 시사하며, 향후 multimodal 편향 완화 연구에 중요한 함의를 제공한다.
+
+📖 원문 arXiv에서 ...</description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/19/2606-20527v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>내재적 능동 인지로 종합 다중 모달 이해 추구</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/18/2606-19341v1/</link>
+      <description>OmniAgent는 POMDP 기반 반복 인지-추론-행동 사이클로 동영상 이해 효율화
+
+</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/18/2606-19341v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Zero-shot 장기 촉수 조작: 다중 뷰 3D VLM 추론</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/18/2606-19340v1/</link>
+      <description>authors: Jisoo Kim, Sangwon Baik, Taeksoo Kim, Sungjoo Kim, Junyoung Lee, Mingi Choi, Hanbyul Joo
+
+Zero-shot 장기 촉수 조작을 위한 프레임워크로 calibrated 다중 뷰 RGB 이미지만으로 언어 명령을 실행 가능한 3D 작업 계획으로 변환한다. End-to-end 정책을 학습하는 대신 VLM으로 2D keypoint를 생성하고 다중 뷰 fusion으로 3D로 lift하여 triangulation과 reference-view ray voting을 결합한다. Pick-and-place와 도구 사용 모두 지원하며 실제 실험에서 단일 뷰 RGB-D grounding 및 파인 튜닝된 VLA baseline 대비 향상된 3D...</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/18/2606-19340v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>RNG-Bench: 비 Markov 게임에서 MLLM 기억력 평가</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/18/2606-19338v1/</link>
+      <description>authors: Shengyuan Ding, Xilin Wei, Xinyu Fang, Haodong Duan, Dahua Lin, Jiaqi Wang, Yuhang Zang
+
+RNG-Bench는 과거 관찰을 재구성하고 이를 행동에 활용하는 능력을 측정하는 비-Markov 게임 벤치마크로 Matching Pairs와 3D Maze 두 게임으로 구성된다. 가장 어려운 설정에서 약 128K 토큰 context와 350개 이미지 입력이 필요하며 현재 최고 수준 MLLM도仍未 달성했다. Memory Gap 분석을 통해 대부분의 잔여 오류가 결정 불량보다 기억 소실에서 비롯됨을 확인했으며 Qwen3.5-9B를 최적 정책 롤아웃으로 파인튜닝하면 일반 multimodal 능력을 저하시키지 않으면서 RNG-Bench ...</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/18/2606-19338v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Turing-RL: Turing 테스트 기반 사용자 시뮬레이터 학습</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/18/2606-19336v1/</link>
+      <description>authors: Yingshan Susan Wang, Cedegao E. Zhang, Linlu Qiu, Zexue He, Pengyuan Li, Alex Pentland, Roger P. Levy, Yoon Kim
+
+Turing-RL은 Turing 테스트 기반 강화학습로 사용자 시뮬레이터를 훈련하는 프레임워크로 LLM 심사위원의 구분 불가능성 점수를 reward로 활용한다. 기존 단일 ground truth 응답과의 log-probability 일치 최대화 방식과 달리 생성된 응답이 실제 사용자와 구별불가능하도록 최적화한다. 대화체 채팅과 Reddit 포럼 두 도메인에서 모두 LLM 및 인간 평가 기준으로 우수한 결과를 보였다.
+
+📖 원문 arXiv에서 보기 →
+</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/18/2606-19336v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>LOCUS로 법을 해방하다: 미국 지역 조례 코퍼스</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/18/2606-19334v1/</link>
+      <description>미국 지역 조례 대규모 코퍼스 구축
+
+</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/18/2606-19334v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Chandra-Gaia 대응표: ML로 X선원과 광학원 교차 매칭</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/18/2606-19329v1/</link>
+      <description>authors: V. Samuel Pérez-Díaz, Vinay L. Kashyap, Joshua D. Ingram, David Fouhey, Juan Rafael Martínez-Galarza, Pavlos Protopapas, Jeremy J. Drake, Dong-Woo Kim, Cecilia Garraffo
+
+Chandra-Gaia 교차 매칭 프레임워크는 위치 정보뿐 아니라 빛의 밝기 색 거리 등 특성을 활용하여 X선원(Chandra)과 광학원(Gaia) 간의 대응표를 LightGBM 분류기로 구축한다. 약 254k X선원 중 113k 대응표를 찾아냈고, Orion ultradeep 프로젝트(COUP) 검증에서 Bayesian 교차 매칭 도구 NWAY의 95%를 재현했으며 위치 정보 없이도 일...</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/18/2606-19329v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>UBP2: 불확실성 균형 선호 계획법</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/18/2606-19328v1/</link>
+      <description>authors: Mohamed Nabail, Leo Cheng, Jingmin Wang, Nicholas Rhinehart
+
+UBP2 핵심: 기존 preference-based RL이 수동적 데이터 수집에 의존해 초기 학습 효율이 낮던 문제를, 보상·동역학·가치 함수 불확실성을 통합적으로 고려하는 모델 기반 계획법으로 해결했다. 탐험과 활용의 트레이드오프를 명시적으로 최적화하며, Meta-World에서 모델 프리 방식 및 비 낙관적 모델 기반 baselines보다 현저히 높은 표본 효율을 달성. 유한·무한 시간 전제 모두에 대해 준선형 regret 보장 제공.
+
+📖 원문 arXiv에서 보기 →
+</description>
+      <pubDate>Thu, 18 Jun 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/18/2606-19328v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+  </channel>
+</rss>
