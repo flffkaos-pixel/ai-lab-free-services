@@ -2,14 +2,8 @@ name: 매일 자동 논문 포스팅
 
 on:
   schedule:
-      - cron: '0 21 * * *'
+    - cron: '0 0 * * *'   # 매일 UTC 0시 = KST 09시
   workflow_dispatch:
-    inputs:
-      force_regenerate:
-        description: '오늘 글 강제 재생성 (기존 덮어쓰기)'
-        required: false
-        default: false
-        type: boolean
 
 jobs:
   build-deploy:
@@ -17,55 +11,44 @@ jobs:
     permissions:
       contents: write
       pages: write
-
     steps:
-      - name: master blog 소스 가져오기
-        uses: actions/checkout@v4
-        with:
-          repository: flffkaos-pixel/ai-lab-free-services
-          ref: master
-          path: blog-src
+      - uses: actions/checkout@v4
 
-      - name: Python 설치
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests
 
-      - name: 기존 포스트 정리 (force_regenerate 시)
-        if: ${{ github.event.inputs.force_regenerate == 'true' }}
-        run: |
-          today=$(TZ='Asia/Seoul' date '+%Y-%m-%d')
-          rm -f blog-src/blog/_posts/${today}-*.md
-          echo "오늘($today) 포스트 삭제 완료, 재생성합니다."
+      - name: 의존성
+        run: pip install requests
 
-      - name: arXiv에서 논문 수집
+      - name: arXiv 논문 수집 + 한국어 요약
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python blog-src/scripts/fetch_papers.py
+        run: python scripts/fetch_papers.py
 
-      - name: 생성된 포스트 커밋 (중복 방지 + 기록 보존)
+      - name: 새 포스트 커밋 + 푸시 (누적 보존)
         run: |
-          cd blog-src
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add blog/_posts/
-          git diff --staged --quiet || git commit -m "auto: daily post 생성"
-          git push
+          git add blog/_posts/ blog/field-*.html scripts/fetch_papers.py 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "변경 없음 - 종료"
+          else
+            git commit -m "auto: daily papers + fields"
+            git push
+          fi
 
-      - name: field 페이지 생성
-        run: python blog-src/scripts/generate_field_pages_only.py
-
-      - name: Jekyll 빌드
+      - name: Jekyll 빌드 (커스텀 _site 폴더)
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./blog-src/blog
-          destination: ./blog-src/_site
+          source: ./blog
+          destination: ./_site
+
+      - name: Pages 아티팩트 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
       - name: GitHub Pages 배포
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./blog-src/_site
-          publish_branch: gh-pages
-          force_orphan: false
+        id: deployment
+        uses: actions/deploy-pages@v4
