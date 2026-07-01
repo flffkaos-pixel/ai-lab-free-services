@@ -134,24 +134,48 @@ def _call_groq(prompt, model, system_msg):
 
 
 def summarize(title, abstract):
+    # Few-shot examples help the model output richer Korean summaries
+    fewshot = ""\
+        "Example 1:\n" \
+        "English title: LoRA: Low-Rank Adaptation of Large Language Models\n" \
+        "English abstract: We propose Low-Rank Adaptation, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture. Our method reduces the number of trainable parameters by 10,000x and GPU memory by 3x compared to full fine-tuning.\n" \
+        "제목: 대규모 언어 모델의 저랭크 적응 (LoRA)\n" \
+        "요약: 사전 훈련 가중치를 동결하고 적은 매개변수만 학습해 전체 미세조정 대비 매개변수 1만 배·GPU 메모리 3배 절감.\n\n" \
+        "Example 2:\n" \
+        "English title: Retrieval-Augmented Generation for Large Language Models: A Survey\n" \
+        "English abstract: RAG enhances LLM outputs by retrieving relevant external knowledge. Our benchmark on knowledge-intensive tasks shows 7B RAG models outperform 70B closed models.\n" \
+        "제목: 대규모 언어 모델을 위한 검색 증강 생성 (RAG) 서베이\n" \
+        "요약: 외부 지식 검색으로 LLM 출력을 강화해 지식 집약 과제에서 7B RAG 모델이 70B 폐쇄형 모델을 능가.\n\n"
+
     prompt = (
         "Task: Read an English AI paper and write a Korean translation of the title plus a ONE-LINE summary.\n\n"
-        "=== OUTPUT FORMAT (write ONLY these 2 lines, nothing else) ===\n"
+        "=== EXAMPLES (follow this exact style) ===\n"
+        f"{fewshot}"
+        "=== OUTPUT FORMAT (write ONLY 2 lines, nothing else) ===\n"
         "제목: <Korean title, natural and concise, under 80 chars>\n"
-        "요약: <ONE sentence that includes the SPECIFIC CORE FINDING or RESULT. Use numbers/percentages if available.>\n\n"
+        "요약: <ONE sentence describing the SPECIFIC CORE RESULT, METHOD, and DATASET/SCORE.> \n\n"
         "=== CRITICAL RULES ===\n"
-        "- The 요약 must describe the paper's KEY RESULT, not the method or background\n"
-        "- Good: 'CoT 프롬프트를 적용해 수학 추론 능력을 기존 대비 23% 향상'\n"
-        "- Good: '단 7B 모델이 GPT-4 수준의 수학 문제를 풀어내는 Few-shot 학습 기법 제안'\n"
-        "- Bad: '이 논문은 대규모 언어 모델의 추론 능력을 향상시키는 방법을 제안합니다'\n"
-        "- Include concrete numbers (accuracy %, BLEU score, parameters) if present in abstract\n"
+        "- The 요약 must include ALL of: WHAT they did + WHY it matters + KEY number/metric\n"
+        "- DO NOT just say 'X% 달성' as the whole summary - always include WHAT was achieved\n"
+        "- Good: 'CoT 프롬프팅을 적용해 수학 추론 정확도를 기존 23%에서 78%로 55pp 향상'\n"
+        "- Good: '4개 GPU로 1B 매개변수 모델을 학습하면서 Llama-7B와 동등한 성능 확보'\n"
+        "- Bad: '성능 15% 향상 달성' (no context about WHAT method)\n"
+        "- Bad: '이 논문은 LLM의 추론 능력을 향상시킨다' (vague, no numbers)\n"
+        "- Include concrete numbers/percentages/benchmark names from the abstract\n"
         "- 요약 length: 30~70 characters (Korean)\n\n"
-        "=== INPUT ===\n"
+        "=== INPUT (response after examples) ===\n"
         f"English title: {title}\n\n"
         f"English abstract: {abstract[:1200]}\n\n"
-        "=== OUTPUT (2 lines only) ==="
+        "=== OUTPUT (2 lines only, exactly like the examples) ==="
     )
-    system_msg = "You summarize AI research papers. Output EXACTLY 2 lines, no extra text:\nLine 1: 제목: <Korean title>\nLine 2: 요약: <Key result with numbers (e.g. '정확도 89.2% 달성', '기존 대비 23% 향상'). No method descriptions.>\nBad example: '이 논문은 LLM의 성능을 개선한다' (no numbers, vague)\nGood example: 'CoT 프롬프트로 수학 추론 능력 23% 향상' (specific result)"
+    system_msg = (
+        "You are a Korean AI research translator. Output EXACTLY 2 lines:\n"
+        "Line 1: 제목: <Korean title - natural>\n"
+        "Line 2: 요약: <concise 30-70 char Korean summary including WHAT, METHOD, and KEY METRIC/SCORE>\n"
+        "Look at the examples above. Follow that style precisely.\n"
+        "BAD: '성능 15% 향상' (vague), 'X% 달성', '이 논문은 ~다' (no result)\n"
+        "GOOD: 'CoT 프롬프팅을 적용해 수학 추론 정확도를 기존 23%에서 78%로 55pp 향상'"
+    )
     for model in MODELS:
         print(f"  모델 시도: {model}")
         result = _call_groq(prompt, model, system_msg)
