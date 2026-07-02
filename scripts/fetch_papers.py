@@ -233,89 +233,63 @@ def make_post(paper, today_str):
 
 
 FIELD_DEFS = [
-    ("AI/ML",   "🤖 AI/ML",            "ai-ml",      1),
-    ("CV",      "👁 Computer Vision",  "cv",         2),
-    ("NLP",     "📝 NLP",              "nlp",        3),
-    ("RL",      "🎮 Reinforcement",    "rl",         4),
-    ("음성/음악", "🎵 음성/음악",         "audio",      5),
-    ("로봇",     "🦾 로봇",              "robotics",   6),
-    ("통계",     "📊 통계",              "statistics", 7),
+    ("AI/ML",   "AI/ML - AI 논문 한 줄",          "ai-ml",      1),
+    ("CV",      "CV - AI 논문 한 줄",              "cv",         2),
+    ("NLP",     "NLP - AI 논문 한 줄",             "nlp",        3),
+    ("RL",      "RL - AI 논문 한 줄",              "rl",         4),
+    ("음성/음악", "음성/음악 - AI 논문 한 줄",       "audio",      5),
+    ("로봇",     "로봇 - AI 논문 한 줄",            "robotics",   6),
+    ("통계",     "통계 - AI 논문 한 줄",            "statistics", 7),
 ]
 
 
 def generate_field_pages(all_posts):
-    """Generate static field category pages with actual post content baked in."""
-    tabs_html = []
-    for field_name, label, safe, _ in FIELD_DEFS:
-        tabs_html.append(f'<a href="/ai-lab-free-services/field/{safe}/">{label}</a>')
-    tabs_block = "\n    ".join(tabs_html)
-
-    for field_name, label, safe, _ in FIELD_DEFS:
-        # Filter posts for this field, sort by date desc, take latest 50
+    """Generate field pages using default layout (same header/nav as main site)."""
+    for field_name, title, safe, _ in FIELD_DEFS:
         field_posts = [p for p in all_posts if p.get("field") == field_name]
         field_posts.sort(key=lambda p: p.get("date", ""), reverse=True)
         field_posts = field_posts[:50]
 
-        cards_html = []
+        cards = []
         for p in field_posts:
             pid = p.get("id", "")
             pid_stub = pid.replace("v1", "").replace("v2", "")
-            url = f"/ai-lab-free-services/{p.get('date', '').replace('-', '/')}/{pid_stub}/"
-            title = escape_yaml(p.get("ko_title", p.get("title", "Untitled")))
-            summary = escape_yaml(p.get("summary", ""))
-            date_str = p.get("date", "")
-            arxiv = pid
-            cards_html.append(f"""        <a class="card" href="{url}">
-          <h3>{title}</h3>
-          <p class="summary">{summary}</p>
-          <div class="meta">
-            <span class="tag">arXiv:{arxiv}</span>
-            <span>📄 {date_str}</span>
-            <span>🏷 {field_name}</span>
-          </div>
-        </a>""")
+            url = "/ai-lab-free-services/" + p.get('date', '').replace('-', '/') + "/" + pid_stub + "/"
+            title2 = p.get("ko_title", p.get("title", "Untitled"))
+            summary = p.get("summary", "")
+            cards.append(
+                '<a class="card" href="' + url + '">\n'
+                + '          <h3>' + title2 + '</h3>\n'
+                + '          <p class="summary">' + summary + '</p>\n'
+                + '          <div class="meta">\n'
+                + '            <span class="tag">arXiv:' + pid + '</span>\n'
+                + '            <span>&#x1F4C4; ' + p.get('date', '') + '</span>\n'
+                + '            <span>&#x1F3F7; ' + field_name + '</span>\n'
+                + '          </div>\n'
+                + '        </a>'
+            )
 
-        cards_block = "\n".join(cards_html) if cards_html else (
-            '      <p style="text-align:center; color:#888; padding:40px 0;">\n'
-            "        아직 등록된 논문이 없습니다.\n"
-            "      </p>"
+        block = "\n".join(cards) if cards else (
+            '<p style="text-align:center;color:#888;padding:40px 0;">\n'
+            '  아직 등록된 논문이 없습니다.\n'
+            '</p>'
         )
 
-        page = f"""---
-layout: null
-permalink: /field/{safe}/
----
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{label} — AI 논문 한 줄</title>
-  <link rel="stylesheet" href="/ai-lab-free-services/assets/style.css">
-</head>
-<body>
+        page = ("---\n"
+                + "layout: default\n"
+                + "title: " + title + "\n"
+                + "---\n"
+                + "\n"
+                + '<div class="wrap">\n'
+                + '  <h2 class="date-group">\U0001f4da ' + field_name + ' \ub17c\ubb38</h2>\n'
+                + '  <div class="cards">\n'
+                + block + "\n"
+                + '  </div>\n'
+                + '</div>\n')
 
-<header class="site-header">
-  <h1>{label}</h1>
-  <p>이 분야의 최신 논문을 한국어 한 줄로 정리합니다</p>
-  <nav class="site-nav">
-    {tabs_block}
-  </nav>
-</header>
-
-<div class="wrap">
-  <h2 class="date-group">📚 {field_name} 논문</h2>
-  <div class="cards">
-{cards_block}
-  </div>
-</div>
-
-</body>
-</html>"""
-        out_path = os.path.join(BLOG_DIR, f"field-{safe}.html")
-        with open(out_path, "w", encoding="utf-8") as f:
+        with open("blog/field-" + safe + ".html", "w", encoding="utf-8") as f:
             f.write(page)
-        print(f"  📄 페이지 생성: field-{safe}.html")
+        print("  field-" + safe + ".html")
 
 
 def load_existing_arxiv_ids():
@@ -360,21 +334,21 @@ def main():
     success = 0
     for paper in unique[:8]:
         if paper["id"] in existing_ids:
-            print(f"  ↩ {paper['id']}: 이미 다른 날짜에 존재, 건너뜀")
+            print(f"  \u21a9 {paper['id']}: 이미 다른 날짜에 존재, 건너뜀")
             continue
         filename = f"{today_str}-{paper['id'].replace('.', '-')}.md"
         out_path = os.path.join(POSTS_DIR, filename)
         if os.path.exists(out_path):
-            print(f"  ↩ {paper['id']}: 이미 오늘 포스트 존재, 건너뜀")
+            print(f"  \u21a9 {paper['id']}: 이미 오늘 포스트 존재, 건너뜀")
             continue
-        print(f"  → {paper['id']} [{detect_field(paper)}]: {paper['title'][:60]}")
+        print(f"  \u2192 {paper['id']} [{detect_field(paper)}]: {paper['title'][:60]}")
         post = make_post(paper, today_str)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(post)
         success += 1
         time.sleep(15)
 
-    # Load all existing posts for field pages (both newly created and pre-existing)
+    # Load all existing posts for field pages
     all_posts = []
     for fname in os.listdir(POSTS_DIR):
         if not fname.endswith(".md"):
