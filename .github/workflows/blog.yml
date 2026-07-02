@@ -8,13 +8,8 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       contents: write
-      pages: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -34,7 +29,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add blog/_posts/ blog/field-*.html scripts/fetch_papers.py 2>/dev/null || true
+          git add blog/_posts/ blog/field-*.html scripts/fetch_papers.py blog/assets/style.css 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "변경 없음 - 종료"
           else
@@ -42,17 +37,19 @@ jobs:
             git push
           fi
 
-      - name: Jekyll 빌드 (커스텀 _site 폴더)
+      - name: Jekyll 빌드
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./blog
           destination: ./_site
 
-      - name: Pages 아티팩트 업로드
-        uses: actions/upload-pages-artifact@v3
+      - name: GitHub Pages 배포 (gh-pages 브랜치)
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./_site
-
-      - name: GitHub Pages 배포
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: false
+          user_name: 'github-actions'
+          user_email: 'actions@github.com'
+          commit_message: 'deploy: ${{ github.event.head_commit.message }}'
