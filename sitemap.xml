@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,11 +33,151 @@
   
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/field/ai-ml,cv,nlp,rl,audio,robotics,statistics/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/07/02/2607-01100v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/07/02/2607-01089v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/07/02/2607-01088v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/07/02/2607-01087v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/07/02/2607-01086v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/07/02/2607-01083v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/07/02/2607-01077v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/07/02/2607-01061v1/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/07/01/2606-32040v1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/07/01/2606-32039v1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/07/01/2606-32038v1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/07/01/2606-32034v1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/07/01/2606-32028v1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/30/2606-30645v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/30/2606-30639v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/30/2606-30638v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/30/2606-30634v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/%EB%A1%9C%EB%B4%87/2026/06/30/2606-30632v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/ai/ml/2026/06/30/2606-30627v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/nlp/2026/06/30/2606-30616v1/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/cv/2026/06/29/2606-27377v1/</loc>
