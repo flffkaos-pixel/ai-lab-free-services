@@ -247,7 +247,7 @@ def generate_field_pages(all_posts):
     """Generate static field category pages with actual post content baked in."""
     tabs_html = []
     for field_name, label, safe, _ in FIELD_DEFS:
-        tabs_html.append(f'<a class="field-tab" href="/ai-lab-free-services/field/{safe}/">{label}</a>')
+        tabs_html.append(f'<a href="/ai-lab-free-services/field/{safe}/">{label}</a>')
     tabs_block = "\n    ".join(tabs_html)
 
     for field_name, label, safe, _ in FIELD_DEFS:
@@ -298,7 +298,7 @@ permalink: /field/{safe}/
 <header class="site-header">
   <h1>{label}</h1>
   <p>이 분야의 최신 논문을 한국어 한 줄로 정리합니다</p>
-  <nav class="field-tabs">
+  <nav class="site-nav">
     {tabs_block}
   </nav>
 </header>
