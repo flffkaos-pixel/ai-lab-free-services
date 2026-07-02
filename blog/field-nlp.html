@@ -8,7 +8,7 @@ permalink: /field/nlp/
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>📝 NLP — AI 논문 한 줄</title>
-  <link rel="stylesheet" href="{ '/assets/style.css' | relative_url }">
+  <link rel="stylesheet" href="/ai-lab-free-services/assets/style.css">
 </head>
 <body>
 
@@ -16,39 +16,109 @@ permalink: /field/nlp/
   <h1>📝 NLP</h1>
   <p>이 분야의 최신 논문을 한국어 한 줄로 정리합니다</p>
   <nav class="field-tabs">
-    <a class="field-tab" href="{{ '/field/ai-ml/' | relative_url }}">🤖 AI/ML</a>
-    <a class="field-tab" href="{{ '/field/cv/' | relative_url }}">👁 Computer Vision</a>
-    <a class="field-tab" href="{{ '/field/nlp/' | relative_url }}">📝 NLP</a>
-    <a class="field-tab" href="{{ '/field/rl/' | relative_url }}">🎮 Reinforcement</a>
-    <a class="field-tab" href="{{ '/field/audio/' | relative_url }}">🎵 음성/음악</a>
-    <a class="field-tab" href="{{ '/field/robotics/' | relative_url }}">🦾 로봇</a>
-    <a class="field-tab" href="{{ '/field/statistics/' | relative_url }}">📊 통계</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/ai-ml/">🤖 AI/ML</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/cv/">👁 Computer Vision</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/nlp/">📝 NLP</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/rl/">🎮 Reinforcement</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/audio/">🎵 음성/음악</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/robotics/">🦾 로봇</a>
+    <a class="field-tab" href="/ai-lab-free-services/field/statistics/">📊 통계</a>
   </nav>
 </header>
 
 <div class="wrap">
   <h2 class="date-group">📚 NLP 논문</h2>
   <div class="cards">
-    {{%- assign found = 0 -%}}
-    {{%- for post in site.posts -%}}
-      {{%- if post.field == "NLP" -%}}
-        <a class="card" href="{{{ post.url | relative_url }}}">
-          <h3>{{{ post.title }}}</h3>
-          <p class="summary">{{{ post.excerpt | strip_html | truncate: 130 }}}</p>
+        <a class="card" href="/ai-lab-free-services/2026/07/01/2606.32038/">
+          <h3>자기 설명 훈련이 행동 변화를 추적하는 자기 반영적 결합</h3>
+          <p class="summary">자기 설명 훈련을 통해 모델이 89.2% 정확도로 자신의 행동을 설명할 수 있는 자기 반영적 결합을 달성</p>
           <div class="meta">
-            <span class="tag">arXiv:{{{ post.arxiv_id }}}</span>
-            <span>📄 {{ post.date | date: "%Y-%m-%d" }}</span>
-            <span>🏷 {{ post.field }}</span>
+            <span class="tag">arXiv:2606.32038v1</span>
+            <span>📄 2026-07-01</span>
+            <span>🏷 NLP</span>
           </div>
         </a>
-        {{%- assign found = 1 -%}}
-      {{%- endif -%}}
-    {{%- endfor -%}}
-    {{%- if found == 0 -%}}
-      <p style="text-align:center; color:#888; padding:40px 0;">
-        아직 등록된 논문이 없습니다.
-      </p>
-    {{%- endif -%}}
+        <a class="card" href="/ai-lab-free-services/2026/06/30/2606.30616/">
+          <h3>trillion-레벨 성능 달성하는 35B 에이전트 모델</h3>
+          <p class="summary">35B 에이전트 모델이 1T-레벨 성능을 달성, 6개의 다중 도메인에서 우수한 성능을 보임</p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.30616v1</span>
+            <span>📄 2026-06-30</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/29/2606.27347/">
+          <h3>유럽 정치 엘리트 네트워크 매핑</h3>
+          <p class="summary">유럽 정치 엘리트 네트워크를 위한 다언어 Entity-Relation 추출 파이프라인을 제안, 텍스트 정확도 68.2%~93.7% 달성</p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.27347v1</span>
+            <span>📄 2026-06-29</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/19/2606.20527/">
+          <h3>StylisticBias: 소수의 시각적 단서가 MLLM 사회 편향 주도</h3>
+          <p class="summary">15개 속성만으로 80% 편향 유발 가능, 25K 이미지 실험으로 소수의 시각적 단서가 MLLM의 사회적 편견을 지배적으로 조종함을 입증</p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.20527v1</span>
+            <span>📄 2026-06-19</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/18/2606.18237/">
+          <h3>ReproRepo</h3>
+          <p class="summary"></p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.18237v1</span>
+            <span>📄 2026-06-18</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/18/2606.18246/">
+          <h3>가변 너비 트랜스포머</h3>
+          <p class="summary"></p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.18246v1</span>
+            <span>📄 2026-06-18</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/18/2606.19334/">
+          <h3>LOCUS로 법을 해방하다: 미국 지역 조례 코퍼스</h3>
+          <p class="summary"></p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.19334v1</span>
+            <span>📄 2026-06-18</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/18/2606.19336/">
+          <h3>Turing-RL: Turing 테스트 기반 사용자 시뮬레이터 학습</h3>
+          <p class="summary">LLM 심사위원의 구분 불가능성 점수를 reward로 활용하여 사용자 시뮬레이터를 학습, 기존 ground truth 매칭 방식보다 우위</p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.19336v1</span>
+            <span>📄 2026-06-18</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/17/2606.18246/">
+          <h3>가변 너비 트랜스포머</h3>
+          <p class="summary"></p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.18246v1</span>
+            <span>📄 2026-06-17</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
+        <a class="card" href="/ai-lab-free-services/2026/06/16/2606.17053/">
+          <h3>문맥 인식 강화학습</h3>
+          <p class="summary"></p>
+          <div class="meta">
+            <span class="tag">arXiv:2606.17053v1</span>
+            <span>📄 2026-06-16</span>
+            <span>🏷 NLP</span>
+          </div>
+        </a>
   </div>
 </div>
 

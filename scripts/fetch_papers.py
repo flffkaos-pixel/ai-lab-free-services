@@ -243,13 +243,44 @@ FIELD_DEFS = [
 ]
 
 
-def generate_field_pages():
+def generate_field_pages(all_posts):
+    """Generate static field category pages with actual post content baked in."""
     tabs_html = []
     for field_name, label, safe, _ in FIELD_DEFS:
-        tabs_html.append(f'<a class="field-tab" href="{{{{ \'/field/{safe}/\' | relative_url }}}}">{label}</a>')
+        tabs_html.append(f'<a class="field-tab" href="/ai-lab-free-services/field/{safe}/">{label}</a>')
     tabs_block = "\n    ".join(tabs_html)
 
     for field_name, label, safe, _ in FIELD_DEFS:
+        # Filter posts for this field, sort by date desc, take latest 50
+        field_posts = [p for p in all_posts if p.get("field") == field_name]
+        field_posts.sort(key=lambda p: p.get("date", ""), reverse=True)
+        field_posts = field_posts[:50]
+
+        cards_html = []
+        for p in field_posts:
+            pid = p.get("id", "")
+            pid_stub = pid.replace("v1", "").replace("v2", "")
+            url = f"/ai-lab-free-services/{p.get('date', '').replace('-', '/')}/{pid_stub}/"
+            title = escape_yaml(p.get("ko_title", p.get("title", "Untitled")))
+            summary = escape_yaml(p.get("summary", ""))
+            date_str = p.get("date", "")
+            arxiv = pid
+            cards_html.append(f"""        <a class="card" href="{url}">
+          <h3>{title}</h3>
+          <p class="summary">{summary}</p>
+          <div class="meta">
+            <span class="tag">arXiv:{arxiv}</span>
+            <span>📄 {date_str}</span>
+            <span>🏷 {field_name}</span>
+          </div>
+        </a>""")
+
+        cards_block = "\n".join(cards_html) if cards_html else (
+            '      <p style="text-align:center; color:#888; padding:40px 0;">\n'
+            "        아직 등록된 논문이 없습니다.\n"
+            "      </p>"
+        )
+
         page = f"""---
 layout: null
 permalink: /field/{safe}/
@@ -260,7 +291,7 @@ permalink: /field/{safe}/
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{label} — AI 논문 한 줄</title>
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="stylesheet" href="/ai-lab-free-services/assets/style.css">
 </head>
 <body>
 
@@ -275,32 +306,12 @@ permalink: /field/{safe}/
 <div class="wrap">
   <h2 class="date-group">📚 {field_name} 논문</h2>
   <div class="cards">
-    {{{{%- assign found = 0 -%}}}}
-    {{{{%- for post in site.posts -%}}}}
-      {{{{%- if post.field == "{field_name}" -%}}}}
-        <a class="card" href="{{{{{{ post.url | relative_url }}}}}}">
-          <h3>{{{{{{ post.title }}}}}}</h3>
-          <p class="summary">{{{{{{ post.excerpt | strip_html | truncate: 130 }}}}}}</p>
-          <div class="meta">
-            <span class="tag">arXiv:{{{{{{ post.arxiv_id }}}}}}</span>
-            <span>📄 {{{{ post.date | date: "%Y-%m-%d" }}}}</span>
-            <span>🏷 {{{{ post.field }}}}</span>
-          </div>
-        </a>
-        {{{{%- assign found = 1 -%}}}}
-      {{{{%- endif -%}}}}
-    {{{{%- endfor -%}}}}
-    {{{{%- if found == 0 -%}}}}
-      <p style="text-align:center; color:#888; padding:40px 0;">
-        아직 등록된 논문이 없습니다.
-      </p>
-    {{{{%- endif -%}}}}
+{cards_block}
   </div>
 </div>
 
 </body>
-</html>
-"""
+</html>"""
         out_path = os.path.join(BLOG_DIR, f"field-{safe}.html")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page)
@@ -324,8 +335,6 @@ def load_existing_arxiv_ids():
 
 def main():
     os.makedirs(POSTS_DIR, exist_ok=True)
-    print("===== 분야 페이지 생성 =====")
-    generate_field_pages()
 
     print("\n===== 논문 수집 =====")
     queries = [("cat:cs.LG", 2),
@@ -364,6 +373,32 @@ def main():
             f.write(post)
         success += 1
         time.sleep(15)
+
+    # Load all existing posts for field pages (both newly created and pre-existing)
+    all_posts = []
+    for fname in os.listdir(POSTS_DIR):
+        if not fname.endswith(".md"):
+            continue
+        fpath = os.path.join(POSTS_DIR, fname)
+        with open(fpath, encoding="utf-8") as f:
+            content = f.read()
+        post = {"date": "", "title": "", "summary": "", "field": "", "id": ""}
+        for line in content.split("\n"):
+            if line.startswith("date:"):
+                post["date"] = line.split(":")[1].strip().split()[0] if " " in line else line.split(":")[1].strip()
+            elif line.startswith("title:"):
+                post["title"] = line.split(":", 1)[1].strip().strip('"')
+            elif line.startswith("summary:"):
+                post["summary"] = line.split(":", 1)[1].strip().strip('"')
+            elif line.startswith("field:"):
+                post["field"] = line.split(":", 1)[1].strip().strip('"')
+            elif line.startswith("arxiv_id:"):
+                post["id"] = line.split(":", 1)[1].strip().strip('"')
+        if post["field"] and post["id"]:
+            all_posts.append(post)
+
+    print("\n===== 분야 페이지 생성 =====")
+    generate_field_pages(all_posts)
 
     print(f"\n완료: {success}건 + 분야 페이지 {len(FIELD_DEFS)}건")
 
