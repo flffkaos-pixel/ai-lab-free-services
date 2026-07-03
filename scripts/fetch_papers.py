@@ -276,9 +276,10 @@ def generate_field_pages(all_posts):
         )
 
         page = ("---\n"
-                + "layout: default\n"
-                + "title: " + title + "\n"
-                + "---\n"
+                        + "layout: default\n"
+                        + "title: " + title + "\n"
+                        + "permalink: /field/" + safe + "/\n"
+                        + "---\n"
                 + "\n"
                 + '<div class="wrap">\n'
                 + '  <h2 class="date-group">\U0001f4da ' + field_name + ' \ub17c\ubb38</h2>\n'

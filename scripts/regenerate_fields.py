@@ -72,10 +72,11 @@ for field_name, title, safe in FIELD_DEFS:
     )
 
     page = ("---\n"
-            + "layout: default\n"
-            + "title: " + title + "\n"
-            + "---\n"
-            + "\n"
+                + "layout: default\n"
+                + "title: " + title + "\n"
+                + "permalink: /field/" + safe + "/\n"
+                + "---\n"
+                + "\n"
             + '<div class="wrap">\n'
             + '  <h2 class="date-group">\U0001f4da ' + field_name + ' \ub17c\ubb38</h2>\n'
             + '  <div class="cards">\n'
