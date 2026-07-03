@@ -74,7 +74,22 @@ small { font-size: .82em; }
 .site-nav a:hover { color: var(--accent-ink); background: var(--surface-2);
                    border-color: var(--accent-ink); text-decoration: none; }
 .site-nav a.active { background: var(--surface); color: var(--accent-ink);
-                     box-shadow: var(--shadow-sm); }
+                      box-shadow: var(--shadow-sm); }
+
+/* ---------- 검색 폼 ---------- */
+.header-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.search-form { display: flex; align-items: center; gap: 4px; }
+.search-input {
+  font-size: .85rem; padding: 6px 12px; border: 1px solid var(--border);
+  border-radius: var(--r-pill); background: var(--surface); color: var(--fg);
+  width: 180px; outline: none; transition: .15s;
+}
+.search-input:focus { border-color: var(--accent-ink); width: 220px; }
+.search-btn {
+  font-size: .9rem; background: none; border: none; cursor: pointer;
+  padding: 4px 8px; border-radius: var(--r-pill); transition: .12s;
+}
+.search-btn:hover { background: var(--surface-2); }
 
 /* ---------- 카드 (필드 페이지용) ---------- */
 .cards { display: flex; flex-direction: column; gap: 8px; }

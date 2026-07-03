@@ -82,7 +82,13 @@
 <body>
 
 <header class="site-header">
-  <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
+  <div class="header-top">
+    <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
+    <form class="search-form" action="/ai-lab-free-services/" method="get" role="search">
+      <input class="search-input" type="text" name="q" placeholder="논문 검색..." value="" aria-label="논문 검색">
+      <button class="search-btn" type="submit">🔍</button>
+    </form>
+  </div>
   <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
   <nav class="site-nav">
     <a href="/ai-lab-free-services/" >일일 논문</a>

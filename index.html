@@ -94,7 +94,13 @@
 <body>
 
 <header class="site-header">
-  <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
+  <div class="header-top">
+    <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
+    <form class="search-form" action="/ai-lab-free-services/" method="get" role="search">
+      <input class="search-input" type="text" name="q" placeholder="논문 검색..." value="" aria-label="논문 검색">
+      <button class="search-btn" type="submit">🔍</button>
+    </form>
+  </div>
   <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
   <nav class="site-nav">
     <a href="/ai-lab-free-services/" class="active">일일 논문</a>
@@ -125,6 +131,8 @@
 </header>
 
 <main class="container">
+
+
 <section class="intro">
   <p>매일 <strong>오전 9시 KST</strong>, arXiv에서 선정된 최신 AI 논문을 분야별로 분류하여
   <strong>한국어 한 줄 요약</strong>으로 제공합니다.</p>
