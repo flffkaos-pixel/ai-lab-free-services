@@ -76,6 +76,47 @@ small { font-size: .82em; }
 .site-nav a.active { background: var(--surface); color: var(--accent-ink);
                      box-shadow: var(--shadow-sm); }
 
+/* ---------- 카드 (필드 페이지용) ---------- */
+.cards { display: flex; flex-direction: column; gap: 8px; }
+.card {
+  display: block;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow .15s, border-color .15s;
+}
+.card:hover { border-color: var(--accent-ink); box-shadow: var(--shadow-sm); }
+.card h3 {
+  margin: 0 0 4px;
+  font-size: .95rem;
+  font-weight: 650;
+  color: var(--fg);
+  line-height: 1.5;
+}
+.card .summary {
+  margin: 0 0 6px;
+  font-size: .82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.card .meta {
+  font-size: .78rem;
+  color: var(--muted-2);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card .tag {
+  background: var(--surface-2);
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-weight: 650;
+  font-size: .74rem;
+}
+
 /* ---------- 공통 카드 ---------- */
 .intro, .dashboard, .track-intro, .sector-news, .stock-card, .track-card,
 .chart-widget { background: var(--surface); border: 1px solid var(--border);
