@@ -48,10 +48,13 @@ small { font-size: .82em; }
 /* ---------- 헤더 ---------- */
 .site-header {
   max-width: 900px; margin: 0 auto; padding: 30px 22px 18px; position: relative;
+  text-align: center;
 }
 .site-title { font-size: 1.32rem; font-weight: 800; color: var(--fg); letter-spacing: -0.03em; }
 .site-title:hover { text-decoration: none; }
-.site-tagline { color: var(--muted); font-size: .9rem; margin: 7px 0 0; max-width: 70ch; }
+.site-tagline { color: var(--muted); font-size: .9rem; margin: 7px auto 0; max-width: 70ch; }
+/* ---------- 검색 폼 (nav 위, 가운데) ---------- */
+.search-form { display: flex; align-items: center; gap: 4px; margin: 6px 0 0; justify-content: center; }
 #refresh-btn {
   position: absolute; top: 30px; right: 22px;
   display: inline-flex; align-items: center; gap: 6px;
