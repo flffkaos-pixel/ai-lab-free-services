@@ -3,6 +3,8 @@ layout: default
 permalink: /
 ---
 
+{% assign q = page.search_query | default: '' %}
+
 <section class="intro">
   <p>매일 <strong>오전 9시 KST</strong>, arXiv에서 선정된 최신 AI 논문을 분야별로 분류하여
   <strong>한국어 한 줄 요약</strong>으로 제공합니다.</p>
