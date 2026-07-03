@@ -253,7 +253,7 @@ def generate_field_pages(all_posts):
         cards = []
         for p in field_posts:
             pid = p.get("id", "")
-            pid_stub = pid.replace("v1", "").replace("v2", "")
+            pid_stub = pid.replace(".", "-")
             url = "/ai-lab-free-services/" + p.get('date', '').replace('-', '/') + "/" + pid_stub + "/"
             title2 = p.get("ko_title", p.get("title", "Untitled"))
             summary = p.get("summary", "")
