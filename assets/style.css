@@ -76,15 +76,14 @@ small { font-size: .82em; }
 .site-nav a.active { background: var(--surface); color: var(--accent-ink);
                       box-shadow: var(--shadow-sm); }
 
-/* ---------- 검색 폼 ---------- */
-.header-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-.search-form { display: flex; align-items: center; gap: 4px; }
+/* ---------- 검색 폼 (nav 위) ---------- */
+.search-form { display: flex; align-items: center; gap: 4px; margin: 4px 0 0; }
 .search-input {
   font-size: .85rem; padding: 6px 12px; border: 1px solid var(--border);
   border-radius: var(--r-pill); background: var(--surface); color: var(--fg);
-  width: 180px; outline: none; transition: .15s;
+  width: 100%; max-width: 340px; outline: none; transition: .15s; box-sizing: border-box;
 }
-.search-input:focus { border-color: var(--accent-ink); width: 220px; }
+.search-input:focus { border-color: var(--accent-ink); }
 .search-btn {
   font-size: .9rem; background: none; border: none; cursor: pointer;
   padding: 4px 8px; border-radius: var(--r-pill); transition: .12s;

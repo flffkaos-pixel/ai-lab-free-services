@@ -3,23 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>검색 — AI 논문 한 줄</title>
+  
+  
+  
+  <title>AI 논문 한 줄 | arXiv AI 논문 한국어 요약</title>
+  
+  <!-- Primary Meta — page.content의 첫 단락을 description으로 사용 -->
+    
+    <meta name="description" content="매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공.">
+  <meta name="keywords" content="AI 논문, arXiv, 논문 요약, 머신러닝, 딥러닝, 한국어 논문, AI 연구, 컴퓨터비전, NLP, 강화학습">
+  <meta name="author" content="AI 논문 한 줄">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://flffkaos-pixel.github.io/ai-lab-free-services/search/">
+  <meta name="google-site-verification" content="L79QmV2Kl2q46r95AEfpSzbFd49GSmCPF2iwi8Regt4" />
+  <meta name="naver-site-verification" content="df6983ed314e1059fa104a39bbdf00647a136af3" />
+  <meta name="google-adsense-account" content="ca-pub-1955893232253258">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 논문 한 줄 | arXiv AI 논문 한국어 요약">
+  <meta property="og:description" content="매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공.">
+  <meta property="og:url" content="https://flffkaos-pixel.github.io/ai-lab-free-services/search/">
+  <meta property="og:site_name" content="AI 논문 한 줄">
+  <meta property="og:locale" content="ko_KR">
+  
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 논문 한 줄 | arXiv AI 논문 한국어 요약">
+  <meta name="twitter:description" content="매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약. AI/ML, CV, NLP, RL, 음성/음악, 로봇, 통계 7개 분야별 제공.">
+  
+  <!-- JSON-LD Structured Data -->
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI 논문 한 줄",
+    "alternateName": "AI Paper Korean Summary",
+    "url": "https://flffkaos-pixel.github.io/ai-lab-free-services/",
+    "description": "매일 오전 9시, arXiv 최신 AI 논문을 한국어 한 줄로 요약합니다.",
+    "inLanguage": "ko",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://flffkaos-pixel.github.io/ai-lab-free-services/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  
+  
   <link rel="stylesheet" href="/ai-lab-free-services/assets/style.css">
-  <meta name="robots" content="noindex">
+  <link rel="alternate" type="application/atom+xml" title="AI 논문 한 줄 RSS" href="/ai-lab-free-services/feed.xml">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-top">
-    <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
-    <form class="search-form" action="/ai-lab-free-services/search/" method="get" role="search">
-      <input class="search-input" type="text" name="q" placeholder="논문 검색..." value="" aria-label="논문 검색">
-      <button class="search-btn" type="submit">🔍</button>
-    </form>
-  </div>
+  <a class="site-title" href="/ai-lab-free-services/">AI 논문 한 줄</a>
   <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
+  <form class="search-form" action="/ai-lab-free-services/search/" method="get" role="search">
+    <input class="search-input" type="text" name="q" placeholder="논문 검색..." aria-label="논문 검색">
+    <button class="search-btn" type="submit">🔍</button>
+  </form>
   <nav class="site-nav">
-    <a href="/ai-lab-free-services/">일일 논문</a>
+    <a href="/ai-lab-free-services/" >일일 논문</a>
     
     
       
@@ -47,11 +96,774 @@
 </header>
 
 <main class="container">
-  <h2>🔍 검색 결과</h2>
-  
-  
-    <p style="text-align:center; color:#888; padding:40px 0;">검색어를 입력해주세요.</p>
-  
+<h2>🔍 검색 결과</h2>
+
+<div id="search-results">
+  <p style="text-align:center; color:var(--muted); padding:40px 0;" id="search-status">검색어를 입력해주세요.</p>
+</div>
+
+<script>
+(function() {
+  // GET ?q=... 읽기
+  const params = new URLSearchParams(window.location.search);
+  const q = (params.get('q') || '').trim();
+  if (!q) return;
+
+  const status = document.getElementById('search-status');
+  const resultsDiv = document.getElementById('search-results');
+
+  // 모든 포스트 데이터를 JSON으로 내장
+  const posts = [
+    
+    {
+      title: "세계 디렉터: 지속적 동적 메모리와 제어 가능한 세계 시뮬레이터 구축",
+      summary: "세계 디렉터는 지속적 동적 객체 메모리와 자유로운 시점 탐색을 지원하는 제어 가능한 비디오 세계 모델 프레임워크를 제안, 실험 결과로 3D 트랙과 카메라 움직임을 조정하는 LLM을 사용해 3D 물리 동적을 시각 생성에서 분리, 동적 엔티티의 정확한 시각적 정체성을 유지.",
+      field: "CV",
+      arxiv_id: "2607.02517v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02517v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "Align4D 프레임워크 개발",
+      summary: "Align4D 프레임워크를 통해 X모드 입력을 동시 비디오-3D 쌍으로 변환해 4D 생성을 가능케 함, X4D 데이터셋에서 4D 생성 성능 35.4% 향상.",
+      field: "CV",
+      arxiv_id: "2607.02516v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02516v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "분산 공격에 대한 지속 상태 AI 제어",
+      summary: "지속 코드베이스에서 코드를 반복적으로 배포하는 AI 에이전트에 대한 분산 공격을 연구해 Iterative VibeCoding을 제안, 65% 이상의 높은 도피성 확보.",
+      field: "AI/ML",
+      arxiv_id: "2607.02514v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02514v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "LACUNA: 모델 언러닝 정확도 테스트베드",
+      summary: "LACUNA를 통해 1B, 7B OLMo 모델의 개인 정보가 저장된 매개변수 90%를 정확하게 삭제하는 방법을 발견.",
+      field: "NLP",
+      arxiv_id: "2607.02513v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02513v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "프로그래밍을 가중치로: 모호한 함수 프로그래밍 패러다임",
+      summary: "PAW 프로그래밍을 통해 0.6B Qwen3 인터프리터가 32B 모델과 동등한 성능을 달성해 50배의 메모리 절감.",
+      field: "AI/ML",
+      arxiv_id: "2607.02512v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02512v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "시각-촉각 세계 행동 모델 (VT-WAM)",
+      summary: "시각-촉각 정보를 통합해 6개의 실제 세계 촉각 집중 과제에서 71.67% 성공률 달성해 Fast-WAM보다 26.67%, OmniVTLA보다 35.84% 높은 성능을 보였다.",
+      field: "로봇",
+      arxiv_id: "2607.02503v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02503v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "고장 허용 연구 파이프라인: 물리학 연구 자동화",
+      summary: "고장 허용 연구 파이프라인을 통해 11,083편의 물리학 논문을 기반으로 3개의 물리학적 발견을 발표할 수 있는 LLM를 개발.",
+      field: "AI/ML",
+      arxiv_id: "2607.02329v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02329v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "공간 일반화 향상을 위한 다이나믹 데이터 수집",
+      summary: "VLA 모델의 공간 일반화를 향상하기 위해 다이나믹 카메라 모션과 다양한 정적 관점을 결합한 하이브리드 전략을 제안해 3배 이상의 성능 향상.",
+      field: "로봇",
+      arxiv_id: "2607.02322v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02322v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "신경 안내 진화적 비디오 합성 (NEvo)",
+      summary: "동적 시각 입력에 대한 신경 안내 프레임워크를 통해 동적 시각 선택성을 위한 최적 자극을 합성해 3차원 ROI에 대한 활동을 10% 이상 향상.",
+      field: "CV",
+      arxiv_id: "2607.02317v1",
+      url: "/ai-lab-free-services/2026/07/03/2607-02317v1/",
+      date: "2026-07-03"
+    },
+    
+    {
+      title: "인간과 LLM 연구 아이디어 간 격차 측정",
+      summary: "LLM이 연구 아이디어를 생성할 때 인간 연구자와의 격차를 측정해, LLM 아이디어가 인간 연구자보다 2배 좁은 범위로 집중되는 경향을 발견.",
+      field: "NLP",
+      arxiv_id: "2607.01233v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01233v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "단일 트랜스포머 레이어만으로 RL 훈련 성능 달성 가능성",
+      summary: "단일 레이어 RL 훈련으로 전체 매개변수 RL 훈련 성능 90% 이상 회복 가능.",
+      field: "AI/ML",
+      arxiv_id: "2607.01232v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01232v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "언어 비판 학습 프레임워크 개발",
+      summary: "언어 비판 프레임워크를 통해 suboptimal 데모에서 55% 이상의 성능 향상을 달성.",
+      field: "AI/ML",
+      arxiv_id: "2607.01225v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01225v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "3D 자산 텍스처 생성을 위한 비디오 생성 모델",
+      summary: "Ink3D 프레임워크는 3D 자산에 복잡한 텍스처를 생성해 내는 비디오 생성 모델을 적용해 기존 3D 텍스처 생성보다 더 풍부한 텍스처를 생성한다.",
+      field: "CV",
+      arxiv_id: "2607.01222v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01222v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "실물 규모 이중 손가락 가구 조립을 위한 비전-언어-행동 모델",
+      summary: "비전-언어-행동 모델을 적용해 가구 조립 성공률을 48%에서 80%로 32% 향상, 21% 추가 향상.",
+      field: "로봇",
+      arxiv_id: "2607.01212v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01212v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "인터페이스 증강 조립 그래프 학습 프레임워크 (Linkify)",
+      summary: "인터페이스 증강 조립 그래프를 학습해 CAD 부분 추출 성능을 85% 정확도로 향상.",
+      field: "CV",
+      arxiv_id: "2607.01205v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01205v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "CPDDNet: 색도-극성 잡음 제거 및 데모사킹 네트워크",
+      summary: "CPFA 센서의 모자이크 출력에서 잡음 제거와 데모사킹을 동시에 수행해 실제 데이터셋에서 기존 방법보다 이미지 품질과 극성 매개변수 정확도 55.4% 향상.",
+      field: "CV",
+      arxiv_id: "2607.01100v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01100v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "데이터 효율적 적극 학습을 위한 그룹 불변 코세트 (GRINCO)",
+      summary: "GRINCO를 적용해 데이터의 변형에 대한 불변성을 고려해 3D 이미지 데이터셋에서 4배 더 효율적인 적극 학습 성능을 달성.",
+      field: "AI/ML",
+      arxiv_id: "2607.01089v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01089v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "로봇 공장용 RFM 서비스 시스템 ROSA",
+      summary: "로봇 공장용 RFM 서비스 시스템 ROSA를 제안해 공장 생산성 최대화와 로봇 배터리 수명 연장에 도움을 준다.",
+      field: "로봇",
+      arxiv_id: "2607.01088v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01088v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "지배 가능한 에이전트 소프트웨어 공학 사례 연구",
+      summary: "12주간의 개발 노트 88건, 420KLOC 코드, 1.16MLOC 테스트 등 1인 개발자에 의한 에이전트 AI를 활용한 문서 접근성 보완 시스템 개발 사례를 통해 지배 가능한 에이전트 구현을 위한 중간 범위 이론을 제안.",
+      field: "AI/ML",
+      arxiv_id: "2607.01087v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01087v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "LongVQUBench: 시각-언어 모델의 장기 동영상 품질 이해 평가 도구",
+      summary: "장기 동영상 품질 이해를 위한 LongVQUBench 도구를 제시해 1200여 동영상에 대한 1500개의 질문을 통해 지역적 왜곡, 시간적 연속성, 합산적 저하, 합리적 복잡성에 대한 평가를 수행.",
+      field: "CV",
+      arxiv_id: "2607.01086v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01086v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "비동기 RLHF에서 스테일러 학습률 스케일링 법칙",
+      summary: "비동기 GRPO에서 스테일러 롤아웃은 학습률 스케일링 법칙 O(S * eta)로 학습 속도에 영향을 미치며, 최대 안정 학습률은 S * G_upd / R_batch와 T * G_upd / R_crit에 의존한다.",
+      field: "AI/ML",
+      arxiv_id: "2607.01083v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01083v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "메시지 패스 언어 모델 (MPLM)",
+      summary: "메시지 패스 언어 모델을 통해 CoT 연쇄를 효율적으로 처리해 수학 추론 정확도 향상.",
+      field: "NLP",
+      arxiv_id: "2607.01077v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01077v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "반응 분류에 대한 증명 가능한 규칙 생성",
+      summary: "665,901 US 특허 반응을 분류하고 규칙을 자동으로 생성해 표준 분류 체계를 68에서 14,073개까지 확장하고, 97.7%의 미확인 반응을 분류해 상업적 분류기와 동등한 성능을 달성.",
+      field: "AI/ML",
+      arxiv_id: "2607.01061v1",
+      url: "/ai-lab-free-services/2026/07/02/2607-01061v1/",
+      date: "2026-07-02"
+    },
+    
+    {
+      title: "저해상도 얼굴 인식 모델 FaceMoE 제안",
+      summary: "FaceMoE는 저해상도 얼굴 인식 성능을 89.2% 달성",
+      field: "CV",
+      arxiv_id: "2606.32040v1",
+      url: "/ai-lab-free-services/2026/07/01/2606-32040v1/",
+      date: "2026-07-01"
+    },
+    
+    {
+      title: "토크나이저와 생성 모델을 동시에 학습하는 GEAR",
+      summary: "토크나이저와 생성 모델을 동시에 학습하는 GEAR를 통해 84.2%의 정확도 달성",
+      field: "CV",
+      arxiv_id: "2606.32039v1",
+      url: "/ai-lab-free-services/2026/07/01/2606-32039v1/",
+      date: "2026-07-01"
+    },
+    
+    {
+      title: "자기 설명 훈련이 행동 변화를 추적하는 자기 반영적 결합",
+      summary: "자기 설명 훈련을 통해 모델이 89.2% 정확도로 자신의 행동을 설명할 수 있는 자기 반영적 결합을 달성",
+      field: "NLP",
+      arxiv_id: "2606.32038v1",
+      url: "/ai-lab-free-services/2026/07/01/2606-32038v1/",
+      date: "2026-07-01"
+    },
+    
+    {
+      title: "LLM 에서 긴 시간대 행동을 위한 밀도 감독 신호 평가 방법",
+      summary: "QVal을 통해 밀도 감독 신호의 정확도 85.1% 달성",
+      field: "AI/ML",
+      arxiv_id: "2606.32034v1",
+      url: "/ai-lab-free-services/2026/07/01/2606-32034v1/",
+      date: "2026-07-01"
+    },
+    
+    {
+      title: "동적 비디오 생성을 통한 효율적인 로봇 조작용 세계 모델",
+      summary: "DVG-WM 프레임워크는 동적 학습과 시각 합성을 분리하여 로봇 조작용 세계 모델의 효율성을 23.1% 향상시켰다.",
+      field: "로봇",
+      arxiv_id: "2606.32028v1",
+      url: "/ai-lab-free-services/2026/07/01/2606-32028v1/",
+      date: "2026-07-01"
+    },
+    
+    {
+      title: "인간형 로봇의 로코-매니퓰레이션 학습",
+      summary: "48,000 개의 시뮬레이션 데이터를 생성해 인간형 로봇의 로코-매니퓰레이션 능력을 90% 정확도 달성",
+      field: "로봇",
+      arxiv_id: "2606.30645v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30645v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "LLM 에이전트 계획을 위한 스스로 진화하는 월드 모델",
+      summary: "월드 모델의 예측 정확도 89.2% 달성, 기존 대비 23% 향상",
+      field: "AI/ML",
+      arxiv_id: "2606.30639v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30639v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "3D 가우시안 분할을 위한 2D 감지기 활용",
+      summary: "3D 가우시안 분할 성능을 89.2% 달성",
+      field: "CV",
+      arxiv_id: "2606.30638v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30638v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "대기 시간이 대규모 비동기 파이프 라인 병렬 LLM 훈련에 장애가 아님",
+      summary: "1-step 지연이 AdamW에만 30% 정확도 감소로 이어지지만, Muon은 지연에 강한 것으로 나타났다.",
+      field: "AI/ML",
+      arxiv_id: "2606.30634v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30634v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "도구 사용을 위한 GROW$^2$ 프레임워크",
+      summary: "도구 사용 능력을 10.5% 향상시키는 GROW$^2$ 프레임워크를 제안",
+      field: "로봇",
+      arxiv_id: "2606.30632v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30632v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "보수적인 오프라인 훈련이 온라인 적응 중 보상 해킹을 증폭시킵니다",
+      summary: "보수적인 오프라인 훈련이 온라인 적응 중 보상 해킹을 100% 증가시킵니다.",
+      field: "AI/ML",
+      arxiv_id: "2606.30627v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30627v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "trillion-레벨 성능 달성하는 35B 에이전트 모델",
+      summary: "35B 에이전트 모델이 1T-레벨 성능을 달성, 6개의 다중 도메인에서 우수한 성능을 보임",
+      field: "NLP",
+      arxiv_id: "2606.30616v1",
+      url: "/ai-lab-free-services/2026/06/30/2606-30616v1/",
+      date: "2026-06-30"
+    },
+    
+    {
+      title: "DanceOPD: 이미지 생성 모델의 다중 기능 통합",
+      summary: "DanceOPD 프레임워크를 적용해 텍스트-이미지 생성, 지역 편집, 글로벌 편집 능력을 23% 향상",
+      field: "CV",
+      arxiv_id: "2606.27377v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27377v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "통합 멀티모달 모델의 자가 진화",
+      summary: "자가 진화 훈련 프레임워크를 통해 통합 멀티모달 모델이 비라벨 이미지로만 시각 이해와 이미지 생성 능력을 23% 향상.",
+      field: "CV",
+      arxiv_id: "2606.27376v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27376v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "개방형 데이터, 훈련, 평가를 위한 확장 가능한 행동 클론잉",
+      summary: "195 가지 다양한 태스크에서 130K 에피소드에 걸쳐 3,500 시간의 데이터를 활용한 ABC-130K가 공개되며, 이를 통해 400 시간의 시뮬레이션-텔레오퍼레이션 데이터와 함께 89% 정확도의 정책을 구현합니다.",
+      field: "로봇",
+      arxiv_id: "2606.27375v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27375v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "LLM의 성능 향상을 위한 무지식 보상 학습 방법",
+      summary: "LLM의 성능을 8.9% 향상시키는 무지식 보상 학습 방법을 제안",
+      field: "AI/ML",
+      arxiv_id: "2606.27369v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27369v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "Boltzmann 생성기 개선",
+      summary: "Boltzmann 생성기 아르BG를 통해 분자 시스템의 샘플링 정확도 23% 향상",
+      field: "AI/ML",
+      arxiv_id: "2606.27361v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27361v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "유럽 정치 엘리트 네트워크 매핑",
+      summary: "유럽 정치 엘리트 네트워크를 위한 다언어 Entity-Relation 추출 파이프라인을 제안, 텍스트 정확도 68.2%~93.7% 달성",
+      field: "NLP",
+      arxiv_id: "2606.27347v1",
+      url: "/ai-lab-free-services/2026/06/29/2606-27347v1/",
+      date: "2026-06-29"
+    },
+    
+    {
+      title: "JanusMesh: 교차 공간 편향 소자를 통한 0-shot 3D 시각적 illusion 생성",
+      summary: "CLIP 방향 정렬 voxel 공간과 SDF blending을 결합한 교차 공간 이중 분기 편향 소자 방식으로, 기존 방식 대비 3-5분에 고도로 사실적인 이중 의미 3D illusion 생성",
+      field: "CV",
+      arxiv_id: "2606.20563v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20563v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "MemoryWAM: 영속 메모리를 갖춘 효율적 세계-행동 모델링",
+      summary: "이벤트 경계 앵커 프레임+압축 토큰 기반 하이브리드 메모리로 장기 비 Markov 환경에서도 효율적으로 동작하는 세계-행동 모델, 기존 VLA 및 WAM baseline 대비 우위",
+      field: "로봇",
+      arxiv_id: "2606.20562v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20562v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "TimeProVe: 효율적 일상 활동 장시간 동영상 시간 추론",
+      summary: "OTB 벤치마크에서 기존 방식 대비 7.3% 향상, VLM 호출 75% 절감한 효율적 장시간 동영상 시간 추론 방법",
+      field: "CV",
+      arxiv_id: "2606.20561v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20561v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "DiffusionGemma: 투명성 증대를 통한 개방형 텍스트 생성 개선",
+      summary: "interpreter token 병목 분석으로 투명성을 28.6배 향상시키고 실제 Gemma 모델에서 검증, 텍스트 생성 품질 개선에 기여",
+      field: "AI/ML",
+      arxiv_id: "2606.20560v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20560v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "UNIEGO: 자기 중심 프록시를 통한 통합 시점 비디오 표현 학습",
+      summary: "9개 교사의 지식 증류를 프록시 모델로 중개하는 계층적 프레임워크로, ego-exo 시점과 복수 모달리티 통합, 기존 다중 교사 증류 대비 우수한 성능",
+      field: "CV",
+      arxiv_id: "2606.20559v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20559v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "LedgerAgent: 정책 준수 도구 호출 에이전트를 위한 구조화 상태 관리",
+      summary: "도구 호출 에이전트가 과제 상태를 별도 ledger로 관리하여 정책 위반을 사전 차단, 4개 고객 서비스 도메인에서 기존 대비 현저한 일관성 향상",
+      field: "AI/ML",
+      arxiv_id: "2606.20529v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20529v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "StylisticBias: 소수의 시각적 단서가 MLLM 사회 편향 주도",
+      summary: "15개 속성만으로 80% 편향 유발 가능, 25K 이미지 실험으로 소수의 시각적 단서가 MLLM의 사회적 편견을 지배적으로 조종함을 입증",
+      field: "NLP",
+      arxiv_id: "2606.20527v1",
+      url: "/ai-lab-free-services/2026/06/19/2606-20527v1/",
+      date: "2026-06-19"
+    },
+    
+    {
+      title: "내재적 능동 인지로 종합 다중 모달 이해 추구",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.19341v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19341v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "Zero-shot 장기 촉수 조작: 다중 뷰 3D VLM 추론",
+      summary: " calibrated 다중 뷰 RGB 이미지로 언어 명령을 3D 작업 계획으로 변환하는 zero-shot 프레임워크,未见物体과 새로운 장면에서도 실행 가능",
+      field: "로봇",
+      arxiv_id: "2606.19340v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19340v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "RNG-Bench: 비 Markov 게임에서 MLLM 기억력 평가",
+      summary: "과거 관찰 재구성+행동 활용 능력을 측정하는 비-Markov 게임 벤치마크로 최고 수준 MLLM도仍未달성한 어려운 설정 포함",
+      field: "CV",
+      arxiv_id: "2606.19338v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19338v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "Turing-RL: Turing 테스트 기반 사용자 시뮬레이터 학습",
+      summary: "LLM 심사위원의 구분 불가능성 점수를 reward로 활용하여 사용자 시뮬레이터를 학습, 기존 ground truth 매칭 방식보다 우위",
+      field: "NLP",
+      arxiv_id: "2606.19336v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19336v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "LOCUS로 법을 해방하다: 미국 지역 조례 코퍼스",
+      summary: null,
+      field: "NLP",
+      arxiv_id: "2606.19334v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19334v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "Chandra-Gaia 대응표: ML로 X선원과 광학원 교차 매칭",
+      summary: "LightGBM으로 위치+광도 색 거리 특성을 결합한 교차 매칭으로 약 254k X선원 중 113k 대응표 확보, 기존 방식 대비 95% 재현률",
+      field: "AI/ML",
+      arxiv_id: "2606.19329v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19329v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "UBP2: 불확실성 균형 선호 계획법",
+      summary: "보상·동역학·가치 함수의 불확실성을 통합 고려하는 모델 기반 pref-RL으로, Meta-World에서 기존 방식 대비 현저히 높은 표본 효율 달성",
+      field: "AI/ML",
+      arxiv_id: "2606.19328v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19328v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "AdsMind: 자기 교정 촉매 표면 흡착 탐색 시스템",
+      summary: "MLFF relaxation 피드백으로 자기 교정하는 폐쇄 루프 다중 에이전트 방식으로 촉매 표면 흡착 구성 탐색, baseline 대비 relaxation 약 14배 절감",
+      field: "AI/ML",
+      arxiv_id: "2606.19152v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-19152v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "동적 3D 재구성",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.18250v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18250v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "통합 멀티모달 모델",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.18249v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18249v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "시각 검증을 통한 정책 개선",
+      summary: null,
+      field: "로봇",
+      arxiv_id: "2606.18247v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18247v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "가변 너비 트랜스포머",
+      summary: null,
+      field: "NLP",
+      arxiv_id: "2606.18246v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18246v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "ReproRepo",
+      summary: null,
+      field: "NLP",
+      arxiv_id: "2606.18237v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18237v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "서명 순위",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18236v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18236v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "EvolveNav",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18235v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18235v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "적응적 물리량 필드",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.18231v1",
+      url: "/ai-lab-free-services/2026/06/18/2606-18231v1/",
+      date: "2026-06-18"
+    },
+    
+    {
+      title: "가변 너비 트랜스포머",
+      summary: null,
+      field: "NLP",
+      arxiv_id: "2606.18246v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18246v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "조건부 독립성 검정",
+      summary: null,
+      field: "통계",
+      arxiv_id: "2606.18011v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18011v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "PhaseWin",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.18008v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18008v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "LLM 소비자 행동 이론",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18005v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18005v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "C2FL: 클러스터링 연속 연합 학습",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18003v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18003v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "지식 그래프 모델",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18001v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18001v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "광 네트워크를 위한 ReAct 루프",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.18000v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-18000v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "AIGS-Net",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.17998v1",
+      url: "/ai-lab-free-services/2026/06/17/2606-17998v1/",
+      date: "2026-06-17"
+    },
+    
+    {
+      title: "문맥 인식 강화학습",
+      summary: null,
+      field: "NLP",
+      arxiv_id: "2606.17053v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17053v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "BRDFusion",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.17049v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17049v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "선형 역문제의 정확한 후방 점수 추정",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.17048v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17048v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "기하학적 행동 모델",
+      summary: null,
+      field: "로봇",
+      arxiv_id: "2606.17046v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17046v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "계층적 우위 가중",
+      summary: null,
+      field: "로봇",
+      arxiv_id: "2606.17043v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17043v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "신경망 내 위상 중요성",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.17037v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17037v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "HAMON: 광학 시퀀스 믹싱",
+      summary: null,
+      field: "AI/ML",
+      arxiv_id: "2606.17028v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17028v1/",
+      date: "2026-06-16"
+    },
+    
+    {
+      title: "퓨전RS",
+      summary: null,
+      field: "CV",
+      arxiv_id: "2606.17020v1",
+      url: "/ai-lab-free-services/2026/06/16/2606-17020v1/",
+      date: "2026-06-16"
+    }
+    
+  ];
+
+  const qLower = q.toLowerCase();
+  const results = posts.filter(p => {
+    return (p.title && p.title.toLowerCase().includes(qLower))
+        || (p.summary && p.summary.toLowerCase().includes(qLower))
+        || (p.field && p.field.toLowerCase().includes(qLower))
+        || (p.arxiv_id && p.arxiv_id.includes(q));
+  });
+
+  status.innerHTML = `'${q}' 검색 결과 <strong>${results.length}</strong>건`;
+
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<p style="text-align:center; color:var(--muted); padding:40px 0;">검색 결과가 없습니다.</p>';
+  } else {
+    resultsDiv.innerHTML = '<div class="cards">' + results.map(p => {
+      return `<a class="card" href="${p.url}">
+        <h3>${p.title}</h3>
+        <p class="summary">${p.summary}</p>
+        <div class="meta">
+          <span class="tag">arXiv:${p.arxiv_id}</span>
+          <span>📄 ${p.date}</span>
+          <span>🏷 ${p.field}</span>
+        </div>
+      </a>`;
+    }).join('') + '</div>';
+  }
+})();
+</script>
 </main>
 
 <footer class="site-footer">
