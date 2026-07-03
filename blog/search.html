@@ -1,86 +1,63 @@
 ---
-layout: null
+layout: default
 permalink: /search/
 sitemap: false
 ---
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>검색 — AI 논문 한 줄</title>
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-  <meta name="robots" content="noindex">
-</head>
-<body>
 
-<header class="site-header">
-  <div class="header-top">
-    <a class="site-title" href="{{ '/' | relative_url }}">AI 논문 한 줄</a>
-    <form class="search-form" action="{{ '/search/' | relative_url }}" method="get" role="search">
-      <input class="search-input" type="text" name="q" placeholder="논문 검색..." value="{{ page.search_query | default: '' }}" aria-label="논문 검색">
-      <button class="search-btn" type="submit">🔍</button>
-    </form>
-  </div>
-  <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
-  <nav class="site-nav">
-    <a href="{{ '/' | relative_url }}">일일 논문</a>
-    {% assign nav_fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
-    {% for f in nav_fields %}
-      {% capture safe %}{% if f == "AI/ML" %}ai-ml{% elsif f == "CV" %}cv{% elsif f == "NLP" %}nlp{% elsif f == "RL" %}rl{% elsif f == "음성/음악" %}audio{% elsif f == "로봇" %}robotics{% elsif f == "통계" %}statistics{% endif %}{% endcapture %}
-      <a href="{{ '/field/' | append: safe | append: '/' | relative_url }}">{{ f }}</a>
-    {% endfor %}
-  </nav>
-</header>
+<h2>🔍 검색 결과</h2>
 
-<main class="container">
-  <h2>🔍 검색 결과</h2>
-  {% assign q = page.search_query | default: '' %}
-  {% if q == '' %}
-    <p style="text-align:center; color:#888; padding:40px 0;">검색어를 입력해주세요.</p>
-  {% else %}
-    {% assign results = '' | split: '' %}
+<div id="search-results">
+  <p style="text-align:center; color:var(--muted); padding:40px 0;" id="search-status">검색어를 입력해주세요.</p>
+</div>
+
+<script>
+(function() {
+  // GET ?q=... 읽기
+  const params = new URLSearchParams(window.location.search);
+  const q = (params.get('q') || '').trim();
+  if (!q) return;
+
+  const status = document.getElementById('search-status');
+  const resultsDiv = document.getElementById('search-results');
+
+  // 모든 포스트 데이터를 JSON으로 내장
+  const posts = [
     {% for post in site.posts %}
-      {% assign title_down = post.title | downcase %}
-      {% assign summary_down = post.summary | downcase %}
-      {% assign field_down = post.field | downcase %}
-      {% assign q_down = q | downcase %}
-      {% if title_down contains q_down or summary_down contains q_down or field_down contains q_down or post.arxiv_id contains q %}
-        {% assign results = results | push: post %}
-      {% endif %}
+    {
+      title: {{ post.title | jsonify }},
+      summary: {{ post.summary | jsonify }},
+      field: {{ post.field | jsonify }},
+      arxiv_id: {{ post.arxiv_id | jsonify }},
+      url: {{ post.url | relative_url | jsonify }},
+      date: {{ post.date | date: '%Y-%m-%d' | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
     {% endfor %}
-    {% assign count = results | size %}
-    <p style="margin-bottom:20px; color:#666;">'{{ q }}' 검색 결과 <strong>{{ count }}</strong>건</p>
-    {% if count == 0 %}
-      <p style="text-align:center; color:#888; padding:40px 0;">검색 결과가 없습니다.</p>
-    {% else %}
-      {% for post in results %}
-        <a class="card" href="{{ post.url | relative_url }}">
-          <h3>{{ post.title }}</h3>
-          <p class="summary">{{ post.summary }}</p>
-          <div class="meta">
-            <span class="tag">arXiv:{{ post.arxiv_id }}</span>
-            <span>📄 {{ post.date | date: '%Y-%m-%d' }}</span>
-            <span>🏷 {{ post.field }}</span>
-          </div>
-        </a>
-      {% endfor %}
-    {% endif %}
-  {% endif %}
-</main>
+  ];
 
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="{{ '/about/' | relative_url }}">소개</a>
-    <a href="{{ '/contact/' | relative_url }}">문의하기</a>
-    <a href="{{ '/privacy/' | relative_url }}">개인정보 처리방침</a>
-    <a href="{{ '/terms/' | relative_url }}">이용약관</a>
-    <a href="https://github.com/flffkaos-pixel/ai-lab-free-services">GitHub</a>
-    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-  </div>
-  <p>매일 0시(UTC, <strong>한국 오전 9시</strong>)에 자동 업데이트</p>
-  <p class="copyright">© {{ site.time | date: '%Y' }} AI 논문 한 줄. 모든 논문의 저작권은 원저자에게 있습니다.</p>
-</footer>
+  const qLower = q.toLowerCase();
+  const results = posts.filter(p => {
+    return (p.title && p.title.toLowerCase().includes(qLower))
+        || (p.summary && p.summary.toLowerCase().includes(qLower))
+        || (p.field && p.field.toLowerCase().includes(qLower))
+        || (p.arxiv_id && p.arxiv_id.includes(q));
+  });
 
-</body>
-</html>
+  status.innerHTML = `'${q}' 검색 결과 <strong>${results.length}</strong>건`;
+
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<p style="text-align:center; color:var(--muted); padding:40px 0;">검색 결과가 없습니다.</p>';
+  } else {
+    resultsDiv.innerHTML = '<div class="cards">' + results.map(p => {
+      return `<a class="card" href="${p.url}">
+        <h3>${p.title}</h3>
+        <p class="summary">${p.summary}</p>
+        <div class="meta">
+          <span class="tag">arXiv:${p.arxiv_id}</span>
+          <span>📄 ${p.date}</span>
+          <span>🏷 ${p.field}</span>
+        </div>
+      </a>`;
+    }).join('') + '</div>';
+  }
+})();
+</script>

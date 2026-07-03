@@ -131,14 +131,12 @@ layout: null
 <body>
 
 <header class="site-header">
-  <div class="header-top">
-    <a class="site-title" href="{{ '/' | relative_url }}">AI 논문 한 줄</a>
-    <form class="search-form" action="{{ '/' | relative_url }}" method="get" role="search">
-      <input class="search-input" type="text" name="q" placeholder="논문 검색..." value="{{ page.search_query | default: '' }}" aria-label="논문 검색">
-      <button class="search-btn" type="submit">🔍</button>
-    </form>
-  </div>
+  <a class="site-title" href="{{ '/' | relative_url }}">AI 논문 한 줄</a>
   <p class="site-tagline">매일 가장 핫한 AI·머신러닝 논문을 한국어 한 줄로 빠르게 읽어보세요</p>
+  <form class="search-form" action="{{ '/search/' | relative_url }}" method="get" role="search">
+    <input class="search-input" type="text" name="q" placeholder="논문 검색..." aria-label="논문 검색">
+    <button class="search-btn" type="submit">🔍</button>
+  </form>
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>일일 논문</a>
     {% assign nav_fields = "AI/ML,CV,NLP,RL,음성/음악,로봇,통계" | split: "," %}
