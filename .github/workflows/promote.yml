@@ -1,0 +1,28 @@
+name: Global Promotion
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:         # manual trigger
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install browser-use
+        run: pip install browser-use
+
+      - name: Run promotion
+        env:
+          BROWSER_USE_API_KEY: ${{ secrets.BROWSER_USE_API_KEY }}
+        run: |
+          # Use browser-use cloud mode (no local Chrome needed)
+          browser-use auth login --api-key-stdin <<< "$BROWSER_USE_API_KEY"
+          python promote.py --once
