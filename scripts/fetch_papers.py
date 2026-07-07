@@ -78,9 +78,9 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
                 data = resp.read().decode("utf-8")
             break
         except Exception as e:
-            if attempt < 2 and "429" in str(e):
-                print(f"arxiv 429 rate limit — 10초 후 재시도 ({attempt+1}/3)")
-                time.sleep(10)
+            if attempt < 2 and ("429" in str(e) or "timed out" in str(e).lower()):
+                print(f"arxiv rate limit — 30초 후 재시도 ({attempt+1}/3)")
+                time.sleep(30)
                 continue
             print(f"arxiv err [{query}]: {e}")
             return []
@@ -103,7 +103,6 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
         papers.append({"id": arxiv_id, "title": title, "summary": summary,
                        "authors": authors, "url": url_p, "categories": cats})
     return papers
-
 
 MODELS = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
 
