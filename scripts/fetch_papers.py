@@ -72,11 +72,19 @@ def fetch_arxiv_papers(query="cat:cs.AI", max_results=3):
         "search_query": query, "start": 0, "max_results": max_results,
         "sortBy": "submittedDate", "sortOrder": "descending",
     })
-    try:
-        with urllib.request.urlopen(url, timeout=30) as resp:
-            data = resp.read().decode("utf-8")
-    except Exception as e:
-        print(f"arxiv err [{query}]: {e}")
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as resp:
+                data = resp.read().decode("utf-8")
+            break
+        except Exception as e:
+            if attempt < 2 and "429" in str(e):
+                print(f"arxiv 429 rate limit — 10초 후 재시도 ({attempt+1}/3)")
+                time.sleep(10)
+                continue
+            print(f"arxiv err [{query}]: {e}")
+            return []
+    else:
         return []
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     root = ET.fromstring(data)
@@ -322,7 +330,7 @@ def main():
     for q, n in queries:
         papers = fetch_arxiv_papers(q, max_results=n)
         all_papers.extend(papers)
-        time.sleep(2)
+        time.sleep(5)  # arXiv API rate limit 방지를 위해 5초 대기
 
     seen, unique = set(), []
     for p in all_papers:
@@ -347,7 +355,7 @@ def main():
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(post)
         success += 1
-        time.sleep(15)
+        time.sleep(15)  # Groq API rate limit 방지를 위해 15초 대기
 
     # Load all existing posts for field pages
     all_posts = []
