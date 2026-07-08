@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 07 Jul 2026 12:49:48 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 12:18:31 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>유연한 3D 지식 통합 모델 ELSA3D</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06565v1/</link>
+      <description>authors: Tianjiao Yu, Xinzhuo Li, Yifan Shen, Onkar Susladkar, Yuanzhe Liu
+</description>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06565v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>3D 지오메트리와 동적 조작을 위한 Lift3D-VLA 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06564v1/</link>
+      <description>authors: Jiaming Liu, Qingpo Wuwu, Nuowei Han, Hao Chen, Zhuoyang Liu
+</description>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06564v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>그래프 변이Attention: 그래프 잡음 및 확산의 스펙트럴 관점</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06546v1/</link>
+      <description>authors: Shervin Khalafi, Igor Krawczuk, Sergio Rozada, Charilaos Kanatsoulis, Antonio G Marques
+</description>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06546v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>인도 문화 유산 보존 관점에서 인도 AI를 재평가하기</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06544v1/</link>
+      <description>authors: Aparna Madva, Sharath Srivatsa, Srinath Srinivasa, Tulika Saha
+</description>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06544v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>의존구문 분석의 비인간 시퀀스 가능성</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06542v1/</link>
+      <description>authors: Ramon Ferrer-i-Cancho, Catherine Hobaiter, Thore Bergman, Morgan Gustison
+</description>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/08/2607-06542v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>카메라 독립적 비전-언어-행동 모델 (CamVLA)</title>
@@ -156,56 +206,6 @@
       <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01232v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>언어 비판 학습 프레임워크 개발</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01225v1/</link>
-      <description>authors: Chih-Han Yang, Dai-Jie Wu, Yun-Ping Huang, Ping-Chun Hsieh, Kenneth Marino
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01225v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>3D 자산 텍스처 생성을 위한 비디오 생성 모델</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01222v1/</link>
-      <description>authors: Yue Han, Chong Li, Zhening Liu, Cong Huang, Fang Deng
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01222v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>실물 규모 이중 손가락 가구 조립을 위한 비전-언어-행동 모델</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01212v1/</link>
-      <description>authors: Chenyang Ma, Yue Yang, Radu Corcodel, Siddarth Jain, Andrew Wu
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01212v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>인터페이스 증강 조립 그래프 학습 프레임워크 (Linkify)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01205v1/</link>
-      <description>authors: Anushrut Jignasu, Daniele Grandi
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01205v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>CPDDNet: 색도-극성 잡음 제거 및 데모사킹 네트워크</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01100v1/</link>
-      <description>authors: Qihang Zhang, Yusuke Monno, Masayuki Tanaka, Masatoshi Okutomi
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01100v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
