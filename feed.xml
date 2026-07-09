@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 08 Jul 2026 12:18:31 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 12:42:54 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>구조-물성 이해를 위한 깊은 원천 구조적 사유 모델 (SciReasoner)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07708v1/</link>
+      <description>authors: Chen Tang, Yizhou Wang, Jianyu Wu, Lintao Wang, Shixiang Tang
+</description>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07708v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>연속 쿼리 제한 메모리 언어 모델 (Co-LMLM)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07707v1/</link>
+      <description>authors: Yair Feldman, Linxi Zhao, Nathan Godey, Dongyoung Go, Yilun Hua
+</description>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07707v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>선택적 시간 단계 가중치 및 이점 기반 재생을 위한 샘플 효율적인 확산 RLHF</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07693v1/</link>
+      <description>authors: Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
+</description>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07693v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>MoE 비디오 프레트레이닝을 적용한 embodied intelligence 향상</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07675v1/</link>
+      <description>authors: Shuailei Ma, Jiaqi Liao, Xinyang Wang, Jingjing Wang, Chaoran Feng
+</description>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07675v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>소프트 아키텍처로 영장류의 코를 모방한 ELEANOR</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07622v1/</link>
+      <description>authors: Giovanna A. Naselli, Anderson B. Nardin, Seonggun Joe, Ryan Drinkwater, Enrico Donato
+</description>
+      <pubDate>Thu, 09 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/09/2607-07622v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>유연한 3D 지식 통합 모델 ELSA3D</title>
@@ -156,56 +206,6 @@
       <pubDate>Fri, 03 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02503v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>고장 허용 연구 파이프라인: 물리학 연구 자동화</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02329v1/</link>
-      <description>authors: Haonan Huang
-</description>
-      <pubDate>Fri, 03 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02329v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>공간 일반화 향상을 위한 다이나믹 데이터 수집</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02322v1/</link>
-      <description>authors: Jincheng Tang, Yilong Zhu, Zhengyuan Xie, Jiang-Jiang Liu, Jiaxing Zhang
-</description>
-      <pubDate>Fri, 03 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02322v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>신경 안내 진화적 비디오 합성 (NEvo)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02317v1/</link>
-      <description>authors: Yingtian Tang, Sogand Salehi, Ming Zhou, Amir Zamir, Leyla Isik
-</description>
-      <pubDate>Fri, 03 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/03/2607-02317v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>인간과 LLM 연구 아이디어 간 격차 측정</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01233v1/</link>
-      <description>authors: Ziyu Chen, Yilun Zhao, Arman Cohan
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01233v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>단일 트랜스포머 레이어만으로 RL 훈련 성능 달성 가능성</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01232v1/</link>
-      <description>authors: Zijian Zhang, Rizhen Hu, Athanasios Glentis, Dawei Li, Chung-Yiu Yau
-</description>
-      <pubDate>Thu, 02 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/02/2607-01232v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
