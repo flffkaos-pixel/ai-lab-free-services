@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 14 Jul 2026 11:52:02 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 11:53:42 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>AI 에이전트가 과제가 간단한지 알 수 있는가? 복잡도 인식 및 실행 향상</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13034v1/</link>
+      <description>authors: Junjie Yin, Xinyu Feng
+</description>
+      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13034v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>로봇 조작을 위한 밀도 보상 학습 (DenseReward)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13033v1/</link>
+      <description>authors: Yu Fang, Wanxi Dong, Jiaqi Liu, Yue Yang, Mingxiao Huo
+</description>
+      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13033v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>비디오 확산 모델의 시리얼리티 격차</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13031v1/</link>
+      <description>authors: Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai
+</description>
+      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13031v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>TerraZero: 절차적 주행 시뮬레이터</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13028v1/</link>
+      <description>authors: Zhouchonghao Wu, Akshay Rangesh, Weixin Li, Wei-Jer Chang, Zachary Lee
+</description>
+      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13028v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>사전 훈련 MLLM을 이용한 텍스트-이미지 생성의 zero-shot 보상 모델</title>
@@ -166,46 +206,6 @@
       <pubDate>Fri, 10 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08771v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>유니클라우 벤치마크: 실세계 태스크를 위한 능력 기반 벤치마크</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08768v1/</link>
-      <description>authors: Zhekai Chen, Chengqi Duan, Kaiyue Sun, Bohao Li, Yuqing Wang
-</description>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08768v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>OpenCoF: 비디오 생성을 통해 논리적 결과 이해 학습</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08763v1/</link>
-      <description>authors: Xinyan Chen, Ziyu Guo, Renrui Zhang, Dongzhi Jiang, Hongsheng Li
-</description>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08763v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>전도 확산에서 점진적 안정성에 대한 점수 정확도는 수치 안정성을 보장하지 않는다</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08757v1/</link>
-      <description>authors: Yiwei Zhou
-</description>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08757v1/</guid>
-      <category>통계</category>
-    </item>
-    
-    <item>
-      <title>멀티 트랙 팝 음악 전사 데이터셋 (MulTTiPop)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08756v1/</link>
-      <description>authors: Nathan Pruyne, Benjamin Stoler, William Chen, Chien-yu Huang, Shinji Watanabe
-</description>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/10/2607-08756v1/</guid>
-      <category>음성/음악</category>
     </item>
     
   </channel>
