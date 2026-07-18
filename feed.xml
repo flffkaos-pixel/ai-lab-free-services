@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 17 Jul 2026 12:05:14 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 11:50:46 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>다단계 시각적 추론을 위한 계층적 잡음 제거</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15278v1/</link>
+      <description>authors: Zezhong Qian, Xiaowei Chi, Chak-Wing Mak, Tianze Zhou, Ruibin Yuan
+</description>
+      <pubDate>Sat, 18 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15278v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>언어 모델의 통계적 자기 일관성</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15277v1/</link>
+      <description>authors: Patrik Wolf, Thomas Kleine Buening, Andreas Krause, Celestine Mendler-Dünner
+</description>
+      <pubDate>Sat, 18 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15277v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>평균 속도 생성기에서 전처리 RL을 적용한 MeanFlowNFT</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15273v1/</link>
+      <description>authors: Yushi Huang, Xiangxin Zhou, Jun Zhang, Liefeng Bo, Tianyu Pang
+</description>
+      <pubDate>Sat, 18 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15273v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>과학 도표 편집을 위한 학습 기반 도구 (SciDiagramEdit)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15272v1/</link>
+      <description>authors: Yasheng Sun, Zezi Zeng, Yifan Yang, Chong Luo, Wenyi Wang
+</description>
+      <pubDate>Sat, 18 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15272v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>로보TTT: 로봇 정책의 컨텍스트 스케일링</title>
@@ -166,46 +206,6 @@
       <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11884v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>자기 학습 데이터를 이용한 모델 압축 (Requential Coding)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11883v1/</link>
-      <description>authors: Shikai Qiu, Marc Finzi, Yujia Zheng, Kun Zhang, Andrew Gordon Wilson
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11883v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>LLM의 자기 인식 능력 연구</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11881v1/</link>
-      <description>authors: Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11881v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>트랜스포머의 인덕티브 추론 능력 동적 분석</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11875v1/</link>
-      <description>authors: Tiberiu Musat, Tiago Pimentel, Nicholas Zucchet, Thomas Hofmann
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11875v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>교과 피드백 분류 프로토콜의 지속성 및 언어 전이 평가</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11873v1/</link>
-      <description>authors: Esteban U. Vega Barajas
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11873v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
