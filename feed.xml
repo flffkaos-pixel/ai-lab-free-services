@@ -5,8 +5,88 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 19 Jul 2026 12:18:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 12:35:17 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>UAV 멀티뷰 스페이스-타임 리저닝 대비성 검토 벤치마크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16193v1/</link>
+      <description>authors: Like Liu, Zhengzheng Xu, Haitao He, Hongzhe Li, Shuchang Zhang
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16193v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>미래 3D 장면 흐름 예측을 위한 비디오 모델 재활용 (MotionForesight)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16192v1/</link>
+      <description>authors: Homanga Bharadhwaj, Yash Jangir
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16192v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>손과 인간형 로봇을 연결하는 플랫폼 (Handroid)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16187v1/</link>
+      <description>authors: Ruogu Li, Chenyang Ma, Sikai Li, Zhenyu Wei, Yunchao Yao
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16187v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>MoE LLM 서비스 효율성 향상</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16184v1/</link>
+      <description>authors: Yuchen Yang, Yifan Zhao, Anisha Dasgupta, Sasa Misailovic
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16184v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>동역학 컴퓨팅 기반의 저에너지 머신 러닝 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16183v1/</link>
+      <description>authors: Owen Lockwood, Jérémy Béjanin, Joost Bus, Christopher Chamberland, Patrick Huembeli
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16183v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>오픈 가중 LLM을 이용한 자율 주행 차량 취약점 정보 생성 평가</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16175v1/</link>
+      <description>authors: Md Erfan, Ahmed Ryan, Md Kamal Hossain Chowdhury, Md Rayhanur Rahman
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16175v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>적극 관찰자 위한 시험</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16165v1/</link>
+      <description>authors: Jiarui Zhang, Muzi Tao, Shangshang Wang, Ollie Liu, Xuezhe Ma
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16165v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>ToolSciVer: 도구 증강 강화 학습을 이용한 다모드 과학적 주장 확인</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16131v1/</link>
+      <description>authors: Binglin Zhou, Peng Shi, Ryo Kamoi, Nan Zhang, Rui Zhang
+</description>
+      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16131v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>다단계 시각적 추론을 위한 계층적 잡음 제거</title>
@@ -125,86 +205,6 @@
 </description>
       <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14047v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>LLM을 문장 수준 이탈시키는 PAT 개발</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14040v1/</link>
-      <description>authors: Alaina Brandt
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14040v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>AI 에이전트가 과제가 간단한지 알 수 있는가? 복잡도 인식 및 실행 향상</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13034v1/</link>
-      <description>authors: Junjie Yin, Xinyu Feng
-</description>
-      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13034v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>로봇 조작을 위한 밀도 보상 학습 (DenseReward)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13033v1/</link>
-      <description>authors: Yu Fang, Wanxi Dong, Jiaqi Liu, Yue Yang, Mingxiao Huo
-</description>
-      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13033v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>비디오 확산 모델의 시리얼리티 격차</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13031v1/</link>
-      <description>authors: Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai
-</description>
-      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13031v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>TerraZero: 절차적 주행 시뮬레이터</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13028v1/</link>
-      <description>authors: Zhouchonghao Wu, Akshay Rangesh, Weixin Li, Wei-Jer Chang, Zachary Lee
-</description>
-      <pubDate>Wed, 15 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/15/2607-13028v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>사전 훈련 MLLM을 이용한 텍스트-이미지 생성의 zero-shot 보상 모델</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11886v1/</link>
-      <description>authors: Runhui Huang, Qihui Zhang, Zhe Liu, Yu Gao, Jie Wu
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11886v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>텍스트-이미지 개인화 모델의 잠재 정체성 조정</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11885v1/</link>
-      <description>authors: Daniel Garibi, Ronen Kamenetsky, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11885v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>프레임 혼합 정책: 다중 프레임 행동 잡음 제거</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11884v1/</link>
-      <description>authors: Dian Wang, Jisang Park, Xiaomeng Xu, Han Zhang, Shuran Song
-</description>
-      <pubDate>Tue, 14 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/14/2607-11884v1/</guid>
       <category>로봇</category>
     </item>
     
