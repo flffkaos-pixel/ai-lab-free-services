@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 20 Jul 2026 12:35:17 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 12:15:23 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>시각 유사성의 다중 감각 측정: 텍스트 프롬프팅 기반 이미지 인지 지표</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18237v1/</link>
+      <description>authors: Sheng-Yu Wang, Yotam Nitzan, Aaron Hertzmann, Jun-Yan Zhu, Eli Shechtman
+</description>
+      <pubDate>Tue, 21 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18237v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>패치 정책: 효율적인 시각 표현을 통한 로봇 제어</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18236v1/</link>
+      <description>authors: Gaoyue Zhou, Zichen Jeff Cui, Ada Langford, Bowen Tan, Yann LeCun
+</description>
+      <pubDate>Tue, 21 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18236v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>무인 발견의 표준화된 하네스 absence</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18235v1/</link>
+      <description>authors: Akshat Gupta, Jermaine Lei, Alexander Lu, Gopala Anumanchipalli, Leshem Choshen
+</description>
+      <pubDate>Tue, 21 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18235v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>믿음 표현에 따른 LLM 반응 평가</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18232v1/</link>
+      <description>authors: Kevin Du, Clara Kümpel, Michelle Wastl, Alex Warstadt
+</description>
+      <pubDate>Tue, 21 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18232v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>현대 VLM에서 강력한 픽셀 레벨 이미지 조작 탐지</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18230v1/</link>
+      <description>authors: Yi Tang, Xinyi Shang, Jiacheng Cui, Sondos Mahmoud Bsharat, Jiacheng Liu
+</description>
+      <pubDate>Tue, 21 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/21/2607-18230v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>UAV 멀티뷰 스페이스-타임 리저닝 대비성 검토 벤치마크</title>
@@ -156,56 +206,6 @@
       <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14086v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>최적 교통을 이용한 선형 독립 성분 분석</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14081v1/</link>
-      <description>authors: Ashutosh Jha, Michel Besserve, Simon Buchholz
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14081v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>픽셀에서 상태로: 인터랙티브 월드 모델을 게임 엔진으로 재해석</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14076v1/</link>
-      <description>authors: Zhen Li, Zian Meng, Shuwei Shi, Mingliang Zhai, Jiaming Tan
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14076v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>예측 시장 재연을 통한 LLM 예측기 평가</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14051v1/</link>
-      <description>authors: Xiao Ye, Jacob Dineen, Evan Zhu, Shijie Lu, Kevin Song
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14051v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Chain-of-Thought 사고 모델의 효율적인 인공지능 상호작용 방법</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14049v1/</link>
-      <description>authors: Hefeng Zhou, Jinxuan Zhang, Jiong Lou, Yuxin Liu, Chaochao Lu
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14049v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>인간-로봇 협력 시스템 PhysClaw-0</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14047v1/</link>
-      <description>authors: Boyuan Wang, Zhenyuan Zhang, Zhiqin Yang, Peijun Gu, Shuya Wang
-</description>
-      <pubDate>Thu, 16 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/16/2607-14047v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
