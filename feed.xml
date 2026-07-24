@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 23 Jul 2026 12:24:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 12:05:45 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>3D-Aware VLMs의 암묵적 및 명시적 기하학</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21595v1/</link>
+      <description>authors: Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu
+</description>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21595v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>확장 흐름 맵 (Expanding Flow Maps)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21585v1/</link>
+      <description>authors: Sophia Tang, Pranam Chatterjee
+</description>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21585v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>surprisal 이론의 타우토로지</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21574v1/</link>
+      <description>authors: Ryan Cotterell
+</description>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21574v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>의료 교육을 위한 대규모 언어 모델 기반 스토리텔링 게임화 (MedGame)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21570v1/</link>
+      <description>authors: Qian Wu, Xinrong Zhou, Zizhan Ma, Kai Chen, Zheyao Gao
+</description>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21570v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>반복 복사 문제를 해결한 증거 인식 강화 학습</title>
@@ -166,46 +206,6 @@
       <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16183v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>오픈 가중 LLM을 이용한 자율 주행 차량 취약점 정보 생성 평가</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16175v1/</link>
-      <description>authors: Md Erfan, Ahmed Ryan, Md Kamal Hossain Chowdhury, Md Rayhanur Rahman
-</description>
-      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16175v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>적극 관찰자 위한 시험</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16165v1/</link>
-      <description>authors: Jiarui Zhang, Muzi Tao, Shangshang Wang, Ollie Liu, Xuezhe Ma
-</description>
-      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16165v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>ToolSciVer: 도구 증강 강화 학습을 이용한 다모드 과학적 주장 확인</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16131v1/</link>
-      <description>authors: Binglin Zhou, Peng Shi, Ryo Kamoi, Nan Zhang, Rui Zhang
-</description>
-      <pubDate>Mon, 20 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/20/2607-16131v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>다단계 시각적 추론을 위한 계층적 잡음 제거</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15278v1/</link>
-      <description>authors: Zezhong Qian, Xiaowei Chi, Chak-Wing Mak, Tianze Zhou, Ruibin Yuan
-</description>
-      <pubDate>Sat, 18 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/18/2607-15278v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
