@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 30 Jul 2026 11:48:19 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 12:24:59 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>세이버그 이중성 추적 학습</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28628v1/</link>
+      <description>authors: Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28628v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>ReToken: 시각-언어 모델을 위한 하나의 토큰 개선</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28627v1/</link>
+      <description>authors: Yao Xiao, Reuben Tan, Zhen Zhu, Yuqun Wu, Jianfeng Gao
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28627v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>인간 중심의 주변 캡처 엔진 (ACE-Data-0)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28625v1/</link>
+      <description>authors: Yukang Cao, Haozhe Xie, Beichen Wen, Runmao Yao, Yinghao Liu
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28625v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>PAC-MAN: 인간형 도디볼을 위한 감각 인식 기반 CBF-RL 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28623v1/</link>
+      <description>authors: Lizhi Yang, Junheng Li, Aaron D. Ames
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28623v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Claim-Centered Chemistry 문헌 합성 인프라스트럭처 (AskChem)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28618v1/</link>
+      <description>authors: Bing Yan, Gregory Wolfe, Stefano Martiniani, Kyunghyun Cho
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28618v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>사용자 중심 시스템 프롬프팅 감사 프레임워크 (AISPA)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28617v1/</link>
+      <description>authors: Xiangning Lin, Shenzhe Zhu, Shu Yang, Zhenyu Zhang, Haoqian Zhang
+</description>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28617v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>NC-tALC 데이터셋과 전환 자율 주행 차량의 행동 통찰력</title>
@@ -145,66 +205,6 @@
 </description>
       <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/27/2607-22518v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>양자 스펙트럴 모델 (QSM)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/27/2607-22516v1/</link>
-      <description>authors: Peiyong Wang, Udaya Parampalli, Casey R. Myers
-</description>
-      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/27/2607-22516v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>멀티 에이전트 동적 모델링을 위한 월드 스테이트 레지스터 (WorldWeaver)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/26/2607-21594v1/</link>
-      <description>authors: Sicheng Mo, Yuheng Li, Ziyang Leng, Krishna Kumar Singh, Bolei Zhou
-</description>
-      <pubDate>Sun, 26 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/26/2607-21594v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>커뮤니티 주도 데이터 엔진 AXIS</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/26/2607-21588v1/</link>
-      <description>authors: Mengfei Zhao, Dihong Huang, Yikai Tang, Peihao Li, Mingxuan Yan
-</description>
-      <pubDate>Sun, 26 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/26/2607-21588v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>3D-Aware VLMs의 암묵적 및 명시적 기하학</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21595v1/</link>
-      <description>authors: Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu
-</description>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21595v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>확장 흐름 맵 (Expanding Flow Maps)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21585v1/</link>
-      <description>authors: Sophia Tang, Pranam Chatterjee
-</description>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21585v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>surprisal 이론의 타우토로지</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21574v1/</link>
-      <description>authors: Ryan Cotterell
-</description>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/24/2607-21574v1/</guid>
       <category>NLP</category>
     </item>
     
