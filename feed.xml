@@ -5,8 +5,28 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 03 Aug 2026 12:25:53 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 11:57:30 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>신뢰할 수 있는 AI의 디지털 헬스 통합</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02238v1/</link>
+      <description>authors: Abdullah Mamun, Shovito Barua Soumma, Hassan Ghasemzadeh
+</description>
+      <pubDate>Tue, 04 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02238v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>적응적 시각 보강을 위한 비전-언어-행동 모델</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02197v1/</link>
+      <description>authors: Jin Cui, Yanbin Hu, Xinyue Long, Linkai Li, Boran Zhao
+</description>
+      <pubDate>Tue, 04 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02197v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>시퀀셜 로봇 태스크의 합성 일반화 진단</title>
@@ -186,26 +206,6 @@
       <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/29/2607-26055v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>MoE LoRA에서 전문가 라우팅을 위한 신뢰도 적응</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/29/2607-26052v1/</link>
-      <description>authors: Tom Saliencro, Rohan Desai, Priya Nair, Maya Lindqvist, Daniel Whitmore
-</description>
-      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/29/2607-26052v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>동물 질병 진단을 위한 Edge-Cloud 멀티모달 에이전트 시스템 (VetClaw)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/29/2607-26042v1/</link>
-      <description>authors: Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid
-</description>
-      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/29/2607-26042v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
