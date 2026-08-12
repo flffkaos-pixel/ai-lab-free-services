@@ -5,8 +5,28 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 11 Aug 2026 11:08:07 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 11:19:34 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Violence Against Women and Girls 시나리오 생성 프레임워크 (ConVAWG)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/12/2608-11200v1/</link>
+      <description>authors: Chen Lyu, Xingwei Tan, Simon Cullen, Shelley Wilson, Lois Arthurs
+</description>
+      <pubDate>Wed, 12 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/12/2608-11200v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>집합 수준 불안정성: 희소 자기인코더의 새로운 접근</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/12/2608-11197v1/</link>
+      <description>authors: Nikolai Bolik, Lennart Stöpler, Artur Andrzejak
+</description>
+      <pubDate>Wed, 12 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/12/2608-11197v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>선택적 신뢰 최적화 (SCOPE)</title>
@@ -186,26 +206,6 @@
       <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28625v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>PAC-MAN: 인간형 도디볼을 위한 감각 인식 기반 CBF-RL 프레임워크</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28623v1/</link>
-      <description>authors: Lizhi Yang, Junheng Li, Aaron D. Ames
-</description>
-      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28623v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Claim-Centered Chemistry 문헌 합성 인프라스트럭처 (AskChem)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28618v1/</link>
-      <description>authors: Bing Yan, Gregory Wolfe, Stefano Martiniani, Kyunghyun Cho
-</description>
-      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28618v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
