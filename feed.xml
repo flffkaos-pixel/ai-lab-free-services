@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 12 Aug 2026 11:19:34 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 11:27:27 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>3D 월드 상태 기반 프리비전화 프레임워크 (StateFlow)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12314v1/</link>
+      <description>authors: Yuyang Yin, Zixiang Li, Longxuan Deng, Hongkai Li, Shifang Zhao
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12314v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>에이전트-자연 비디오 표현 학습을 위한 AVA-인코더</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12313v1/</link>
+      <description>authors: Chuyue Li, Jinpeng Yu, Haozhe Wang, Tian Xueyun, Zhijing Zhang
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12313v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>드림 플라이: 비행 시각 언어 탐색 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12308v1/</link>
+      <description>authors: Yan Deng, Fei Xu
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12308v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>테스트 시점 강-약 능력 전이 (AI4AI)</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12307v1/</link>
+      <description>authors: Cheng Qian, Wenting Zhao, Liangwei Yang, Heng Wang, Jielin Qiu
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12307v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>분산 비용 추론을 위한 재분배 기반 비용 추론 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12306v1/</link>
+      <description>authors: Ebenezer Gelo, Geraud Nangue Tasse, Steven James, Benjamin Rosman
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12306v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>자동 주행을 위한 학습 기반 행동 계획</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12198v1/</link>
+      <description>authors: Jean-Pierre Busch, Guido Linden, Jan Bergmann, Lutz Eckstein
+</description>
+      <pubDate>Thu, 13 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/13/2608-12198v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>Violence Against Women and Girls 시나리오 생성 프레임워크 (ConVAWG)</title>
@@ -146,66 +206,6 @@
       <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29675v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Muon 업데이트 압축 기술 개발</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29674v1/</link>
-      <description>authors: Maria Smirnova, Alexey Kravatskiy
-</description>
-      <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29674v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>언어 구성성의 진화</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29642v1/</link>
-      <description>authors: Fabio De Ponte, Eloise Gaines-White, Conor Houghton, Seth Bullock
-</description>
-      <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29642v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>세계 비평가 모델 (WCM) 개발</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29613v1/</link>
-      <description>authors: Senyu Fei, Xiaopeng Yu, Siyin Wang, Xianzhong Zhao, Jingjing Gong
-</description>
-      <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29613v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>세이버그 이중성 추적 학습</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28628v1/</link>
-      <description>authors: Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu
-</description>
-      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28628v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>ReToken: 시각-언어 모델을 위한 하나의 토큰 개선</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28627v1/</link>
-      <description>authors: Yao Xiao, Reuben Tan, Zhen Zhu, Yuqun Wu, Jianfeng Gao
-</description>
-      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28627v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>인간 중심의 주변 캡처 엔진 (ACE-Data-0)</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28625v1/</link>
-      <description>authors: Yukang Cao, Haozhe Xie, Beichen Wen, Runmao Yao, Yinghao Liu
-</description>
-      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/07/31/2607-28625v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
