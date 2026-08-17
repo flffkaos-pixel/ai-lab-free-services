@@ -5,8 +5,28 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 16 Aug 2026 10:45:11 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 10:33:23 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>선사 시대 손그림 성별 판별을 위한 불확실성 인식 딥 러닝 프레임워크</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14539v1/</link>
+      <description>authors: Karel Becerra, Boris Mederos, Dean Snow, Ramón A. Mollineda
+</description>
+      <pubDate>Mon, 17 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14539v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>증거 해석과 결론 조합을 분리하는 방법</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14509v1/</link>
+      <description>authors: Zhelun Wu
+</description>
+      <pubDate>Mon, 17 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14509v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>AutoDesign: 메타 하네스 최적화 프레임워크</title>
@@ -186,26 +206,6 @@
       <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29684v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>텍스트 조건이 시각 생성에 미치는 규모 특성</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29679v1/</link>
-      <description>authors: Zilong Chen, Chaorui Deng, Kunchang Li, Hongyi Yuan, Haoqi Fan
-</description>
-      <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29679v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>ExtractBench: 기업 문서 추출 벤치마크</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29677v1/</link>
-      <description>authors: Boyang Zhang, Adrian Lyjak, Eli Stewart, Zhaoqi Li, Simon Suo
-</description>
-      <pubDate>Mon, 03 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/03/2607-29677v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
