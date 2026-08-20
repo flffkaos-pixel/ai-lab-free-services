@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 19 Aug 2026 10:36:31 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 10:35:56 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Detecting Backdoors in Object Detection via Pre-NMS Prediction Distribution Shift</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19088v1/</link>
+      <description>authors: Longtian Wang, Zhengyu Zhao, Chenhao Lin, Le Yang, Shiwei Wang
+</description>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19088v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Does Mapping Non-Maximal Probabilities to GMM Components Matter for S-JEPA Encoder Representations?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19084v1/</link>
+      <description>authors: Wenxuan He, Yunpeng Li, Shan Liang
+</description>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19084v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Learning Random Geometric Graphs Drawn in Probabilistic Metric Spaces</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19082v1/</link>
+      <description>authors: Dalia Chakrabarty, Kangrui Wang, Chuqiao Zhang, Ye Liu
+</description>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19082v1/</guid>
+      <category>통계</category>
+    </item>
+    
+    <item>
+      <title>SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19080v1/</link>
+      <description>authors: Changshun Wu, Weicheng He, Xiaowei Huang, Saddek Bensalem
+</description>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19080v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Dynamic Compression in Recurrent Networks</title>
@@ -166,46 +206,6 @@
       <pubDate>Fri, 07 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/07/2608-06276v1/</guid>
       <category>통계</category>
-    </item>
-    
-    <item>
-      <title>실용성 제약하에 임상 시뮬레이션 벤치마크의 현실성 향상</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/07/2608-06265v1/</link>
-      <description>authors: Omid Bazgir, Md Nasir, Jacob Hoffman, Yang Yang, Manu Agrawal
-</description>
-      <pubDate>Fri, 07 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/07/2608-06265v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>아규스: 장기적 사유 능력 위한 일반 목적 에이전트 런타임</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/06/2608-05144v1/</link>
-      <description>authors: Boxiu Li, Zimo Wen, Yijia Fan, Junxiang Lei, Sufeng Guo
-</description>
-      <pubDate>Thu, 06 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/06/2608-05144v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>단일 프레임 구조 조명 깊이 재구성 기술</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/06/2608-05109v1/</link>
-      <description>authors: Wayne Wonseok Rodgers, Xiangyi Le, Seonghoon Jang, Shuwen Wei, Justin Opfermann
-</description>
-      <pubDate>Thu, 06 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/06/2608-05109v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>신뢰할 수 있는 AI의 디지털 헬스 통합</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02238v1/</link>
-      <description>authors: Abdullah Mamun, Shovito Barua Soumma, Hassan Ghasemzadeh
-</description>
-      <pubDate>Tue, 04 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/04/2608-02238v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
