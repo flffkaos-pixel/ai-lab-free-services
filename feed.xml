@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 27 Aug 2026 17:31:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 19:35:05 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27456v1/</link>
+      <description>authors: Tianjie Ju, Zheng Wu, Yueqing Sun, Yuhan Cui, Bobo Li
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27456v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27455v1/</link>
+      <description>authors: Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27455v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27454v1/</link>
+      <description>authors: Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27454v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27421v1/</link>
+      <description>authors: Kevin Zhu, Ryan Zhang, Baraa Abed, Tilendra Choudhary, Malvern Madondo
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27421v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27417v1/</link>
+      <description>authors: Chanho Park, Daehyeon Choi, Jihyun Lee, Minhyuk Sung
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27417v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27413v1/</link>
+      <description>authors: Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27413v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27406v1/</link>
+      <description>authors: Kechen Liu, Ola Shorinwa
+</description>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27406v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19084v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Learning Random Geometric Graphs Drawn in Probabilistic Metric Spaces</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19082v1/</link>
-      <description>authors: Dalia Chakrabarty, Kangrui Wang, Chuqiao Zhang, Ye Liu
-</description>
-      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19082v1/</guid>
-      <category>통계</category>
-    </item>
-    
-    <item>
-      <title>SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19080v1/</link>
-      <description>authors: Changshun Wu, Weicheng He, Xiaowei Huang, Saddek Bensalem
-</description>
-      <pubDate>Thu, 20 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/20/2608-19080v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Dynamic Compression in Recurrent Networks</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-17896v1/</link>
-      <description>authors: Jyothish Pari, Ryan Bahlous-Boldi, Pulkit Agrawal
-</description>
-      <pubDate>Wed, 19 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-17896v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>A Residual Learning Approach for Unsteady Aerodynamic Load Prediction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-17894v1/</link>
-      <description>authors: Divya Sanghi, Carlos E. S. Cesnik
-</description>
-      <pubDate>Wed, 19 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-17894v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Don&#39;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-16889v1/</link>
-      <description>authors: Bingxin Xu, Yuzhang Shang, Emilio Ferrara
-</description>
-      <pubDate>Wed, 19 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/19/2608-16889v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>선사 시대 손그림 성별 판별을 위한 불확실성 인식 딥 러닝 프레임워크</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14539v1/</link>
-      <description>authors: Karel Becerra, Boris Mederos, Dean Snow, Ramón A. Mollineda
-</description>
-      <pubDate>Mon, 17 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14539v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>증거 해석과 결론 조합을 분리하는 방법</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14509v1/</link>
-      <description>authors: Zhelun Wu
-</description>
-      <pubDate>Mon, 17 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/17/2608-14509v1/</guid>
       <category>AI/ML</category>
     </item>
     
