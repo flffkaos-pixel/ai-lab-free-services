@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 31 Aug 2026 13:48:49 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 13:31:10 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Context-Aware Interleaved Batching for WhisperX</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31170v1/</link>
+      <description>authors: Carlos Bain, Max Bain
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31170v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31167v1/</link>
+      <description>authors: Weiqi Wang, Zhi Li, Yudong Lei, David Martinez, Xiaofeng Gao
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31167v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Constant Individual Regret in General Games</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31166v1/</link>
+      <description>authors: Mingyang Liu, Gabriele Farina, Asuman Ozdaglar
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31166v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31159v1/</link>
+      <description>authors: Yiling Yao, Wenjuan Zhang, Bowen Wang, Bocheng Li, Wentao Song
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31159v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31157v1/</link>
+      <description>authors: Shijun Zhang
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31157v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31139v1/</link>
+      <description>authors: Riya Ahuja, Tim Kacprowski, Roya Shiasi Sardoabi
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31139v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>BLARM: Animating 3D Objects from Video via Blending Latent Rigid Motion Primitives</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31113v1/</link>
+      <description>authors: Pradyumn Goyal, Yizhak Ben-Shabat, Hsueh-Ti Derek Liu, Haomiao Jiang, Snehasish Mukherjee
+</description>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/01/2608-31113v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs</title>
@@ -136,76 +206,6 @@
       <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27406v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26105v1/</link>
-      <description>authors: Junxiang Xu, Ruisi Wang, Fanyi Pu, Maijunxian Wang, Ran Ji
-</description>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26105v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26103v1/</link>
-      <description>authors: Jiaming Zhou, Qihang Zhang, Gangwei Xu, Cunxin Fan, Yujie Zhao
-</description>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26103v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26094v1/</link>
-      <description>authors: Hao Yin, Paritosh Parmar, Lijun Gu, Lin Xu, Tianxiao Guo
-</description>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26094v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26091v1/</link>
-      <description>authors: Nabaraj Subedi, Shuvo Dip Datta, Ahmed Abdelaty, Shivanand Venkanna Sheshappanavar
-</description>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26091v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>SwarmWorld: Stigmergic technological evolution in societies of language-model agents</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26081v1/</link>
-      <description>authors: Subhadeep Pal, Fiona Y. Wang, Markus J. Buehler
-</description>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/27/2608-26081v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>How to Train a Critic Stably and Efficiently</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/26/2608-23566v1/</link>
-      <description>authors: Penghui Qi, Xiangxin Zhou, Wee Sun Lee
-</description>
-      <pubDate>Wed, 26 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/26/2608-23566v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Provably adaptive sampling with uniform and remasking discrete diffusion models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/26/2608-23554v1/</link>
-      <description>authors: Daniil Dmitriev, Zhihan Huang, Yuting Wei
-</description>
-      <pubDate>Wed, 26 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/26/2608-23554v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
