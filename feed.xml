@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 01 Sep 2026 13:31:10 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 12:51:21 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Uncovering Understanding-Generation Synergy in Native Unified Multimodal Models: From Representation, Task to System</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01607v1/</link>
+      <description>authors: Penghao Wu, Haiwen Diao, Weichen Fan, Lewei Lu, Dahua Lin
+</description>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01607v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01604v1/</link>
+      <description>authors: Himil Vasava, Ming Jiang
+</description>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01604v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01603v1/</link>
+      <description>authors: Kefeng Duan, Dewu Zheng, Yanlin Wang, Xiwen Wang, Ensheng Shi
+</description>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01603v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>UI-VISA: U-Net Initialized Vascular Image Segmentation Architecture</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01598v1/</link>
+      <description>authors: Asees Kaur, Suzanne S. Sindi, Erica M. Rutter
+</description>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01598v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01596v1/</link>
+      <description>authors: Haoyuan Deng, Haichao Liu, Wenkai Guo, Yuan Ling, Zaijia Yang
+</description>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/02/2609-01596v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>Context-Aware Interleaved Batching for WhisperX</title>
@@ -156,56 +206,6 @@
       <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27455v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27454v1/</link>
-      <description>authors: Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27454v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27421v1/</link>
-      <description>authors: Kevin Zhu, Ryan Zhang, Baraa Abed, Tilendra Choudhary, Malvern Madondo
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27421v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27417v1/</link>
-      <description>authors: Chanho Park, Daehyeon Choi, Jihyun Lee, Minhyuk Sung
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27417v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27413v1/</link>
-      <description>authors: Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27413v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27406v1/</link>
-      <description>authors: Kechen Liu, Ola Shorinwa
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27406v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
