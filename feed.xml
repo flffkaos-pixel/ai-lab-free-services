@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 02 Sep 2026 12:51:21 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 12:54:48 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>A Common Measure of Communication for Speech Brain-Computer Interfaces</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02887v1/</link>
+      <description>authors: Dulhan Jayalath, Benjamin Ballyk, Oiwi Parker Jones
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02887v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02886v1/</link>
+      <description>authors: Junchao Huang, Guian Fang, Shengju Qian, Xianghao Kong, Zhuoran Zhao
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02886v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Discriminative World Models for Web Agents</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02885v1/</link>
+      <description>authors: Kelvin Li, Dhruv Pendharkar, Anish Pahilajani, Chuyi Shang, Leon Oks
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02885v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02864v1/</link>
+      <description>authors: Yutong Liu, Nan Huang, Xu Cao, James M. Rehg
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02864v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02861v1/</link>
+      <description>authors: Cagri Temel
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02861v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>User Feedback Provides a Unique Signal that LLMs Can not Detect</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02859v1/</link>
+      <description>authors: Shachar Don-Yehiya, Leshem Choshen, Omri Abend
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02859v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Post-Training Language Models for Gold-Medal Performance in Coding Competitions</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02849v1/</link>
+      <description>authors: Aleksander Ficek, Sean Narenthiran, Mehrzad Samadi, Somshubra Majumdar, Boris Ginsburg
+</description>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/03/2609-02849v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Uncovering Understanding-Generation Synergy in Native Unified Multimodal Models: From Representation, Task to System</title>
@@ -136,76 +206,6 @@
       <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28589v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28578v1/</link>
-      <description>authors: Nan Wang, Mohit Yadav, Jonathan Wulff, Aidan Rosenbaum, Kezhou Chen
-</description>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28578v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>SignRR: Retrieve and Refine Real Motion for Sign Language Production</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28568v1/</link>
-      <description>authors: Fidel Omar Tito Cruz, Angie Sanchez Marquina, Summy Farfan, Gissella Bejarano
-</description>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28568v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>GeBDA: Building Damage Assessment as Text-Based Sequence Prediction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28567v1/</link>
-      <description>authors: Olivier Dietrich, Krishna Sapkota, Konrad Schindler, Genady Beryozkin
-</description>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28567v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>A Formal Limitation on Learning Human Language From Textual Corpora</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28560v1/</link>
-      <description>authors: Emily Cheng, Ryan Cotterell
-</description>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28560v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28518v1/</link>
-      <description>authors: Sihan Jia, Oliver Lemon
-</description>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/31/2608-28518v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27456v1/</link>
-      <description>authors: Tianjie Ju, Zheng Wu, Yueqing Sun, Yuhan Cui, Bobo Li
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27456v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27455v1/</link>
-      <description>authors: Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li
-</description>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/08/28/2608-27455v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
