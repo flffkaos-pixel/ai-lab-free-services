@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 09 Sep 2026 13:06:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 13:04:01 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Programmable World Model</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10540v1/</link>
+      <description>authors: Zheng-Hui Huang, Guixu Lin, Jiacheng Lin, Yi-Chuan Huang, Ruihan Yu
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10540v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10539v1/</link>
+      <description>authors: Yiling Ma, Yilun Zhao, Sihong Wu, Manasi Patwardhan, Arman Cohan
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10539v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Likelihood-free inference with nuisance parameters through normalizing flows</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10534v1/</link>
+      <description>authors: Phil Assheton
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10534v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Guiding Image-to-3D Generation with Test-Time Partial Observations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10531v1/</link>
+      <description>authors: Jerred Chen, Simon Weber, Ronald Clark
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10531v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>A positive resolution of the gap-entropy conjecture</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10529v1/</link>
+      <description>authors: P. M. Aronow, Nathan Kallus, Patrick Lopatto
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10529v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Show-Harness: Just a VLM Agent Can Play Robots</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10522v1/</link>
+      <description>authors: Yanzhe Chen, Zechen Bai, Zhijun Cao, Wenzheng Zeng, Kevin Qinghong Lin
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10522v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10494v1/</link>
+      <description>authors: Blake Stenstrom, Charangan Vasantharajan, Brian Sathianathan
+</description>
+      <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10494v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Curriculum Learning as Transport: Understanding Curricula with Wasserstein Geodesics</title>
@@ -136,76 +206,6 @@
       <pubDate>Mon, 07 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/07/2609-05403v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/07/2609-05401v1/</link>
-      <description>authors: Wonje Jeung, Sangyeon Yoon, Hyesoo Hong, Yoonjun Cho, Dongjae Jeon
-</description>
-      <pubDate>Mon, 07 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/07/2609-05401v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Temporal Self-Distillation: Learning Visual State Tracking in Videos Without Supervision</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04203v1/</link>
-      <description>authors: Shravan Venkatraman, Wenshuai Zhao, Mohammad Hassan Vali, Arno Solin
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04203v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04202v1/</link>
-      <description>authors: Adeela Islam, Zorah Lähner, Vittorio Murino, Vladislav Golyanik
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04202v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04199v1/</link>
-      <description>authors: Yuntian Deng, Pengyu Nie, Stuart Shieber
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04199v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04198v1/</link>
-      <description>authors: Haoyaun Zhu, Jie Zhang
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04198v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04197v1/</link>
-      <description>authors: Lihao Liu, Peng Tang, Kunwar Yashraj Singh, Shabnam Ghadar
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04197v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04193v1/</link>
-      <description>authors: Yupeng Zheng, Xiang Li, Songen Gu, Yuhang Zheng, Shuai Tian
-</description>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/04/2609-04193v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
