@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,11 +33,60 @@
   
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/field/ai-ml,cv,nlp,rl,audio,robotics,statistics/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11929v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11923v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11920v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11918v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11917v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11913v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11900v1/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <url>
     <loc>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/10/2609-10540v1/</loc>
