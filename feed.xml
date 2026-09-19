@@ -5,8 +5,18 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 18 Sep 2026 12:58:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:56:54 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/19/2609-20822v1/</link>
+      <description>authors: Bingxin Xu, Yuzhang Shang, Zhen Dong, Emilio Ferrara
+</description>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/19/2609-20822v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>Objective vs. Search: Decomposing What Makes a Good Tokeniser</title>
@@ -196,16 +206,6 @@
       <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11913v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>MindTopo: Can Foundation Models Reason in Topological Space?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11900v1/</link>
-      <description>authors: Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Jianwen Lyu
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11900v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
