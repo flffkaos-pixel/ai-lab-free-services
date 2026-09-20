@@ -5,8 +5,38 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 19 Sep 2026 12:56:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 13:16:43 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Embedding Models Measure in Peculiar Ways</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20821v1/</link>
+      <description>authors: Juri Opitz, Andrianos Michail
+</description>
+      <pubDate>Sun, 20 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20821v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Can 4D Foundation Models Remember?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20819v1/</link>
+      <description>authors: Guangzhao He, Hadar Averbuch-Elor, Wei-Chiu Ma
+</description>
+      <pubDate>Sun, 20 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20819v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Paint-Anything: Unified Any-Color Control for Image Generation and Editing</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20816v1/</link>
+      <description>authors: Ji Xie, Dewei Zhou, Xinyu Huang, Zhennan Chen, Xun Wang
+</description>
+      <pubDate>Sun, 20 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/20/2609-20816v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation</title>
@@ -176,36 +206,6 @@
       <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11920v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>General Quantification of Covariate and Concept Shifts</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11918v1/</link>
-      <description>authors: Hongbo Chen, Li Charlie Xia
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11918v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11917v1/</link>
-      <description>authors: Atindra Jha, Margaret Li, Jure Leskovec, Percy Liang, Luke Zettlemoyer
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11917v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Distance generalization in transformers: why bother with positional encoding?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11913v1/</link>
-      <description>authors: Daniel Henrik Nevermann, Claudius Gros
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11913v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
