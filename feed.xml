@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 20 Sep 2026 13:16:43 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 13:18:00 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22086v1/</link>
+      <description>authors: Hongyang Du, Lan Yan, Christian Flores, Asim Kadav
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22086v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22085v1/</link>
+      <description>authors: Saksham Singh, Zheyuan Hu, Max Sobol Mark, Jeffrey Yu, Zackory Erickson
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22085v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>MintAct: A Unified Visual Agent for Digital Environments</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22083v1/</link>
+      <description>authors: Mingfei Gao, Rui Tian, Haiming Gang, Bohan Zhai, Le Zhang
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22083v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Cross-sector generalization of accident-process role classification in occupational accident narratives</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22081v1/</link>
+      <description>authors: Aho Yapi, Pierre Latouche, Arnaud Guillin, Yan Bailly
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22081v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22064v1/</link>
+      <description>authors: Alexandre Andre, Shivashriganesh P. Mahato, Vinam Arora, Keshav Balaji, Divyansha Lachi
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22064v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22056v1/</link>
+      <description>authors: Andre Bacellar
+</description>
+      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22056v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Embedding Models Measure in Peculiar Ways</title>
@@ -146,66 +206,6 @@
       <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17516v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17499v1/</link>
-      <description>authors: Vicky Feliren, A. Taufiq Asyhari, Muhamad Risqi U. Saputra
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17499v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>FreqSpaNet: Frequency and Spatial Learning of SFPF for Physical Layer Hardware Integrity Detection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17491v1/</link>
-      <description>authors: Xiaoxuan Huang, Jinlong Xu, YiZhe Wang, Meng Zhang, Xian Li
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17491v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17479v1/</link>
-      <description>authors: Jiayi Zhou, David W. Johnston, Brinnae Bent
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17479v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>SenseNova-U1.5: Towards Native Unified Visual Intelligence</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11929v1/</link>
-      <description>authors: Haiwen Diao, Jiahao Wang, Chenjing Ding, Hanming Deng, Jiangnan Chen
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11929v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11923v1/</link>
-      <description>authors: Boning Li, Longbo Huang
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11923v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>EVPeriscope: Extended Perception across Aerial and Ground Vehicles with Event-based Propeller Tracking</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11920v1/</link>
-      <description>authors: Dexter Ong, Vijay Kumar, Pratik Chaudhari
-</description>
-      <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/11/2609-11920v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
