@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 22 Sep 2026 13:07:03 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 13:11:05 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26796v1/</link>
+      <description>authors: Quan Nguyen-Tri, Mukul Ranjan, Zhiqiang Shen
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26796v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>φ-RIE: From Photorealistic Reconstruction to Interactive Environments</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26795v1/</link>
+      <description>authors: Runyi Yang, Deheng Zhang, Xiaoye Wang, Kanzhi Wu, Lei Sun
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26795v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26793v1/</link>
+      <description>authors: Shufan Sun, Chen Wang, Enxin Song, Jiatao Gu, Lingjie Liu
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26793v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26783v1/</link>
+      <description>authors: Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26783v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Agensh: Scaling Organizational Intelligence to 1,024 Agents</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26781v1/</link>
+      <description>authors: Zhihao Zhan, Ting Song, Li Dong, Shaohan Huang, Jianxun Lian
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26781v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26780v1/</link>
+      <description>authors: Haobo Zheng, Tan Tang, Yan Chen, Weijie Wang, Yingcai Wu
+</description>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26780v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design</title>
@@ -145,66 +205,6 @@
 </description>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/17/2609-18649v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Fallacy Benchmarks Measure Scheme Recognition, Not Fallacy Detection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/17/2609-18644v1/</link>
-      <description>authors: Navyansh Singh, Animesh Pathak, Aarav Singh
-</description>
-      <pubDate>Thu, 17 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/17/2609-18644v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Agentic Societies Need a Social Harness</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17527v1/</link>
-      <description>authors: Tapan Chugh, Vidushi Singh, Krish Jain, Arvind Krishnamurthy, Ratul Mahajan
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17527v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Modality-Autoregressive World-Action Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17524v1/</link>
-      <description>authors: Adam Hung, Bardienus P. Duisterhof, Deva Ramanan, Jeffrey Ichnowski
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17524v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17523v1/</link>
-      <description>authors: Shuhan Xue, Jianyuan Zhong, Ziyuan Nan, Wenbin Li, Zhaochen Yu
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17523v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17521v1/</link>
-      <description>authors: Chuhao Chen, Peter Wonka, Chaoyang Wang, Chen Wang, Qiao Feng
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17521v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17516v1/</link>
-      <description>authors: Ali Şenol
-</description>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/16/2609-17516v1/</guid>
       <category>NLP</category>
     </item>
     
