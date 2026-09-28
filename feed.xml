@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 27 Sep 2026 13:42:17 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 13:43:10 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31620v1/</link>
+      <description>authors: Hongyang Du, Yunfei Xie, Junjie Ye, Jiawei Yang, Xiaoyan Cong
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31620v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31619v1/</link>
+      <description>authors: Parsa Hosseini, Akasha Tigalappanavara, Sumit Nawathe, Chenrui Fan, Sourya Basu
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31619v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Gap-free Differentially Private PCA for Gaussian Data</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31614v1/</link>
+      <description>authors: Alina Ene, Huy L. Nguyen
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31614v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Learning Robot Policies from Sparse Success Signals via STL-Guided Stein Variational Policy Gradient</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31606v1/</link>
+      <description>authors: Hongrui Zheng, Cristian Ioan Vasile, Antonio Loquercio, Rahul Mangharam
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31606v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>User Model Extraction via Belief Self-Distillation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31603v1/</link>
+      <description>authors: Ali Holmov, Yiran Huang, Kirill Bykov, Zeynep Akata
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31603v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>GraphWrit3R: End-to-End 3D Scene Graph Writing</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31595v1/</link>
+      <description>authors: Luka Milivojevic, Nikola Popovic, Sayan Deb Sarkar, Sebastian Koch, Iro Armeni
+</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31595v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>LLM Agents Can Easily Tamper With Their Own Traces</title>
@@ -146,66 +206,6 @@
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26783v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Agensh: Scaling Organizational Intelligence to 1,024 Agents</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26781v1/</link>
-      <description>authors: Zhihao Zhan, Ting Song, Li Dong, Shaohan Huang, Jianxun Lian
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26781v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26780v1/</link>
-      <description>authors: Haobo Zheng, Tan Tang, Yan Chen, Weijie Wang, Yingcai Wu
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26780v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22086v1/</link>
-      <description>authors: Hongyang Du, Lan Yan, Christian Flores, Asim Kadav
-</description>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22086v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22085v1/</link>
-      <description>authors: Saksham Singh, Zheyuan Hu, Max Sobol Mark, Jeffrey Yu, Zackory Erickson
-</description>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22085v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>MintAct: A Unified Visual Agent for Digital Environments</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22083v1/</link>
-      <description>authors: Mingfei Gao, Rui Tian, Haiming Gang, Bohan Zhai, Le Zhang
-</description>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22083v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Cross-sector generalization of accident-process role classification in occupational accident narratives</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22081v1/</link>
-      <description>authors: Aho Yapi, Pierre Latouche, Arnaud Guillin, Yan Bailly
-</description>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/21/2609-22081v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
