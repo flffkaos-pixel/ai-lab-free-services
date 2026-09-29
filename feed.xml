@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 28 Sep 2026 13:43:10 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 14:11:00 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>FurE: Efficient Instance-Specific 3D Fur Reconstruction without Animal-Fur Datasets</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35770v1/</link>
+      <description>authors: Srinjay Sarkar, Prakhar Kaushik, Soumava Paul, Alan Yuille
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35770v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Telescopic Language Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35769v1/</link>
+      <description>authors: Zhilin Guo, Boqiao Zhang, Hakan Aktas, Kyle Fogarty, Nursena Koprucu Aslan
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35769v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>PDMD: Projected Distribution Matching Distillation for Video Diffusion Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35768v1/</link>
+      <description>authors: Zimo Wang, Junkun Yuan, Angtian Wang, Haotian Yang, Canyu Zhang
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35768v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Retrieving Biblical Intertextual References in Karen Blixen&#39;s Seven Gothic Tales</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35765v1/</link>
+      <description>authors: András Kovács, Alexander Conroy, Daniel Hershcovich, Jens Bjerring-Hansen
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35765v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Unifying Distributional Training for One-Step Visual Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35763v1/</link>
+      <description>authors: Chi Zhang, Haoyang Shi, Yueyi Liu, Ruichuan An, Junkang Zhou
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35763v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35761v1/</link>
+      <description>authors: Rui Zhou, Yibo Yuan, Junkai Zhao, Fangyuan Zhao, Xiaoguang Zhao
+</description>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35761v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders</title>
@@ -146,66 +206,6 @@
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/24/2609-28471v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>StudentBench: AI and human tutoring yield equivalent GRE learning gains</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/24/2609-28470v1/</link>
-      <description>authors: Curtis Northcutt, Inaara Hasmani, Kevin Feng, Trevor Khangi, Andreas Plesner
-</description>
-      <pubDate>Thu, 24 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/24/2609-28470v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/24/2609-28449v1/</link>
-      <description>authors: Hamed Taherkhani, Mohammad Abdollahi, Melika Sepidband, Hridya Dhulipala, Tien N. Nguyen
-</description>
-      <pubDate>Thu, 24 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/24/2609-28449v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26796v1/</link>
-      <description>authors: Quan Nguyen-Tri, Mukul Ranjan, Zhiqiang Shen
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26796v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>φ-RIE: From Photorealistic Reconstruction to Interactive Environments</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26795v1/</link>
-      <description>authors: Runyi Yang, Deheng Zhang, Xiaoye Wang, Kanzhi Wu, Lei Sun
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26795v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26793v1/</link>
-      <description>authors: Shufan Sun, Chen Wang, Enxin Song, Jiatao Gu, Lingjie Liu
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26793v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26783v1/</link>
-      <description>authors: Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos
-</description>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/23/2609-26783v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
