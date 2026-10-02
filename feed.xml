@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 01 Oct 2026 14:08:06 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 14:01:41 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Moore, Escher, Penrose: A Conformal Golden Braid</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02210v1/</link>
+      <description>authors: Sophia Feldman, Assaf Shocher
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02210v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Sphere Encoder 2</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02208v1/</link>
+      <description>authors: Kaiyu Yue, Sean McLeish, Ruchit Rawal, Brian Bartoldson, Menglin Jia
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02208v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02207v1/</link>
+      <description>authors: Ramazan Fazylov, Stamatis Lefkimmiatis, Ivan Laptev
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02207v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02206v1/</link>
+      <description>authors: Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02206v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02204v1/</link>
+      <description>authors: Yen-Jen Wang, Haozhe Jiang, Shuying Deng, Haoru Xue, Weirui Ye
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02204v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Embedding Prediction Helps Image Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02203v1/</link>
+      <description>authors: Sihan Xu, Ji Xie, Zilin Wang, Hui Shen, Stella X. Yu
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02203v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02202v1/</link>
+      <description>authors: Sohyeon Kim, Yoonho Lee, Bo Liu, Dayoon Ko, Rulin Shao
+</description>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02202v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Multimodal Flow: Unified Flow Modeling of Language and Vision in Embedding Spaces</title>
@@ -136,76 +206,6 @@
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35765v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Unifying Distributional Training for One-Step Visual Generation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35763v1/</link>
-      <description>authors: Chi Zhang, Haoyang Shi, Yueyi Liu, Ruichuan An, Junkang Zhou
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35763v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35761v1/</link>
-      <description>authors: Rui Zhou, Yibo Yuan, Junkai Zhao, Fangyuan Zhao, Xiaoguang Zhao
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35761v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31620v1/</link>
-      <description>authors: Hongyang Du, Yunfei Xie, Junjie Ye, Jiawei Yang, Xiaoyan Cong
-</description>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31620v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31619v1/</link>
-      <description>authors: Parsa Hosseini, Akasha Tigalappanavara, Sumit Nawathe, Chenrui Fan, Sourya Basu
-</description>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31619v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Gap-free Differentially Private PCA for Gaussian Data</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31614v1/</link>
-      <description>authors: Alina Ene, Huy L. Nguyen
-</description>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31614v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Learning Robot Policies from Sparse Success Signals via STL-Guided Stein Variational Policy Gradient</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31606v1/</link>
-      <description>authors: Hongrui Zheng, Cristian Ioan Vasile, Antonio Loquercio, Rahul Mangharam
-</description>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31606v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>User Model Extraction via Belief Self-Distillation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31603v1/</link>
-      <description>authors: Ali Holmov, Yiran Huang, Kirill Bykov, Zeynep Akata
-</description>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/28/2609-31603v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
