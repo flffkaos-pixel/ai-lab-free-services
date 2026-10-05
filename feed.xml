@@ -5,8 +5,18 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 04 Oct 2026 14:06:03 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 13:53:37 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/05/2610-03717v1/</link>
+      <description>authors: Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan, Nhi Ngoc Nguyen, Jeremy Collins
+</description>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/05/2610-03717v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Moore, Escher, Penrose: A Conformal Golden Braid</title>
@@ -196,16 +206,6 @@
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35768v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Retrieving Biblical Intertextual References in Karen Blixen&#39;s Seven Gothic Tales</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35765v1/</link>
-      <description>authors: András Kovács, Alexander Conroy, Daniel Hershcovich, Jens Bjerring-Hansen
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35765v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
