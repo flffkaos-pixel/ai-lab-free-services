@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 05 Oct 2026 13:53:37 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 14:45:58 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06852v1/</link>
+      <description>authors: Shih-Chen Tseng, Chih-Hsuan Chen, Ryan Yang, Hsi-An Chen, Chun-Wei Tuan Mu
+</description>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06852v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Base Models Can Reason By Taking a Cue From Training Data</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06851v1/</link>
+      <description>authors: Sophie L. Wang, Amil Dravid, Rulin Shao, Kevin Farhat, Sewon Min
+</description>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06851v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06850v1/</link>
+      <description>authors: Yucheng Zhang, Sirui Xu, Jinhong Li, Liuyu Bian, Anatulya Nandi
+</description>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06850v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Learning to Read the Contextual Tokens in Diffusion Transformers</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06844v1/</link>
+      <description>authors: Omer Dahary, Etai Sella, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik
+</description>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06844v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Recursive Video In-Context Learning for Agentic Robot</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06843v1/</link>
+      <description>authors: Wenrui Bao, Xinxin Liu, Bingxin Xu, Yuzhang Shang
+</description>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06843v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis</title>
@@ -155,56 +205,6 @@
 </description>
       <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/30/2609-38177v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Breakdown of Local Denoising as Semantic Speciation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/30/2609-38176v1/</link>
-      <description>authors: Guangkuo Liu, Mert Okyay, Yifan F. Zhang, Fangjun Hu, Rahul Nandkishore
-</description>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/30/2609-38176v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/30/2609-38169v1/</link>
-      <description>authors: Bingchen Yao, Haobo Xu, Haokun Lin, Yichen Wu, Ziyu Guo
-</description>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/30/2609-38169v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>FurE: Efficient Instance-Specific 3D Fur Reconstruction without Animal-Fur Datasets</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35770v1/</link>
-      <description>authors: Srinjay Sarkar, Prakhar Kaushik, Soumava Paul, Alan Yuille
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35770v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Telescopic Language Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35769v1/</link>
-      <description>authors: Zhilin Guo, Boqiao Zhang, Hakan Aktas, Kyle Fogarty, Nursena Koprucu Aslan
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35769v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>PDMD: Projected Distribution Matching Distillation for Video Diffusion Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35768v1/</link>
-      <description>authors: Zimo Wang, Junkun Yuan, Angtian Wang, Haotian Yang, Canyu Zhang
-</description>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/09/29/2609-35768v1/</guid>
       <category>CV</category>
     </item>
     
