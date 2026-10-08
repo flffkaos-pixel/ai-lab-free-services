@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 07 Oct 2026 14:18:56 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 14:26:51 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Tetris3D: 3D Scene Generation With Objects That Fit Together</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10539v1/</link>
+      <description>authors: Jaeyeong Kim, Jinhyuk Jang, Jongmin Lee, Kyehong Park, Seungryong Kim
+</description>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10539v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10538v1/</link>
+      <description>authors: Shravan Chaudhari, William Paul, Suchi Saria, Rama Chellappa, Homanga Bharadhwaj
+</description>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10538v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Decoupling Exploration from Optimization in RLVR</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10536v1/</link>
+      <description>authors: Saif Punjwani, Micah Goldblum
+</description>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10536v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10533v1/</link>
+      <description>authors: Hongru Cai, Ran Wei, Wenjie Wang, Chengfa Wu, Ning Song
+</description>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10533v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10527v1/</link>
+      <description>authors: Aleksandar Armacki, Haoyuan Cai, Ali H. Sayed
+</description>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/08/2610-10527v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>World Models&#39; Last Exam in Physics</title>
@@ -156,56 +206,6 @@
       <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02208v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02207v1/</link>
-      <description>authors: Ramazan Fazylov, Stamatis Lefkimmiatis, Ivan Laptev
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02207v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02206v1/</link>
-      <description>authors: Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02206v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02204v1/</link>
-      <description>authors: Yen-Jen Wang, Haozhe Jiang, Shuying Deng, Haoru Xue, Weirui Ye
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02204v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Embedding Prediction Helps Image Generation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02203v1/</link>
-      <description>authors: Sihan Xu, Ji Xie, Zilin Wang, Hui Shen, Stella X. Yu
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02203v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02202v1/</link>
-      <description>authors: Sohyeon Kim, Yoonho Lee, Bo Liu, Dayoon Ko, Rulin Shao
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02202v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
