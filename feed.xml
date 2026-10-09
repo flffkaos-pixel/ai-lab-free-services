@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 08 Oct 2026 14:26:51 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 14:32:46 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12470v1/</link>
+      <description>authors: Jusuk Lee, Sungha Kim, Yeonsoo Park, Jonguk Cheon, Yoonkyo Jung
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12470v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Rubric-CEPR: Self-Evolving Image Editing via Reward-Verified Self-Distillation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12469v1/</link>
+      <description>authors: Ritesh Thawkar, Shubham Patle, Shravan Venkatraman, Rao Muhammad Anwer
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12469v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>CSF: Contextual Safety Filtering for Motion Generators</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12467v1/</link>
+      <description>authors: Lizhi Yang, Yiling Hou, Yao Tang, Junheng Li, Daniel Weng
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12467v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>On the estimation and validity of AI time horizons---a statistical look at the METR plot</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12466v1/</link>
+      <description>authors: Drew T. Nguyen, William Fithian
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12466v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12465v1/</link>
+      <description>authors: Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12465v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12427v1/</link>
+      <description>authors: Yuxuan Hu, Weikang Shi, Yang Bo, Xudong Lu, Xintong Guo
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12427v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>WOVEN: Weaving Visual World Modeling into Multimodal LLMs</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12417v1/</link>
+      <description>authors: Zheyu Fan, Yue Zhang, Mingkai Deng, Kangrui Wang, Qineng Wang
+</description>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12417v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Tetris3D: 3D Scene Generation With Objects That Fit Together</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06852v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Base Models Can Reason By Taking a Cue From Training Data</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06851v1/</link>
-      <description>authors: Sophie L. Wang, Amil Dravid, Rulin Shao, Kevin Farhat, Sewon Min
-</description>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06851v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06850v1/</link>
-      <description>authors: Yucheng Zhang, Sirui Xu, Jinhong Li, Liuyu Bian, Anatulya Nandi
-</description>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06850v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Learning to Read the Contextual Tokens in Diffusion Transformers</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06844v1/</link>
-      <description>authors: Omer Dahary, Etai Sella, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik
-</description>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06844v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Recursive Video In-Context Learning for Agentic Robot</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06843v1/</link>
-      <description>authors: Wenrui Bao, Xinxin Liu, Bingxin Xu, Yuzhang Shang
-</description>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06843v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/05/2610-03717v1/</link>
-      <description>authors: Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan, Nhi Ngoc Nguyen, Jeremy Collins
-</description>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/05/2610-03717v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Moore, Escher, Penrose: A Conformal Golden Braid</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02210v1/</link>
-      <description>authors: Sophia Feldman, Assaf Shocher
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02210v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Sphere Encoder 2</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02208v1/</link>
-      <description>authors: Kaiyu Yue, Sean McLeish, Ruchit Rawal, Brian Bartoldson, Menglin Jia
-</description>
-      <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/02/2610-02208v1/</guid>
       <category>CV</category>
     </item>
     
