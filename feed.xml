@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 11 Oct 2026 13:57:54 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 14:20:57 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Can Language Models Play the Wikipedia Game?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13948v1/</link>
+      <description>authors: Alexander Hickey, Joanna Knight, James Bishop
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13948v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13947v1/</link>
+      <description>authors: Xudong Cai, Ruijie Zhu, Haoliang Shang, Ruining Li, Marc Pollefeys
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13947v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Splat2Act: From Captured Scenes to Personalized VLA Manipulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13945v1/</link>
+      <description>authors: Xiaomeng Ye, Krishna Jaganathan, Gyubeum Lim, Gunjan Chhablani, Muhammad Zubair Irshad
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13945v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Hide and Seek: HIDE Concepts to SEEK explanations for black box models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13935v1/</link>
+      <description>authors: Bhanu Tokas, Rahul Nair, Rockwell Jackson, Hannah Kerner
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13935v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Constructive Bounds for the Topological Expressivity of Neural Networks</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13931v1/</link>
+      <description>authors: Kosio Beshkov
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13931v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>RSI-Anything: Unlocking Recursive Self-Improvement with World Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13912v1/</link>
+      <description>authors: Taoyong Cui, Pinxian Zeng, Wanghan Xu, Hao Xiao, Shuhan Xue
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13912v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13910v1/</link>
+      <description>authors: Shubh Garg, Chen Shani
+</description>
+      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13910v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08791v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Building Rome from a Single Image</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08790v1/</link>
-      <description>authors: Jiraphon Yenphraphai, Fang Li, Tianshuo Xu, Depu Meng, Quentin Herau
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08790v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>QF3: Fast Flow RL with Filtered Q-Gradients</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08789v1/</link>
-      <description>authors: Chung Min Kim, Brent Yi, David McAllister, Hongsuk Choi, Himanshu Gaurav Singh
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08789v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08785v1/</link>
-      <description>authors: Kevin Zhang, Stephen Bates
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08785v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>4D-HOF: Hand-Object Flow Matching for Feed-Forward 4D Interaction Reconstruction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08782v1/</link>
-      <description>authors: Shiqi Li, Sean Cho, Yijie Li, Fengzhi Guo, Bowen Wen
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08782v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08781v1/</link>
-      <description>authors: Ziyu Chen, Yilun Zhao, Jiashuo Sun, Yiling Ma, Manasi Patwardhan
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08781v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Sherpa: Teaching LLMs to Teach Adaptively</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08778v1/</link>
-      <description>authors: Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang, Changyu Chen, Diyi Yang
-</description>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/07/2610-08778v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06852v1/</link>
-      <description>authors: Shih-Chen Tseng, Chih-Hsuan Chen, Ryan Yang, Hsi-An Chen, Chun-Wei Tuan Mu
-</description>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/06/2610-06852v1/</guid>
       <category>CV</category>
     </item>
     
