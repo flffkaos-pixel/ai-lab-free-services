@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 15 Oct 2026 13:05:31 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:59:52 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22372v1/</link>
+      <description>authors: Zhixu Li, Keqian Tang, Litian Gong, Jingyu Yao, Wenqian Zhang
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22372v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Gen4P: Video Generators are 4D Perceivers</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22371v1/</link>
+      <description>authors: Yitong Xia, Zeren Jiang, Chuanxia Zheng
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22371v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22370v1/</link>
+      <description>authors: SeungJu Cha, Ye-Chan Kim, HyunGee Kim, Sungho Koh, Dong-Jin Kim
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22370v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>PathFM: Fast Generative Forecasting of Multivariate Trajectories</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22358v1/</link>
+      <description>authors: Jiachen Yao, Xiyuan Zhang, Annan Yu, Boran Han, Abdul Fatir Ansari
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22358v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22355v1/</link>
+      <description>authors: Bowei Liu, Xinchen Zhang, Xuhuan Li, Tianlin Zhang, Kaian Jiang
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22355v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>FDE-Gym: The Last Mile of AI Delivery</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22350v1/</link>
+      <description>authors: Dongxu Yang, Hongda Yan, Renxin Wang, Baoli Zhang, Haojia Zuo
+</description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22350v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Can Learning to Answer Spatial Questions Improve Novel-View Generation?</title>
@@ -146,66 +206,6 @@
       <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13947v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Splat2Act: From Captured Scenes to Personalized VLA Manipulation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13945v1/</link>
-      <description>authors: Xiaomeng Ye, Krishna Jaganathan, Gyubeum Lim, Gunjan Chhablani, Muhammad Zubair Irshad
-</description>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13945v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Hide and Seek: HIDE Concepts to SEEK explanations for black box models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13935v1/</link>
-      <description>authors: Bhanu Tokas, Rahul Nair, Rockwell Jackson, Hannah Kerner
-</description>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13935v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Constructive Bounds for the Topological Expressivity of Neural Networks</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13931v1/</link>
-      <description>authors: Kosio Beshkov
-</description>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13931v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>RSI-Anything: Unlocking Recursive Self-Improvement with World Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13912v1/</link>
-      <description>authors: Taoyong Cui, Pinxian Zeng, Wanghan Xu, Hao Xiao, Shuhan Xue
-</description>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13912v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13910v1/</link>
-      <description>authors: Shubh Garg, Chen Shani
-</description>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/12/2610-13910v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12470v1/</link>
-      <description>authors: Jusuk Lee, Sungha Kim, Yeonsoo Park, Jonguk Cheon, Yoonkyo Jung
-</description>
-      <pubDate>Fri, 09 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/09/2610-12470v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
