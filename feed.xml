@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 19 Oct 2026 13:05:36 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 13:15:57 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Text-to-Image Generative Modeling Without Language Pretraining</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26863v1/</link>
+      <description>authors: Keshigeyan Chandrasegaran, Yue Zhao, Armin W. Thomas, Ehsan Adeli, Jiajun Wu
+</description>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26863v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Can It Actually Work? Synthesizing Functional CAD Mechanisms</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26861v1/</link>
+      <description>authors: Wenqian Zhang, Yangyi Huang, Zigeng Xu, Weiyang Liu, Zhen Liu
+</description>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26861v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26860v1/</link>
+      <description>authors: Yu Zhou, Cheng-Fu Yang, Rui Sun, Di Wu, Sibo Peng
+</description>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26860v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26855v1/</link>
+      <description>authors: Tianqi Liu, Hanfei Zhao, Qifeng Liang, Hui En Pang, Jiarui Xu
+</description>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/20/2610-26855v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Learning to Correct Geometry in Generated Videos</title>
@@ -165,46 +205,6 @@
 </description>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20607v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20606v1/</link>
-      <description>authors: Huixuan Cheng, Bike Zhang, Shankar Sastry, Koushil Sreenath
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20606v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Latent Compaction with Test-Time Training</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20582v1/</link>
-      <description>authors: Yingfa Chen, Xingyu Shen, Chaojun Xiao, Xu Han
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20582v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20576v1/</link>
-      <description>authors: Artin Tajdini, Manpreet Kaur, Peng Qi
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20576v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>APTree: Extended Behavior Trees for Adaptive and Scalable Automated Robotic Task Planning in Construction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/14/2610-18523v1/</link>
-      <description>authors: Shermin Sherkat, Thomas Wortmann, Andreas Wortmann
-</description>
-      <pubDate>Wed, 14 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/14/2610-18523v1/</guid>
       <category>로봇</category>
     </item>
     
