@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 20 Oct 2026 13:15:57 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 13:05:50 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28632v1/</link>
+      <description>authors: Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron, Gal Chechik
+</description>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28632v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>AEON: Unifying Video and 3D World Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28631v1/</link>
+      <description>authors: Weiqi Zhang, Wenyuan Zhang, Yu-Shen Liu, Junsheng Zhou
+</description>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28631v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28628v1/</link>
+      <description>authors: Yuxuan Kuang, Jiashun Wang, Yixuan Sun, Yufei Ye, Sungjae Park
+</description>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28628v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28616v1/</link>
+      <description>authors: Qingming Li, Ruiyan Sun, Satoshi Nakamura
+</description>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28616v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Benchmarking Arabic Dialects for Math Problems</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28607v1/</link>
+      <description>authors: Noor Abo Mokh, Teresa Lynn, Nizar Habash, Ahmed Elshabrawy, Sara Alhajeri
+</description>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/21/2610-28607v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Text-to-Image Generative Modeling Without Language Pretraining</title>
@@ -156,56 +206,6 @@
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22355v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>FDE-Gym: The Last Mile of AI Delivery</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22350v1/</link>
-      <description>authors: Dongxu Yang, Hongda Yan, Renxin Wang, Baoli Zhang, Haojia Zuo
-</description>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/16/2610-22350v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Can Learning to Answer Spatial Questions Improve Novel-View Generation?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20610v1/</link>
-      <description>authors: Jahyeok Koo, Hyeonseo Yu, Seungho Jang, Jaewoo Jung, Jiwon Kang
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20610v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20609v1/</link>
-      <description>authors: Shaoyuan Xie, Zihan Zhang, Jingxuan Wang, Jiashu Qu, Xiaoqing Liang
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20609v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Representation Conditioning for Generation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20608v1/</link>
-      <description>authors: Saeed Razavi, Xingjian Leng, Liang Zheng
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20608v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20607v1/</link>
-      <description>authors: Zhefei Gong, Hefeifei Jiang, Zehao Wang, Jiachen Li
-</description>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/15/2610-20607v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
