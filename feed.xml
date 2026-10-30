@@ -5,8 +5,88 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 29 Oct 2026 14:02:16 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 14:12:02 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Hybrid AI Patterns: Thirteen Ways to Couple Language Models with Rules, and How to Choose Among Them</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40036v1/</link>
+      <description>authors: Siegfried Handschuh, Götz-Henrik Wiegand, Lorena Raichle
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40036v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>AI Cosmos: An Agentic Infra for Situated Learning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40031v1/</link>
+      <description>authors:  AI Cosmos Team, Jinfeng Zhou, Yuxuan Chen, Fangming Chang, Mingyu Su
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40031v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40030v1/</link>
+      <description>authors: Daniel Strauss, Nikolaos Sotirakis, Zhenshan Bing, Alois Knoll
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40030v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Segment Anything Model Based Context Guided Mamba Unet for Medical Image Segmentation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40029v1/</link>
+      <description>authors: Chenchen Wang, You Zhou
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40029v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40026v1/</link>
+      <description>authors: Xin Ma, Furong Chen, Xinlong Man, Bo Zhang, Yalong Guo
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40026v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>DINOv2 for PET: A Pre-Training Domain Benchmark Across Classification, Segmentation, and Prognosis</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40018v1/</link>
+      <description>authors: Roxanne De Maeyer, Yannick Brackenier, Vicky De Ridder, Simon DeKeyser, Maarten Larmuseau
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40018v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>FIDE: Fiber-Informed Differentiable Experimental Design for Reference-Relative Law Dynamics</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40009v1/</link>
+      <description>authors: Pietro Zanotta, Ján Drgoňa
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-40009v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Can LLMs Ignore What They Know? Measuring Knowledge Leakage in Persona-Based User Simulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-39939v1/</link>
+      <description>authors: Sangmin Lee, Sangwon Lee, Sungbeom Choi, Jeeseung Park, Kibeom Myoung
+</description>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-39939v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction</title>
@@ -126,86 +206,6 @@
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35846v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>The Language of Instruction: Genre and Generative AI</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32982v1/</link>
-      <description>authors: James E. Dobson
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32982v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32978v1/</link>
-      <description>authors: Yuhan Liu, Lianhui Qin, Shenji Wan
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32978v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>UniAction: Unified Action Conditioning for World Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32977v1/</link>
-      <description>authors: Bowen Xue, Zizhang Li, Hong-Xing Yu, Jiajun Wu
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32977v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32971v1/</link>
-      <description>authors: Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu, Shangding Gu
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32971v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32969v1/</link>
-      <description>authors: Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza, Guanya Shi
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32969v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32955v1/</link>
-      <description>authors: Federico Lucca
-</description>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/26/2610-32955v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>A Unified Framework for Image-to-3D Part Generation via Variable Granularity</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/23/2610-31671v1/</link>
-      <description>authors: Qiwen Gu, Xin Zhou, Xiwu Chen, Zhongyang Zhu, Zhuo Zhang
-</description>
-      <pubDate>Fri, 23 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/23/2610-31671v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/23/2610-31670v1/</link>
-      <description>authors: Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei
-</description>
-      <pubDate>Fri, 23 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/23/2610-31670v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
