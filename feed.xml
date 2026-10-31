@@ -5,8 +5,28 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 30 Oct 2026 14:12:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 13:58:32 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Rethinking Neural Thickets Without Weight Perturbations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40649v1/</link>
+      <description>authors: Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez, Loic Landrieu
+</description>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40649v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40646v1/</link>
+      <description>authors: Yunchu Zhang, Ray Song, Junhan Jiao, Liyiming Ke, Yuchen Yang
+</description>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40646v1/</guid>
+      <category>로봇</category>
+    </item>
     
     <item>
       <title>Hybrid AI Patterns: Thirteen Ways to Couple Language Models with Rules, and How to Choose Among Them</title>
@@ -186,26 +206,6 @@
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35862v1/</guid>
       <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Do vision models know that three is three?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35857v1/</link>
-      <description>authors: Ankit Sonthalia, Arnas Uselis, Seong Joon Oh
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35857v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Preserve to Expand: Source-Aware Adaptation and Model Merging for Multilingual LLM-Based ASR</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35846v1/</link>
-      <description>authors: Yuchen Zhang, Haralambos Mouratidis, Ravi Shekhar
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35846v1/</guid>
-      <category>NLP</category>
     </item>
     
   </channel>
