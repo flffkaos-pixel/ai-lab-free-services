@@ -5,8 +5,48 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 31 Oct 2026 13:58:32 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 14:19:09 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Elucidating the Design Space of LM Data Attribution</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40655v1/</link>
+      <description>authors: Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau
+</description>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40655v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40654v1/</link>
+      <description>authors: Moshe Shenfeld, Eliad Tsfadia, Katrina Ligett
+</description>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40654v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Micro-Edits: Computational Support for Fine-Scale Edits in Film</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40653v1/</link>
+      <description>authors: Nhan Tran, Hijung Valentina Shin, Abe Davis, Mackenzie Leake
+</description>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40653v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40627v1/</link>
+      <description>authors: Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo
+</description>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40627v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Rethinking Neural Thickets Without Weight Perturbations</title>
@@ -166,46 +206,6 @@
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35868v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35866v1/</link>
-      <description>authors: Xi Chen, Chongjian Ge, Yiran Xu, Yiqun Mei, Henrik I. Christensen
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35866v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Center-of-Mass Interpretation of Evolution Strategies</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35865v1/</link>
-      <description>authors: Akshat Gupta
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35865v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>VibeVideoBench:Evaluating Multimodal Agents on Code-Driven Video Generation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35864v1/</link>
-      <description>authors: Muxi Diao, Wenbin Xu, Lele Yang, Xuyang Ma, Yuzhe Chen
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35864v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Learning Force-Reactive Humanoid Loco-Manipulation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35862v1/</link>
-      <description>authors: Sihang Li, Xiaofeng Guo, Jinkun Cao, Charlie Cheng, Ruihan Yang
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35862v1/</guid>
-      <category>로봇</category>
     </item>
     
   </channel>
