@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 01 Nov 2026 14:19:09 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 14:21:48 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42152v1/</link>
+      <description>authors: Nattakorn Kittisut, Roy M. Gabriel, Marly van Assen, Mohammadreza Zandehshahvar, Carlo N. De Cecco
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42152v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Latent Reasoning in Continuous Space for Unified Multimodal Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42149v1/</link>
+      <description>authors: Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee, Minsu Cho, Jinwoo Shin
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42149v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Flide: Accelerating Decision Inference with Exact State Forking</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42148v1/</link>
+      <description>authors: Bobo Li, Jiajia Song, Hao Fei, Wynne Hsu, Mong Li Lee
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42148v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42147v1/</link>
+      <description>authors: Ales Kubicek, Andrea Caciolai, Liangzu Peng, Sukrit Sumant, Benjamin Hoover
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42147v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Hierarchical World Models with Implicit Dynamics</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42146v1/</link>
+      <description>authors: Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui, Nicolas Ballas, Mido Assran
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42146v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42139v1/</link>
+      <description>authors: Vitaly Feldman, Audra McMillan, Kunal Talwar
+</description>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42139v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Elucidating the Design Space of LM Data Attribution</title>
@@ -146,66 +206,6 @@
       <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/30/2610-39939v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37668v1/</link>
-      <description>authors: Prakhar Kaushik, Soumava Paul, Alan Yuille
-</description>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37668v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37666v1/</link>
-      <description>authors: Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, Min-Hung Chen, Yu-Chiang Frank Wang
-</description>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37666v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>When Should We Intervene at Test Time?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37658v1/</link>
-      <description>authors: Jiahao Zhang, Xinling Wen, Liangliang Li, Yu Chen
-</description>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37658v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37657v1/</link>
-      <description>authors: Igor Shilov, Xiaoxue Yang, Alexander Panfilov, Evgenii Kortukov, Matthieu Meeus
-</description>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37657v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>GEPA-Curator: Curated Learning for Self Improving Agents</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37651v1/</link>
-      <description>authors: Zack Yu, Nicholas Lee, Minjae Lee, Lakshya Agarwal, Luca Manolache
-</description>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/28/2610-37651v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Retriever-Free Retrieval: Navigating Documents with Decision Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35868v1/</link>
-      <description>authors: Chao Wan, Paul Jünger, Beixi Du, Bodong Liu, Navaneetha Krishnan
-</description>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/27/2610-35868v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
