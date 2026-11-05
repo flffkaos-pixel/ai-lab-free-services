@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 04 Nov 2026 14:40:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 15:02:22 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>From Pixels to Actions - Towards Native Vision-Language-Action Policies</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06918v1/</link>
+      <description>authors: Weichen Fan, Haiwen Diao, Penghao Wu, Siyuan Hu, Ziqi Huang
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06918v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06914v1/</link>
+      <description>authors: Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06914v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>cuRoboV2-Fast: Fast Torque-Limited Collision-Free Motion Planning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06913v1/</link>
+      <description>authors: Balakumar Sundaralingam, Adithyavairavan Murali, Stan Birchfield
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06913v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06912v1/</link>
+      <description>authors: Nicolas Tricard, Linzheng Wang, Jason Chen, Sili Deng
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06912v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06911v1/</link>
+      <description>authors: Fei Lin, Tengchao Zhang, Ziyang Gong, Xiaotong Yu, Bohan Zhang
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06911v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Perceptive Humanoid Motion from Simulation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06908v1/</link>
+      <description>authors: Siyuan Hu, Abulikemu Abuduweili, Yue Meng, Shipeng Liu, Quentin Leboutet
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06908v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06876v1/</link>
+      <description>authors: Yulu An, Yifei Feng, Xiangyang Yin
+</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06876v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>DreamX: Video Diffusion Model is a Universal Latent Action Learner</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42147v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Hierarchical World Models with Implicit Dynamics</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42146v1/</link>
-      <description>authors: Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui, Nicolas Ballas, Mido Assran
-</description>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42146v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42139v1/</link>
-      <description>authors: Vitaly Feldman, Audra McMillan, Kunal Talwar
-</description>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/02/2610-42139v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Elucidating the Design Space of LM Data Attribution</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40655v1/</link>
-      <description>authors: Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau
-</description>
-      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40655v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40654v1/</link>
-      <description>authors: Moshe Shenfeld, Eliad Tsfadia, Katrina Ligett
-</description>
-      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40654v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Micro-Edits: Computational Support for Fine-Scale Edits in Film</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40653v1/</link>
-      <description>authors: Nhan Tran, Hijung Valentina Shin, Abe Davis, Mackenzie Leake
-</description>
-      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40653v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40627v1/</link>
-      <description>authors: Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo
-</description>
-      <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/01/2610-40627v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Rethinking Neural Thickets Without Weight Perturbations</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40649v1/</link>
-      <description>authors: Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez, Loic Landrieu
-</description>
-      <pubDate>Sat, 31 Oct 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/10/31/2610-40649v1/</guid>
       <category>AI/ML</category>
     </item>
     
