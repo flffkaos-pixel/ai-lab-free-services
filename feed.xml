@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 08 Nov 2026 14:18:07 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 14:36:01 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09894v1/</link>
+      <description>authors: Chaoyang Wang, Sicheng Gao, Junan Hu, Kunyang Li, Dongyang Chen
+</description>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09894v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>On Agentic Manipulation Policies</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09892v1/</link>
+      <description>authors: Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, Jesse T. Gonzalez, Negin Heravi
+</description>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09892v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>On the (non-)closedness of the set of ReLU networks</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09887v1/</link>
+      <description>authors: Eloi Martinet, Leon Bungert
+</description>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09887v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09868v1/</link>
+      <description>authors: Xingyu Liu, Xiangyang Yin, Tianhua Xia, Haiyu Wang, Sai Qian Zhang
+</description>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09868v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>How far does a hash-only sender go? A pre-registered map of sender memory versus bits for short text messages</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09848v1/</link>
+      <description>authors: Marcelo Samoilenko
+</description>
+      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09848v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>User Embeddings are Superpositions of Interpretable Behavioral Modes</title>
@@ -156,56 +206,6 @@
       <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05377v1/</guid>
       <category>CV</category>
-    </item>
-    
-    <item>
-      <title>From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05376v1/</link>
-      <description>authors: Hao Fei
-</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05376v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05373v1/</link>
-      <description>authors: Austin Tsai, Saurav Nanda, Ganapathy Parthasarathy, Bhuvnesh Kumar, Parivesh Choudhary
-</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05373v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05372v1/</link>
-      <description>authors: Yuhan Liu, Xinqi Liu, Zixuan Dong, Keith W. Ross, Shenji Wan
-</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05372v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05361v1/</link>
-      <description>authors: Zhipeng Zhong, Matthew Coombes, Cunjia Liu
-</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05361v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Whitened Advantage Summation Policy Optimization: Correlation-Aware Aggregation for Multi-Reward Reinforcement Learning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/03/2611-02609v1/</link>
-      <description>authors: Olaitan Olaleye, Jayson Meribe, Temidayo Olaleye
-</description>
-      <pubDate>Tue, 03 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/03/2611-02609v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
