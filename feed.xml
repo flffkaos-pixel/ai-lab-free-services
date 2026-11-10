@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:36:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 15:53:03 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>GHiML: VLM-Guided Hierarchical Multi-Label Learning with Applications to Benthic Imagery</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12564v1/</link>
+      <description>authors: Isaac Xu, Devi Ayyagari, Martin Gillis, Benjamin Misiuk, Craig J. Brown
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12564v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>WanderBench: Can World Models Explore Dynamic Worlds from Video?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12557v1/</link>
+      <description>authors: Yuhang Chen, Jiheng Li, Jiale Wang, Zai Wang, Guangyue Liu
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12557v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>TID System for Speech-COSER Challenge 2026: ASR Track</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-11497v1/</link>
+      <description>authors: Fernando López, Jordi Luque
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-11497v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Beyond Memory Limits: A Hierarchical Spatio-Temporal Map Representation for Large-Scale 3D Autonomous Exploration</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-11489v1/</link>
+      <description>authors: Yizhe Zhang, Jianping Li, Yilun Gao, Liangliang Yin, Pengfei Wan
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-11489v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Risk-Sensitive Reinforcement Learning for an Options Market Maker: An Empirical Study with Real S&amp;P 500 Options</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-10956v1/</link>
+      <description>authors: Jacky Chen, Ing-Haw Cheng, John Hull, Landis Li, Zissis Poulos
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-10956v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Interpretable Cyber-Physical Attack Detection in Smart Grids: A Leakage-Controlled Multi-Testbed Evaluation of Fusion, Robustness, and Observability Limits</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-10950v1/</link>
+      <description>authors: Muhammad Ridwanul Hoquea, Sarah Sharif, Reza Saeed Kandezy, Yaser Banad
+</description>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-10950v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
@@ -146,66 +206,6 @@
       <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06914v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>cuRoboV2-Fast: Fast Torque-Limited Collision-Free Motion Planning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06913v1/</link>
-      <description>authors: Balakumar Sundaralingam, Adithyavairavan Murali, Stan Birchfield
-</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06913v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06912v1/</link>
-      <description>authors: Nicolas Tricard, Linzheng Wang, Jason Chen, Sili Deng
-</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06912v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06911v1/</link>
-      <description>authors: Fei Lin, Tengchao Zhang, Ziyang Gong, Xiaotong Yu, Bohan Zhang
-</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06911v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Perceptive Humanoid Motion from Simulation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06908v1/</link>
-      <description>authors: Siyuan Hu, Abulikemu Abuduweili, Yue Meng, Shipeng Liu, Quentin Leboutet
-</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06908v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06876v1/</link>
-      <description>authors: Yulu An, Yifei Feng, Xiangyang Yin
-</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/05/2611-06876v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>DreamX: Video Diffusion Model is a Universal Latent Action Learner</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05377v1/</link>
-      <description>authors: Jisoo Kim, Chaehyun Kim, Junsu Kim, Jiho Park, Seongchan Kim
-</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/04/2611-05377v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
