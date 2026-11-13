@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 12 Nov 2026 15:31:41 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 15:00:21 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16694v1/</link>
+      <description>authors: Yupeng Tang, Mingfeng Lin
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16694v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Edge-Gradient Augmentation under Reinforcement Learning for Temporal Graph</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16678v1/</link>
+      <description>authors: Yongqing Zhou, Jiawei Chen, Wenjun Wang, Xinyu Wang, Wei Yu
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16678v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Manifold Attracting Flow Matching: Physics-Constrained Sampling via Continuous Geometric Dynamics</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16677v1/</link>
+      <description>authors: Guanyu Chen, Jinchen Wang, Shengze Xu, Xingyu Ren, Tieyong Zeng
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16677v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>NSDL: Neuro-Symbolic Division of Labor for Multi-Robot Task Planning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16671v1/</link>
+      <description>authors: Xincheng Tan, Ke Wang, Yining Di, Minfeng Zhu
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16671v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>MuSeToM: Multi-Sensory Evaluation of Belief Revision with Textual Cues Across Six Senses</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16662v1/</link>
+      <description>authors: Chunkit Chan, Kawai Chung, Sze Heng Douglas Kwok, Yuxuan Liu, Yauwai Yim
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16662v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>MuViRL: Multimodal View-Invariant Visual Speech Representation Learning via Calibrated View Aggregation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16655v1/</link>
+      <description>authors: Fei Su, Kai Qiu, Juan Liu
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16655v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Learning the Missing Derivative: Neural Multiple-Scattering Operators for Inverse Volume Rendering</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16650v1/</link>
+      <description>authors: Sipeng Chen, Shibo Li
+</description>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16650v1/</guid>
+      <category>CV</category>
+    </item>
     
     <item>
       <title>Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09894v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>On Agentic Manipulation Policies</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09892v1/</link>
-      <description>authors: Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, Jesse T. Gonzalez, Negin Heravi
-</description>
-      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09892v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>On the (non-)closedness of the set of ReLU networks</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09887v1/</link>
-      <description>authors: Eloi Martinet, Leon Bungert
-</description>
-      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09887v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09868v1/</link>
-      <description>authors: Xingyu Liu, Xiangyang Yin, Tianhua Xia, Haiyu Wang, Sai Qian Zhang
-</description>
-      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09868v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>How far does a hash-only sender go? A pre-registered map of sender memory versus bits for short text messages</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09848v1/</link>
-      <description>authors: Marcelo Samoilenko
-</description>
-      <pubDate>Mon, 09 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/09/2611-09848v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>User Embeddings are Superpositions of Interpretable Behavioral Modes</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08487v1/</link>
-      <description>authors: Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi, Eddie K. H. Ng
-</description>
-      <pubDate>Fri, 06 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08487v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Do You Miss the Nights We Spent Crafting Figures? Rethinking Teaser and Framework Figures in the Age of Generative AI</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08486v1/</link>
-      <description>authors: Xiaoqi Zhao, Youwei Pang, Kailai Zhou
-</description>
-      <pubDate>Fri, 06 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08486v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Where and Why is Grounded Reasoning Useful?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08485v1/</link>
-      <description>authors: David Yan, Le Xue, Forrest Huang, Qiuyi Zhang, Dustin Tran
-</description>
-      <pubDate>Fri, 06 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/06/2611-08485v1/</guid>
       <category>CV</category>
     </item>
     
