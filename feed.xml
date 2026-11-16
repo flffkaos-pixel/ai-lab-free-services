@@ -5,8 +5,88 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 15 Nov 2026 14:39:41 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:49:56 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18563v1/</link>
+      <description>authors: Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira, Giuseppe Cascavilla, Alfredo Cuzzocrea
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18563v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Training Reasoning Models in Simulation to Natively Use Real Robots</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18562v1/</link>
+      <description>authors: Jiaming Tang, Zhuoyang Zhang, Junxian Guo, Fangzhou Zhao, Yilong Zhao
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18562v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18561v1/</link>
+      <description>authors: Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou, Nanda H. Krishna, Caleb A. McKinney
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18561v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18559v1/</link>
+      <description>authors: Genki Kinoshita, Ko Nishino
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18559v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>WeightBench: Evaluating Language Models as Weight-Space Programmers</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18553v1/</link>
+      <description>authors: Aayush Marasini, Barsat Khadka, Nick Rahimi
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18553v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Restoring Diversity in Distilled Image and Video Generators by Probing Activations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18550v1/</link>
+      <description>authors: Furkan Horoz, Ozgur Kara, Kaan Oktay, Adil Kaan Akan, Atakan Kara
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18550v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18533v1/</link>
+      <description>authors: Zelin He, Siyu Zhu, Jacob Helwig, Yujian Liu, Li An
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18533v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18527v1/</link>
+      <description>authors: Dayou Du, Congjie He, Andrew Boutros, Luo Mai, Vaughn Betz
+</description>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18527v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Back to Pixels: Lifting Latent Video Diffusion into Pixel Space</title>
@@ -125,86 +205,6 @@
 </description>
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16655v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Learning the Missing Derivative: Neural Multiple-Scattering Operators for Inverse Volume Rendering</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16650v1/</link>
-      <description>authors: Sipeng Chen, Shibo Li
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16650v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14519v1/</link>
-      <description>authors: Emre Kutlusan, Yongmin Li
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14519v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Toward Foundation Detection Models via Example-Based Grounding in EM-DETR</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14518v1/</link>
-      <description>authors: Sheethal Bhat, Bogdan Georgescu, Awais Mansoor, Florin C. Ghesu, Sasa Grbic
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14518v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>TorchCurves: Differentiable Parametric Curves</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14516v1/</link>
-      <description>authors: Alex Shtoff
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14516v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14515v1/</link>
-      <description>authors: Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li, Sujay Bhatt
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14515v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14514v1/</link>
-      <description>authors: Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14514v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Is Your Robot&#39;s Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14488v1/</link>
-      <description>authors: Chubin Zhang, Bo An
-</description>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/11/2611-14488v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>GHiML: VLM-Guided Hierarchical Multi-Label Learning with Applications to Benthic Imagery</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12564v1/</link>
-      <description>authors: Isaac Xu, Devi Ayyagari, Martin Gillis, Benjamin Misiuk, Craig J. Brown
-</description>
-      <pubDate>Tue, 10 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/10/2611-12564v1/</guid>
       <category>CV</category>
     </item>
     
