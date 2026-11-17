@@ -5,8 +5,58 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:49:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 16:24:12 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Latent Lattice Language Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21608v1/</link>
+      <description>authors: Shivam Duggal, Zongze Wu, William T. Freeman, Antonio Torralba, Richard Zhang
+</description>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21608v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21607v1/</link>
+      <description>authors: Ruixi Yu, Dairu Liu, Xuchuan Chen, Zekun Qi, Zekai Li
+</description>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21607v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21605v1/</link>
+      <description>authors: Huawei Lin, Jinting Liu, Tongyan Wang, Xuyang Chen, Ruihua Shi
+</description>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21605v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>FaceJev: Direct Visual Decisions for Face Forgery Detection</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21604v1/</link>
+      <description>authors: Siran Peng, Tianshuo Zhang, Yibo Xue, Ajian Liu, Haoyuan Zhang
+</description>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21604v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21602v1/</link>
+      <description>authors: Ilia Azizi, Frederick Iat-Hin Tam, Marc-Olivier Boldi, Valérie Chavez-Demoulin, Tom Beucler
+</description>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21602v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion</title>
@@ -156,56 +206,6 @@
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16694v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Edge-Gradient Augmentation under Reinforcement Learning for Temporal Graph</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16678v1/</link>
-      <description>authors: Yongqing Zhou, Jiawei Chen, Wenjun Wang, Xinyu Wang, Wei Yu
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16678v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Manifold Attracting Flow Matching: Physics-Constrained Sampling via Continuous Geometric Dynamics</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16677v1/</link>
-      <description>authors: Guanyu Chen, Jinchen Wang, Shengze Xu, Xingyu Ren, Tieyong Zeng
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16677v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>NSDL: Neuro-Symbolic Division of Labor for Multi-Robot Task Planning</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16671v1/</link>
-      <description>authors: Xincheng Tan, Ke Wang, Yining Di, Minfeng Zhu
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16671v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>MuSeToM: Multi-Sensory Evaluation of Belief Revision with Textual Cues Across Six Senses</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16662v1/</link>
-      <description>authors: Chunkit Chan, Kawai Chung, Sze Heng Douglas Kwok, Yuxuan Liu, Yauwai Yim
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16662v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>MuViRL: Multimodal View-Invariant Visual Speech Representation Learning via Calibrated View Aggregation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16655v1/</link>
-      <description>authors: Fei Su, Kai Qiu, Juan Liu
-</description>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/13/2611-16655v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
