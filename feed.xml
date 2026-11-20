@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 19 Nov 2026 15:53:55 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 15:39:03 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Posterior Matching Distillation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26629v1/</link>
+      <description>authors: Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26629v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>RL Post-Training in Diffusion Transformers Is Activation Steering</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26627v1/</link>
+      <description>authors: Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26627v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>PlayCraft: Designing Engaging Games from Agent Play Experience</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26624v1/</link>
+      <description>authors: Weihao Cheng
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26624v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26619v1/</link>
+      <description>authors: Jinbin Luo, Xiaozhe Yao, Shang Yang, Zhijian Liu, Song Han
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26619v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26617v1/</link>
+      <description>authors: Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu, Lvmin Zhang
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26617v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26613v1/</link>
+      <description>authors: Yiyang Du, Yuxuan Kuang, Qitao Zhao, Yixuan Wang, Zhanqiu Guo
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26613v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Represented but misread: Post-training changes how language models read out what they represent</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26584v1/</link>
+      <description>authors: Jochen Laubrock
+</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26584v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation</title>
@@ -135,76 +205,6 @@
 </description>
       <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21604v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21602v1/</link>
-      <description>authors: Ilia Azizi, Frederick Iat-Hin Tam, Marc-Olivier Boldi, Valérie Chavez-Demoulin, Tom Beucler
-</description>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21602v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18563v1/</link>
-      <description>authors: Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira, Giuseppe Cascavilla, Alfredo Cuzzocrea
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18563v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Training Reasoning Models in Simulation to Natively Use Real Robots</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18562v1/</link>
-      <description>authors: Jiaming Tang, Zhuoyang Zhang, Junxian Guo, Fangzhou Zhao, Yilong Zhao
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18562v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18561v1/</link>
-      <description>authors: Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou, Nanda H. Krishna, Caleb A. McKinney
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18561v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18559v1/</link>
-      <description>authors: Genki Kinoshita, Ko Nishino
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18559v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>WeightBench: Evaluating Language Models as Weight-Space Programmers</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18553v1/</link>
-      <description>authors: Aayush Marasini, Barsat Khadka, Nick Rahimi
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18553v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Restoring Diversity in Distilled Image and Video Generators by Probing Activations</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18550v1/</link>
-      <description>authors: Furkan Horoz, Ozgur Kara, Kaan Oktay, Adil Kaan Akan, Atakan Kara
-</description>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/16/2611-18550v1/</guid>
       <category>CV</category>
     </item>
     
