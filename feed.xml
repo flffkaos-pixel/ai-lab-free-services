@@ -5,8 +5,78 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 22 Nov 2026 14:53:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 15:50:19 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Optimal Linear Regression Without a Variance</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27983v1/</link>
+      <description>authors: Artin Tajdini, Jasper C. H. Lee, Jonathan Scarlett, Kevin Jamieson
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27983v1/</guid>
+      <category>통계</category>
+    </item>
+    
+    <item>
+      <title>A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&amp;P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27978v1/</link>
+      <description>authors: Hari Sitaula, Joseph Opitz
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27978v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>MemOnce: A Scalable Memory Architecture for Large Language Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27973v1/</link>
+      <description>authors: Chang Nie, Chaoyou Fu, Songlin Liu, Yiqing Hu, Caifeng Shan
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27973v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27967v1/</link>
+      <description>authors: Haoyang Wang, Weibo Gao, Zhengxiong Li, Lingfeng Tao
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27967v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Non-penetrating World Models</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27963v1/</link>
+      <description>authors: Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27963v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27931v1/</link>
+      <description>authors: Mohammad Alijanpour Shalmani, Alale Rezvani Boroujeni, Ali Amini
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27931v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27895v1/</link>
+      <description>authors: Marcio Andre de Souza Estevam
+</description>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27895v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>Posterior Matching Distillation</title>
@@ -136,76 +206,6 @@
       <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24395v1/</guid>
       <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Temporal Rank in Recurrent Neural Networks</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24394v1/</link>
-      <description>authors: Leo Dobson, Anton Ragni
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24394v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/18/2611-23229v1/</link>
-      <description>authors: Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba, Constantinos Daskalakis
-</description>
-      <pubDate>Wed, 18 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/18/2611-23229v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Feedback-Linearised Trajectory Tracking via Model-Informed Robust Geometric DDPC</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/18/2611-23215v1/</link>
-      <description>authors: Pranav Gupta, Deepan Muthirayan, Ravi Banavar
-</description>
-      <pubDate>Wed, 18 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/18/2611-23215v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Latent Lattice Language Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21608v1/</link>
-      <description>authors: Shivam Duggal, Zongze Wu, William T. Freeman, Antonio Torralba, Richard Zhang
-</description>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21608v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21607v1/</link>
-      <description>authors: Ruixi Yu, Dairu Liu, Xuchuan Chen, Zekun Qi, Zekai Li
-</description>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21607v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21605v1/</link>
-      <description>authors: Huawei Lin, Jinting Liu, Tongyan Wang, Xuyang Chen, Ruihua Shi
-</description>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21605v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>FaceJev: Direct Visual Decisions for Face Forgery Detection</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21604v1/</link>
-      <description>authors: Siran Peng, Tianshuo Zhang, Yibo Xue, Ajian Liu, Haoyuan Zhang
-</description>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/17/2611-21604v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
