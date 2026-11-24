@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 23 Nov 2026 15:50:19 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 18:16:42 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31240v1/</link>
+      <description>authors: Seongchan Kim, Soowon Son, Sangoh Kim, Hyunah Ko, Eunbeen Hong
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31240v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Lyris: Layout-Guided Long Video Generation with Persistent 3D Memory</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31239v1/</link>
+      <description>authors: Chen Wang, Jiahui Huang, Riccardo de Lutio, Alex Trevithick, Bryan Chu
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31239v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Let Vision-Language Models Generate Images through Their Representations</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31237v1/</link>
+      <description>authors: JB Kim, Byungwoo Jeon, Kyungmin Lee, Hyeonmo Kang, Cheonbok Park
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31237v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31228v1/</link>
+      <description>authors: Daniel Theron
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31228v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31198v1/</link>
+      <description>authors: Rui Sun, Junhua Huang, Luca Zancato, Md Mofijul Islam, Kai-Wei Chang
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31198v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31185v1/</link>
+      <description>authors: Ramraj Chandradevan, Sayontan Ghosh, Vinoth Selvendran
+</description>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/24/2611-31185v1/</guid>
+      <category>NLP</category>
+    </item>
     
     <item>
       <title>Optimal Linear Regression Without a Variance</title>
@@ -146,66 +206,6 @@
       <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26584v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24941v1/</link>
-      <description>authors: Jingzhi Bao, Xiaohe Ma, Hong Li, Yuanming Hu, Xiaoguang Han
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24941v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24940v1/</link>
-      <description>authors: Junjie Ye, Yiqi Zhao, Muchen Xu, Celina Shiyu Wang, Hao Dong
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24940v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Jailbreak Detection on Large Language Models via Contrastive Prototype Structures</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24936v1/</link>
-      <description>authors: Yan Qiu, Yuanyuan Li
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24936v1/</guid>
-      <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24932v1/</link>
-      <description>authors: Priyanka Sinha, Sugam Pandey
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24932v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Who are you? The Personal Imitation Game</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24888v1/</link>
-      <description>authors: Muhammad Rizky Wellyanto, Hajara-Yasmin Isa, Kexin Xue, Vishal Ravichandran, Wenpeng Lu
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24888v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>RSIBench-Infra: Can Agents Optimize Their Own Training and Inference Infrastructure at Production Scale?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24395v1/</link>
-      <description>authors: Hanlin Wu, Yifei Wang, Zhicheng Cai, Huan-ang Gao, Wei-Ying Ma
-</description>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/19/2611-24395v1/</guid>
-      <category>AI/ML</category>
     </item>
     
   </channel>
