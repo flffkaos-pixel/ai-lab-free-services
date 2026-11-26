@@ -5,8 +5,68 @@
     <link>https://flffkaos-pixel.github.io/ai-lab-free-services/</link>
     <description>arXiv 최신 AI 논문 한국어 한 줄 요약 — 매일 오전 9시 업데이트</description>
     <language>ko</language>
-    <lastBuildDate>Wed, 25 Nov 2026 16:53:43 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:45:39 +0900</lastBuildDate>
     <atom:link href="https://flffkaos-pixel.github.io/ai-lab-free-services/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>AnyCam: Anything Can Represent Camera for Video Generation</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34944v1/</link>
+      <description>authors: Weijie Lyu, Zhixin Shu, Yuntian Ke, Ming-Hsuan Yang
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34944v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Tracking Any Point with Agentic Visual Reasoning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34943v1/</link>
+      <description>authors: Xuweiyi Chen, Jin Yao, Linzhan Mou, Lei Gong, Di Liu
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34943v1/</guid>
+      <category>CV</category>
+    </item>
+    
+    <item>
+      <title>Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34942v1/</link>
+      <description>authors: Yalin E. Sagduyu, Tugba Erpek
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34942v1/</guid>
+      <category>AI/ML</category>
+    </item>
+    
+    <item>
+      <title>Tokenisation is not in APX</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34938v1/</link>
+      <description>authors: Violeta Kastreva, Philip Whittington, Dennis Komm, Tiago Pimentel
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34938v1/</guid>
+      <category>NLP</category>
+    </item>
+    
+    <item>
+      <title>DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34936v1/</link>
+      <description>authors: Meenal Parakh, Deep Patel, Beining Han, Jia Deng
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34936v1/</guid>
+      <category>로봇</category>
+    </item>
+    
+    <item>
+      <title>Can image generation help visual reasoning? An empirical study</title>
+      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34935v1/</link>
+      <description>authors: Xueyang Yu, Yifan Jing, Taiming Lu, Linrong Cai, Zhipeng Cai
+</description>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0900</pubDate>
+      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/26/2611-34935v1/</guid>
+      <category>AI/ML</category>
+    </item>
     
     <item>
       <title>OmniAct: One Policy, One Million Embodiments</title>
@@ -146,66 +206,6 @@
       <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
       <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27973v1/</guid>
       <category>NLP</category>
-    </item>
-    
-    <item>
-      <title>Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27967v1/</link>
-      <description>authors: Haoyang Wang, Weibo Gao, Zhengxiong Li, Lingfeng Tao
-</description>
-      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27967v1/</guid>
-      <category>로봇</category>
-    </item>
-    
-    <item>
-      <title>Non-penetrating World Models</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27963v1/</link>
-      <description>authors: Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang
-</description>
-      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27963v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27931v1/</link>
-      <description>authors: Mohammad Alijanpour Shalmani, Alale Rezvani Boroujeni, Ali Amini
-</description>
-      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27931v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27895v1/</link>
-      <description>authors: Marcio Andre de Souza Estevam
-</description>
-      <pubDate>Mon, 23 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/23/2611-27895v1/</guid>
-      <category>AI/ML</category>
-    </item>
-    
-    <item>
-      <title>Posterior Matching Distillation</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26629v1/</link>
-      <description>authors: Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag
-</description>
-      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26629v1/</guid>
-      <category>CV</category>
-    </item>
-    
-    <item>
-      <title>RL Post-Training in Diffusion Transformers Is Activation Steering</title>
-      <link>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26627v1/</link>
-      <description>authors: Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau
-</description>
-      <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
-      <guid>https://flffkaos-pixel.github.io/ai-lab-free-services/2026/11/20/2611-26627v1/</guid>
-      <category>CV</category>
     </item>
     
   </channel>
